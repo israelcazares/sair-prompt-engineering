@@ -1,0 +1,55 @@
+# AN45c — GPT-OSS-120B (DeepInfra) — hard3_20
+
+Comando ejecutado:
+cd /Users/manuelcazares/Downloads/sair/equational-theories-stage1-judge && \
+	export OPENROUTER_API_KEY=$(grep OPENROUTER_API_KEY ../.env | cut -d'=' -f2 | tr -d '"' | tr -d "'") && \
+	python3 examples/run_smoke.py \
+		--prompt-file ../cheat_sheet_variant_AN45c.txt \
+		--problem-file examples/problems_hard3_20.jsonl \
+		--limit 20 \
+		--models gpt-oss-120b 2>&1
+
+Output:
+{"model": "gpt-oss-120b", "problem_id": "hard3_0001", "expected_answer": true, "correct": true, "reason": "Answered TRUE", "finish_reason": "stop", "tokens_in": 743, "tokens_out": 1363, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0002", "expected_answer": true, "correct": true, "reason": "Answered TRUE", "finish_reason": "stop", "tokens_in": 747, "tokens_out": 2651, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0003", "expected_answer": true, "correct": true, "reason": "Answered TRUE", "finish_reason": "stop", "tokens_in": 746, "tokens_out": 1892, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0004", "expected_answer": true, "correct": true, "reason": "Answered TRUE", "finish_reason": "stop", "tokens_in": 746, "tokens_out": 649, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0005", "expected_answer": true, "correct": true, "reason": "Answered TRUE", "finish_reason": "stop", "tokens_in": 746, "tokens_out": 1456, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0006", "expected_answer": true, "correct": true, "reason": "Answered TRUE", "finish_reason": "stop", "tokens_in": 745, "tokens_out": 701, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0007", "expected_answer": false, "correct": true, "reason": "Answered FALSE", "finish_reason": "stop", "tokens_in": 746, "tokens_out": 1159, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0008", "expected_answer": true, "correct": true, "reason": "Answered TRUE", "finish_reason": "stop", "tokens_in": 746, "tokens_out": 852, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0009", "expected_answer": false, "correct": true, "reason": "Answered FALSE", "finish_reason": "stop", "tokens_in": 750, "tokens_out": 2317, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0010", "expected_answer": false, "correct": false, "reason": "Answered TRUE, expected FALSE", "finish_reason": "stop", "tokens_in": 749, "tokens_out": 2249, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0011", "expected_answer": false, "correct": true, "reason": "Answered FALSE", "finish_reason": "stop", "tokens_in": 750, "tokens_out": 2757, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0012", "expected_answer": false, "correct": true, "reason": "Answered FALSE", "finish_reason": "stop", "tokens_in": 749, "tokens_out": 1373, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0013", "expected_answer": false, "correct": true, "reason": "Answered FALSE", "finish_reason": "stop", "tokens_in": 750, "tokens_out": 1378, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0014", "expected_answer": true, "correct": true, "reason": "Answered TRUE", "finish_reason": "stop", "tokens_in": 750, "tokens_out": 1883, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0015", "expected_answer": true, "correct": true, "reason": "Answered TRUE", "finish_reason": "stop", "tokens_in": 748, "tokens_out": 1918, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0016", "expected_answer": false, "correct": true, "reason": "Answered FALSE", "finish_reason": "stop", "tokens_in": 749, "tokens_out": 2227, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0017", "expected_answer": false, "correct": true, "reason": "Answered FALSE", "finish_reason": "stop", "tokens_in": 747, "tokens_out": 1236, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0018", "expected_answer": false, "correct": true, "reason": "Answered FALSE", "finish_reason": "stop", "tokens_in": 749, "tokens_out": 1670, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0019", "expected_answer": false, "correct": true, "reason": "Answered FALSE", "finish_reason": "stop", "tokens_in": 749, "tokens_out": 1574, "actual_provider": "DeepInfra"}
+{"model": "gpt-oss-120b", "problem_id": "hard3_0020", "expected_answer": true, "correct": true, "reason": "Answered TRUE", "finish_reason": "stop", "tokens_in": 750, "tokens_out": 1899, "actual_provider": "DeepInfra"}
+{"summary": {"total_calls": 20, "parseable": 20, "correct": 19}}
+
+---
+
+# Comandos para Llama y Gemma (proveedor respectivo)
+
+## Llama (Novita/AkashML/Parasail/Nebius...)
+cd /Users/manuelcazares/Downloads/sair/equational-theories-stage1-judge && \
+	export OPENROUTER_API_KEY=$(grep OPENROUTER_API_KEY ../.env | cut -d'=' -f2 | tr -d '"' | tr -d "'") && \
+	python3 examples/run_smoke.py \
+		--prompt-file ../cheat_sheet_variant_AN45c.txt \
+		--problem-file examples/problems_hard3_20.jsonl \
+		--limit 20 \
+		--models llama-3-3-70b-instruct 2>&1
+
+## Gemma (Parasail/Novita/AkashML)
+cd /Users/manuelcazares/Downloads/sair/equational-theories-stage1-judge && \
+	export OPENROUTER_API_KEY=$(grep OPENROUTER_API_KEY ../.env | cut -d'=' -f2 | tr -d '"' | tr -d "'") && \
+	python3 examples/run_smoke.py \
+		--prompt-file ../cheat_sheet_variant_AN45c.txt \
+		--problem-file examples/problems_hard3_20.jsonl \
+		--limit 20 \
+		--models gemma-4-31b-it 2>&1

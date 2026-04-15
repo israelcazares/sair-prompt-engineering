@@ -1,2 +1,84 @@
-# sair-prompt-engineering
-Prompt engineering for formal mathematical reasoning — SAIR Equational Theories Stage 1 competition. Empirical study of the single-prompt ceiling effect across 40+ variants and 3 LLMs.
+# Less Is More: Cognitive Load and the Single-Prompt Ceiling in LLM Mathematical Reasoning
+
+**Author:** Manuel Israel Cázares, Bytepro AI, Mazatlán, Sinaloa, Mexico  
+Contact: hello@bytepro.ai | israel.cazares@gmail.com  
+arXiv: [pending — will be added after upload]
+
+---
+
+This repository is the companion codebase for the paper:
+
+**"Less Is More: Cognitive Load and the Single-Prompt Ceiling in LLM Mathematical Reasoning"**
+
+## Context
+
+This repo contains all prompt variants, evaluation pipelines, and results for the SAIR Foundation Mathematics Distillation Challenge: Equational Theories Stage 1 (April 2026, deadline April 20, 2026).
+
+- **Task:** Given two magma equations Eq1 and Eq2, determine if Eq1 implies Eq2 over ALL magmas (TRUE/FALSE binary classification).
+- **Competition:** [SAIR Mathematics Distillation Challenge](https://competition.sair.foundation/competitions/mathematics-distillation-challenge-equational-theories-stage1/overview)
+- **Official judge repo:** [SAIRcompetition/equational-theories-stage1-judge](https://github.com/SAIRcompetition/equational-theories-stage1-judge)
+
+## Key Results
+
+| Variant                  | Dataset | n   | Accuracy | TRUE% | FALSE% |
+|-------------------------|---------|-----|----------|-------|--------|
+| AN45c (submitted)       | hard3   | 400 | 79.25%   | 95.9% | 63.4%  |
+| AN38                    | hard3   | 400 | 71.8%    | 78.5% | 65.4%  |
+| AN19c                   | hard3   | 50  | 62.0%    | 91.7% | 34.6%  |
+| AN3c                    | hard1   | 69  | 78.3%    | 66.7% | 84.4%  |
+| Baseline (no cheatsheet)| hard3   | 400 | 59.75%   | 82.6% | 38.0%  |
+
+*Cross-provider validation:* AN45c achieved 95% (19/20) on OpenRouter/DeepInfra bf16 (official SAIR provider).
+
+## Files Description
+
+- `cheat_sheet_variant_AN45c.txt` — submitted prompt (2,251 bytes)
+- `cheat_sheet_variant_AN38.txt` — runner-up, best stable full-scale
+- `cheat_sheet_variant_AN19c.txt` — best multi-model (289 bytes)
+- `cheat_sheet_variant_AN3c.txt` — best on hard1 (FALSE-heavy distribution)
+- `eval_pipeline_together.py` — Together AI evaluation pipeline (used for all n=400 runs)
+- `eval_pipeline_openrouter.py` — OpenRouter pipeline (used for cross-provider validation)
+- `paper-sair-v13.tex` + `references.bib` — paper source
+- `results/` — all evaluation JSON outputs
+
+## Reproduction
+
+**To reproduce AN45c full-scale result:**
+```bash
+pip install together python-dotenv
+export TOGETHER_API_KEY=your_key
+python eval_pipeline_together.py \
+	--cheatsheet cheat_sheet_variant_AN45c.txt \
+	--raw-prompt \
+	--problems hard3 \
+	--model openai/gpt-oss-120b \
+	--max 400 \
+	--budget 5.00
+```
+
+**To reproduce cross-provider validation (official SAIR pipeline):**
+```bash
+export OPENROUTER_API_KEY=your_key
+python eval_pipeline_openrouter.py \
+	--cheatsheet cheat_sheet_variant_AN45c.txt \
+	--problems hard3 \
+	--limit 20 \
+	--model gpt-oss-120b
+```
+
+## Key Finding
+
+AN45c achieves **+19.5pp** over the no-cheatsheet baseline (79.25% vs 59.75%) on 400 balanced hard problems. The baseline exhibits a structural TRUE bias (82.6% TRUE vs 38.0% FALSE recall); AN45c corrects FALSE recall by +25.4pp while maintaining 95.9% TRUE recall.
+
+## Citation
+If you use this work, please cite:
+
+[arXiv citation — pending]
+
+## License
+MIT
+
+## Related
+- Official SAIR judge: https://github.com/SAIRcompetition/equational-theories-stage1-judge
+- Competition: https://competition.sair.foundation
+- Equational Theories Project: https://github.com/teorth/equational_theories

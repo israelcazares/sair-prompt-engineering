@@ -1,0 +1,16 @@
+Approximately half of these problems are TRUE and half are FALSE.
+Many equations that look complex actually force the magma to have only 1 element, making the implication trivially TRUE.
+Before concluding FALSE, verify your counterexample satisfies Equation 1 for ALL variable assignments.
+
+Equation 1:
+{{ equation1 }}
+
+Equation 2:
+{{ equation2 }}
+
+Determine whether Equation 1 implies Equation 2.
+
+VERDICT: TRUE or FALSE
+REASONING:
+PROOF:
+COUNTEREXAMPLE:
