@@ -71,9 +71,21 @@ python eval_pipeline_openrouter.py \
 AN45c achieves **+19.5pp** over the no-cheatsheet baseline (79.25% vs 59.75%) on 400 balanced hard problems. The baseline exhibits a structural TRUE bias (82.6% TRUE vs 38.0% FALSE recall); AN45c corrects FALSE recall by +25.4pp while maintaining 95.9% TRUE recall.
 
 ## Citation
+
 If you use this work, please cite:
 
-[arXiv citation — pending]
+Manuel Israel Cázares (2026). *Less Is More: Cognitive Load and the Single-Prompt Ceiling in LLM Mathematical Reasoning*. Zenodo. https://doi.org/10.5281/zenodo.19598433
+
+```bibtex
+@misc{cazares2026sair,
+	author    = {Cázares, Manuel Israel},
+	title     = {Less Is More: Cognitive Load and the Single-Prompt Ceiling in LLM Mathematical Reasoning},
+	year      = {2026},
+	publisher = {Zenodo},
+	doi       = {10.5281/zenodo.19598433},
+	url       = {https://zenodo.org/records/19598433}
+}
+```
 
 ## License
 MIT
