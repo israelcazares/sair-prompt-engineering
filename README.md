@@ -35,10 +35,13 @@ This repo contains all prompt variants, evaluation pipelines, and results for th
 
 ## Files Description
 
-- `cheatsheets/cheat_sheet_variant_AN45c.txt` — submitted prompt (2,251 bytes)
+- `cheatsheets/cheat_sheet_variant_AN45c.txt` — submitted prompt (2,252 bytes)
 - `cheatsheets/cheat_sheet_variant_AN38.txt` — runner-up, best stable full-scale
 - `cheatsheets/cheat_sheet_variant_AN19c.txt` — best multi-model (289 bytes)
 - `cheatsheets/cheat_sheet_variant_AN3c.txt` — best on hard1 (FALSE-heavy distribution)
+
+These four files are exactly the prompts used in the gpt-oss runs reported in the paper (byte sizes match Table 1/2: AN45c 2,252; AN38 1,776; AN3c 4,306; AN19c 289). Playground wrappers used only in exploratory multi-model runs (Gemma, Llama) are not included in this curated repo.
+
 - `scripts/eval_pipeline_together.py` — Together AI evaluation pipeline (used for all n=400 runs)
 - `scripts/eval_pipeline_openrouter.py` — OpenRouter pipeline (used for cross-provider validation)
 - `papers/paper-sair.tex` + `papers/references.bib` — paper source (v15.2 canonical)

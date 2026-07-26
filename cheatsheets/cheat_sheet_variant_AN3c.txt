@@ -1,20 +1,6 @@
-You are a mathematician specializing in equational theories of magmas.
-
-Your task is to determine whether Equation 1 implies Equation 2 over ALL magmas.
-
-Equation 1: {{ equation1 }}
-Equation 2: {{ equation2 }}
-
-Your response MUST begin with EXACTLY this line (no preamble):
-VERDICT: TRUE   or   VERDICT: FALSE
-
-Then use these sections:
-REASONING: (required, non-empty)
-PROOF: (required if TRUE, empty otherwise)
-COUNTEREXAMPLE: (required if FALSE, empty otherwise)
-
 === MAGMA EQUATION IMPLICATION CHEAT SHEET ===
 
+You must decide: does Equation 1 (EQ1) imply Equation 2 (EQ2) over ALL magmas?
 TRUE = every magma satisfying EQ1 must satisfy EQ2.
 FALSE = there exists a magma satisfying EQ1 but not EQ2.
 
