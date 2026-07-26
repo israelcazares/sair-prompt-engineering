@@ -2,13 +2,16 @@
 
 **Author:** Manuel Israel Cázares, Bytepro AI, Mazatlán, Sinaloa, Mexico  
 Contact: hello@bytepro.ai | israel.cazares@gmail.com  
-arXiv: [pending — will be added after upload]
+arXiv: https://arxiv.org/abs/2604.18897
 
 ---
 
 This repository is the companion codebase for the paper:
 
 **"Less Is More: Cognitive Load and the Single-Prompt Ceiling in LLM Mathematical Reasoning"**
+
+The paper in this repo corresponds to **v15.2** (current arXiv / Zenodo version).
+Previous TeX sources are kept in `papers/archive/` for historical traceability only.
 
 ## Context
 
@@ -32,13 +35,15 @@ This repo contains all prompt variants, evaluation pipelines, and results for th
 
 ## Files Description
 
-- `cheat_sheet_variant_AN45c.txt` — submitted prompt (2,251 bytes)
-- `cheat_sheet_variant_AN38.txt` — runner-up, best stable full-scale
-- `cheat_sheet_variant_AN19c.txt` — best multi-model (289 bytes)
-- `cheat_sheet_variant_AN3c.txt` — best on hard1 (FALSE-heavy distribution)
-- `eval_pipeline_together.py` — Together AI evaluation pipeline (used for all n=400 runs)
-- `eval_pipeline_openrouter.py` — OpenRouter pipeline (used for cross-provider validation)
-- `paper-sair-v13.tex` + `references.bib` — paper source
+- `cheatsheets/cheat_sheet_variant_AN45c.txt` — submitted prompt (2,251 bytes)
+- `cheatsheets/cheat_sheet_variant_AN38.txt` — runner-up, best stable full-scale
+- `cheatsheets/cheat_sheet_variant_AN19c.txt` — best multi-model (289 bytes)
+- `cheatsheets/cheat_sheet_variant_AN3c.txt` — best on hard1 (FALSE-heavy distribution)
+- `scripts/eval_pipeline_together.py` — Together AI evaluation pipeline (used for all n=400 runs)
+- `scripts/eval_pipeline_openrouter.py` — OpenRouter pipeline (used for cross-provider validation)
+- `papers/paper-sair.tex` + `papers/references.bib` — paper source (v15.2 canonical)
+- `papers/paper-sair.pdf` — compiled PDF
+- `papers/archive/` — previous TeX versions (v13, v15) for historical traceability
 - `results/` — all evaluation JSON outputs
 
 ## Reproduction
@@ -47,8 +52,8 @@ This repo contains all prompt variants, evaluation pipelines, and results for th
 ```bash
 pip install together python-dotenv
 export TOGETHER_API_KEY=your_key
-python eval_pipeline_together.py \
-	--cheatsheet cheat_sheet_variant_AN45c.txt \
+python scripts/eval_pipeline_together.py \
+	--cheatsheet cheatsheets/cheat_sheet_variant_AN45c.txt \
 	--raw-prompt \
 	--problems hard3 \
 	--model openai/gpt-oss-120b \
@@ -59,8 +64,8 @@ python eval_pipeline_together.py \
 **To reproduce cross-provider validation (official SAIR pipeline):**
 ```bash
 export OPENROUTER_API_KEY=your_key
-python eval_pipeline_openrouter.py \
-	--cheatsheet cheat_sheet_variant_AN45c.txt \
+python scripts/eval_pipeline_openrouter.py \
+	--cheatsheet cheatsheets/cheat_sheet_variant_AN45c.txt \
 	--problems hard3 \
 	--limit 20 \
 	--model gpt-oss-120b
