@@ -1,0 +1,186 @@
+% ============================================================
+% SECTION 8 — v16 DRAFT (replaces v15.2 sec:official)
+% Status: DRAFT for author review.
+% All numbers verified against parsed final leaderboard (n=310, July 2026)
+% ============================================================
+
+\section{Official Benchmark Validation}
+\label{sec:official}
+
+The complete competition leaderboard provides an independent validation
+dataset. We use it only to evaluate whether the empirical patterns
+identified in our controlled ablation study
+(Sections~\ref{sec:results}--\ref{sec:multimodel}) generalize beyond our
+own prompts. The analytical sequence is deliberately unidirectional: our
+experiments produced the findings; the findings motivated the hypotheses
+of Section~\ref{sec:analysis}; the leaderboard, released after our
+submission was locked, then serves as an out-of-sample test of whether
+those hypotheses are compatible with the behavior of 309 independently
+developed submissions.
+
+\subsection{Data and Scope}
+\label{sec:official-data}
+
+The final competition leaderboard~\citep{sair2026leaderboard} reports
+results for 310~evaluated submissions of 1{,}007 registered participants,
+across two evaluation tracks. The \emph{Evaluation (Scored)} board, which
+determined official rankings, averages accuracy over three models
+(GPT-OSS~120B, Gemma~4~31B~IT, Llama~3.3~70B~Instruct) and three problem
+sets (\texttt{normal}, \texttt{hard}, \texttt{extra\_hard}, 200~problems
+each, three runs per problem). The \emph{Order-5 (Research)}
+board~\citep{sair2026leaderboardresearch} evaluates the same three models
+on a separate 200-problem set restricted to order-5
+magmas.\footnote{Because the two boards draw from different problem
+distributions, the pair (scored accuracy, research accuracy) provides,
+for every submission, exactly the kind of cross-distribution measurement
+that our AN45c/AN38 case study performed for our own prompts.}
+
+Because both boards were published after the submission deadline, no
+participant---ourselves included---could optimize against them. The
+leaderboard therefore functions as a natural pre-registered test: every
+hypothesis stated in Sections~\ref{sec:analysis}
+and~\ref{sec:multimodel} of the versions of this paper published before
+competition close (v13--v15.2, timestamped on arXiv and Zenodo) predates
+the evidence examined here.
+
+Summary statistics frame the difficulty of the task. On the scored
+board, mean accuracy across all 310~submissions is 55.3\% (median
+55.8\%), and the maximum is 69.1\%. On the research board, the mean is
+61.3\% and the maximum 82.4\%. Only 32 of 310~submissions exceed our
+locally measured no-cheatsheet baseline of 59.75\% on the scored board.
+
+\subsection{Cross-Distribution Trade-Off at Full Scale}
+\label{sec:official-tradeoff}
+
+Version~15.2 of this paper, using the voluntary Contributor Network
+snapshot ($n{=}52$, 13 with dual-split scores), observed that only one
+submission exceeded 65\% accuracy on both hard2 and hard3, and flagged
+the full leaderboard as the natural falsification test: the
+cross-distribution trade-off surface would either survive at scale or
+the thesis would fail. The complete leaderboard resolves this test.
+
+\begin{table}[t]
+\centering
+\caption{Cross-board performance thresholds, final leaderboard
+($n{=}310$). Each submission is evaluated on both the official scored
+distribution and the order-5 research distribution.}
+\label{tab:dualthreshold}
+\begin{tabular}{lc}
+\toprule
+Criterion & Submissions \\
+\midrule
+$>$60\% on both boards & 27 / 310 \\
+$>$65\% on both boards & 5 / 310 \\
+$>$70\% on both boards & \textbf{0 / 310} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+No submission among all 310 exceeds 70\% accuracy on both distributions
+(Table~\ref{tab:dualthreshold}). The trade-off is most visible at the
+top of the research board: the five highest-scoring research submissions
+lose between 19 and 32~percentage points when evaluated on the official
+scored distribution (Table~\ref{tab:researchcollapse}), a pattern
+structurally identical to the AN45c inversion documented in
+Section~\ref{sec:official-inversion} (79.25\% local $\rightarrow$ 55.5\%
+official hard3, a 23.75pp drop).
+
+\begin{table}[t]
+\centering
+\caption{The five highest-ranked submissions on the research board and
+their official scored results. Team names are public leaderboard
+entries~\citep{sair2026leaderboard, sair2026leaderboardresearch}.}
+\label{tab:researchcollapse}
+\begin{tabular}{lccc}
+\toprule
+Team & Research & Scored & Scored rank \\
+\midrule
+Weihang Ding & 82.4\% & 56.3\% & 137 \\
+Lothar Schiemanowski & 81.9\% & 50.3\% & 288 \\
+Math Distillation & 80.6\% & 61.6\% & 20 \\
+Ken & 80.4\% & 56.2\% & 141 \\
+zkdmt & 80.1\% & 52.2\% & 264 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The exception identified in v15.2 also resolves. Arjun Garg's
+submission, which exceeded 65\% on both hard2 and hard3 in the
+Contributor Network snapshot and which we flagged as a potential
+falsifier of the trade-off surface, ranks 8th on the research board
+(77.9\%) but 166th on the scored board (55.5\%)---below our own
+submission's scored accuracy. What appeared at $n{=}13$ to be an escape
+from the trade-off surface is, at $n{=}310$, another instance of it.
+
+Conversely, the five submissions that do clear 65\% on both boards
+(Table~\ref{tab:robustfive}) are characterized not by peak accuracy on
+either distribution but by small cross-board gaps. The competition
+winner exhibits the smallest gap of the top group
+($+1.0$pp), despite ranking only 15th--20th on the research board. At
+full scale, cross-distribution robustness---not peak accuracy on any
+single distribution---predicts official ranking. This generalizes,
+across 309 independently developed prompts, the lesson of our own
+AN38-over-AN45c submission decision (Section~\ref{sec:results}).
+
+\begin{table}[t]
+\centering
+\caption{All submissions exceeding 65\% on both boards ($n{=}5$ of
+310), ordered by scored accuracy.}
+\label{tab:robustfive}
+\begin{tabular}{lccc}
+\toprule
+Team & Scored & Research & Gap \\
+\midrule
+Dufius & 69.1\% & 70.1\% & $+1.0$ \\
+vt & 67.9\% & 66.2\% & $-1.7$ \\
+Reza Jamei & 66.3\% & 74.1\% & $+7.8$ \\
+AJ & 66.2\% & 70.2\% & $+4.0$ \\
+yan-biao & 65.3\% & 74.3\% & $+9.0$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two conclusions follow. First, the cross-distribution fragility
+documented for our own prompts in
+Section~\ref{sec:official-inversion} is not an idiosyncrasy of our
+design family: it is the dominant failure mode of the entire field of
+310~submissions. Second, the empirical saturation region identified in
+Section~\ref{sec:ceiling} for our prompt family (approximately
+60--79\% on local hard3) is consistent with the official ceiling
+observed across all participants: no submission exceeds 69.1\% on the
+official scored evaluation, and no submission exceeds 70\% on both
+distributions simultaneously.
+
+\subsection{Compatibility with the Structural Classification Hypothesis}
+\label{sec:official-router}
+
+Section~\ref{sec:analysis} advanced the hypothesis---prior to the
+release of any official results---that gpt-oss-120b behaves on this
+task as a structural-pattern classifier rather than a prover, and that
+prompts succeed to the extent that they support structural
+classification rather than open-ended mathematical reasoning. The
+leaderboard offers an observational test: if the hypothesis is
+directionally correct, strategies that explicitly constrain the model's
+decision process should be over-represented at the top of the official
+ranking.
+
+The evidence is compatible with the hypothesis. The winning submission
+is, by its own publicly visible description, an explicitly rule-ordered
+deterministic classifier: a fixed sequence of syntactic rules applied
+in priority order with a first-match stopping condition, rather than a
+reasoning guide.\footnote{We cite only the publicly visible
+categorical structure of leaderboard submissions and their published
+scores. A content-level analysis of other participants' prompts is
+outside the scope of this paper.} We treat this as external supporting
+evidence, not as proof: a single winning instance cannot establish
+that decision-space reduction is necessary for escaping the saturation
+region, and the leaderboard does not permit controlled comparison of
+strategy categories. What the observation does establish is that the
+strategy our hypothesis predicted would outperform reasoning
+guidance---formulated in Section~\ref{sec:analysis} before official
+results existed---is the strategy that won.
+
+Section~\ref{sec:instability} develops the observable quantity that,
+in our view, underlies this pattern: the degree to which a prompt
+delegates the classification decision to the model, measurable through
+run-to-run verdict instability.
