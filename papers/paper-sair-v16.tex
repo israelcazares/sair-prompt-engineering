@@ -781,9 +781,10 @@ substantial improvement, but the imbalance persists.
 \textbf{Llama~3.3~70B} exhibits the opposite profile: near-baseline
 \textsc{False} recall~(80.8\% with AN19c) but severely depressed
 \textsc{True} recall (37.5\% with the best prompt; effectively~0\%
-with any prompt exceeding $\approx$2KB). Longer prompts collapse
-\textsc{True} recall further, suggesting a capacity ceiling on
-instruction-following rather than a knowledge deficit.
+with our CE-table prompt family). Within our design family, longer
+prompts collapsed \textsc{True} recall further; however,
+Section~\ref{sec:instability-llama} shows with full-leaderboard data
+that the collapse is driven by prompt content rather than length.
 
 \textbf{Gemma~4~31B} is token-gated rather than directionally biased:
 its failure mode is token budget exhaustion, which triggers the STEP~1
@@ -1234,8 +1235,168 @@ run-to-run verdict instability.
 % ─────────────────────────────────────────────
 \section{Run Instability and Decision Delegation}
 \label{sec:instability}
-% TODO v16: section drafted separately; integration pending.
-\textit{[Section in preparation.]}
+
+The official evaluation executes every problem three times per model.
+The public leaderboard exposes these per-run outcomes at the problem
+level, making it possible to measure a quantity that aggregate accuracy
+conceals: how often a model returns \emph{different verdicts across
+identical runs} of the same problem under the same prompt. We call the
+fraction of problems receiving inconsistent verdicts the
+\textbf{disagreement rate}, and we propose it as an observable proxy
+for \emph{decision delegation}: the degree to which a prompt leaves the
+classification decision to the model's own stochastic reasoning process
+rather than constraining it procedurally.
+
+\subsection{Data and Validation}
+\label{sec:instability-data}
+
+We extracted per-problem, per-run outcomes from the public leaderboard
+problem matrices for two submissions spanning the strategy spectrum:
+our own (AN45c, 2{,}252~bytes, heuristic reasoning guidance) and the
+competition winner's (9{,}834~bytes, rule-ordered deterministic
+classification; Section~\ref{sec:official-router}). For each submission
+this yields $200 \times 3$ run-level outcomes per model per problem
+set---7{,}200 outcomes across the scored board's nine model$\times$set
+cells, plus 1{,}800 for our submission on the research board.
+
+To validate the extraction, we reconstructed each cell's official
+accuracy from the run-level data. Twenty of twenty-one model$\times$set
+combinations reproduce the officially published accuracy exactly; the
+remaining combination is a partial extraction and matches on its
+subset.\footnote{Extraction scripts and the validated dataset are
+released in the companion repository~\citep{cazares2026sair}.}
+
+\subsection{Disagreement Is Prompt-Dependent and Inverts Across Models}
+\label{sec:instability-results}
+
+Table~\ref{tab:disagreement} reports disagreement rates for both
+submissions across all models and problem sets.
+
+\begin{table}[t]
+\centering
+\caption{Disagreement rate: fraction of problems (of 200 per cell)
+receiving inconsistent verdicts across three identical runs
+(temperature~0). ``Ours'' is AN45c; ``Winner'' is the first-place
+submission. GPT-OSS normal for our submission is measured on the
+extracted subset ($n{=}200$, combining both extraction passes).}
+\label{tab:disagreement}
+\small
+\begin{tabular}{llrr}
+\toprule
+Model & Problem set & Ours & Winner \\
+\midrule
+GPT-OSS 120B & normal      & 39.0\% & 8.5\% \\
+GPT-OSS 120B & hard        & \textbf{50.5\%} & 9.0\% \\
+GPT-OSS 120B & extra\_hard & 43.0\% & 5.0\% \\
+\midrule
+Gemma 4 31B  & normal      & 16.0\% & 12.0\% \\
+Gemma 4 31B  & hard        & 10.5\% & 22.5\% \\
+Gemma 4 31B  & extra\_hard & 28.0\% & 10.0\% \\
+\midrule
+Llama 3.3 70B & normal      & 2.0\% & 48.0\% \\
+Llama 3.3 70B & hard        & 1.0\% & \textbf{54.5\%} \\
+Llama 3.3 70B & extra\_hard & 1.0\% & 45.5\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two patterns stand out. First, on GPT-OSS~120B---the model where both
+prompts do their primary work---the winning submission's disagreement
+rate is five to nine times lower than ours. Under our heuristic
+guidance prompt, half of all hard problems (50.5\%) receive
+inconsistent verdicts across three identical runs; under the winner's
+rule-ordered classifier, only 9\% do. This pattern is consistent with
+the interpretation that a rule-ordered procedure constrains the
+model's decision process more tightly than reasoning guidance does:
+under the former, identical runs converge on identical verdicts; under
+the latter, the model resolves the same problem differently run to
+run.
+
+Second, the pattern \emph{inverts} on Llama~3.3~70B. Our prompt makes
+Llama almost perfectly deterministic (1--2\% disagreement)---but
+deterministic in a degenerate way. The per-run data reveals the exact
+mechanism of the Llama collapse documented in
+Section~\ref{sec:multimodel}: on every problem set, our submission
+produces approximately 98--100 solid-correct and 98--100 solid-incorrect
+cells with near-zero \textsc{True}-class F1. On a balanced set, this is
+the signature of a constant classifier: Llama answers \textsc{False}
+on essentially every problem, three runs out of three---correct on the
+\textsc{False} half, wrong on the \textsc{True} half. The winner's
+prompt, by contrast, destabilizes Llama (45--55\% disagreement) but
+makes it \emph{useful}: 63.0\% accuracy on hard versus our 50.5\%.
+Decision delegation is therefore not uniformly good or bad; its
+observed effect depends on what the model does with the delegated
+decision. GPT-OSS's disagreement is concentrated on unresolved
+problems, while Llama's near-total agreement reflects convergence on a
+single, largely incorrect class.
+
+\subsection{Instability Is Not Noise That Voting Can Remove}
+\label{sec:instability-voting}
+
+If run-to-run disagreement were symmetric noise around a correct
+signal, majority voting over the three runs would recover accuracy.
+It does not. For our submission on GPT-OSS hard, run-level accuracy is
+53.8\% and majority-vote accuracy is 53.0\%---no improvement. The
+reason is visible in the composition of the disagreeing cells: of the
+101 mixed cells, 53 have one correct run and 48 have two, an almost
+uniform split. Under our prompt, the model is not noisily orbiting the
+right answer on these problems; it is at chance on them. The
+disagreement rate thus identifies the subpopulation of problems on
+which the prompt fails to constrain the model to \emph{any} decision,
+which is qualitatively different from failing to constrain it to the
+\emph{correct} one.
+
+\subsection{Content, Not Length, Drives the Llama Collapse}
+\label{sec:instability-llama}
+
+Earlier versions of this work attributed the Llama collapse to prompt
+length, based on the within-family observation that our prompts
+exceeding $\approx$2KB produced near-zero \textsc{True} recall. The
+full leaderboard refutes length as the driver. Across all
+310~submissions, 179 exhibit the Llama collapse signature
+(\textsc{True}-class F1 below 5\% on the normal set), and their mean
+cheatsheet size (4.2KB) is \emph{smaller} than that of the
+131~submissions where Llama remains functional (6.1KB). Our own
+2{,}252-byte submission collapses Llama; the winner's 9{,}834-byte
+submission does not. Within our design family, length covaried with
+rule-system complexity, producing a spurious length effect; at
+leaderboard scale, the collapse is evidently a function of prompt
+\emph{content}---which instructions the prompt gives and how they
+interact with Llama's instruction-following capacity---rather than of
+size. We accordingly retract the size-based formulation and restate
+the finding as content-dependent: certain prompt structures, including
+our CE-table family, drive Llama~3.3~70B into a deterministic
+single-class policy regardless of their length.
+
+\subsection{Interpretation and Scope}
+\label{sec:instability-interp}
+
+These observations connect the empirical saturation region
+(Section~\ref{sec:ceiling}) to the structural classification
+hypothesis (Sections~\ref{sec:analysis}
+and~\ref{sec:official-router}) through a measurable intermediate
+variable. Under prompts in our heuristic-guidance family, run-to-run
+inconsistency is high and concentrated exactly on the problems the
+model cannot reliably solve---consistent with the interpretation that
+these prompts leave a large fraction of the decision to the model's
+stochastic reasoning. The winning submission is consistent with the
+same interpretation from the opposite direction: on GPT-OSS~120B it
+exhibits disagreement rates five to nine times lower than our
+heuristic-guidance prompt. We conjecture---but with $n{=}2$ prompts
+cannot establish---that disagreement rate is a general leading
+indicator of distribution fragility: a prompt whose accuracy rests on
+a large population of at-chance problems has more room to lose under
+distribution shift than one whose accuracy rests on deterministically
+solved problems. Testing this conjecture requires per-run data for a
+larger sample of submissions, which the public leaderboard makes
+possible; we leave this to future work.
+
+Two scope limitations apply. The contrast in
+Table~\ref{tab:disagreement} spans two prompts, chosen to represent
+the endpoints of the observed strategy spectrum; intermediate designs
+are unmeasured. And the disagreement rate is measured under the
+official pipeline's sampling configuration; its magnitude (though
+plausibly not its ordering) may vary under other configurations.
 
 % ─────────────────────────────────────────────
 \section{Conclusion}
