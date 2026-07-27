@@ -40,7 +40,8 @@ formal mathematical reasoning in the context of the SAIR Equational
 Theories Stage 1 competition. The task requires deciding whether one
 equational law implies another over all magmas (algebraic structures
 with a single binary operation)~---~a problem that is undecidable in
-general but decidable for \textsc{False} via finite model search. Over
+general, where finite counterexample search is practically useful
+for \textsc{False} despite being theoretically incomplete. Over
 five weeks, we designed, tested, and analyzed more than~40 prompt
 variants, ranging from~0 to~4{,}878 bytes, across four evaluation
 splits and three language models (gpt-oss-120b, Llama~3.3~70B,
@@ -97,7 +98,7 @@ Theories Stage~1 competition~\citep{tao2026sair} provides an unusually
 clean testbed for studying this question: given two equations over magmas
 (sets with a single binary operation), decide whether the first implies
 the second universally. The problem is computationally asymmetric:
-\textsc{False} instances can in principle be certified by exhibiting a
+\textsc{False} instances are often certifiable by exhibiting a
 small finite counterexample, while \textsc{True} instances require a
 universal proof that no counterexample exists, including infinite
 algebraic structures.
@@ -153,10 +154,9 @@ We make the following contributions:
     and Gemma~4~31B on this task.
   \item \textbf{Ordering effect}: Evidence that trivial-magma-first
     ordering (AN45c) outperforms CE-table-first ordering (AN38) by
-    $+7.5$ percentage points at full scale ($n=400$), with
-    non-overlapping 95\% Wilson CIs ([75.0\%, 82.9\%] vs.\
-    [67.1\%, 75.9\%]) (local evaluation; see Section~\ref{sec:official}
-    for official benchmark divergence).
+    $+7.5$ percentage points at full scale ($n=400$; 95\% Wilson CIs
+    [75.0\%, 82.9\%] vs.\ [67.1\%, 75.9\%]) (local evaluation; see
+    Section~\ref{sec:official} for official benchmark divergence).
   \item \textbf{Practical guidelines}: Minimal effective prompts for
     multi-model deployment, with analysis of why simpler beats complex.
   \item \textbf{Cross-distribution trade-off surface.} Official benchmark
@@ -201,14 +201,15 @@ $E_2$ (written $E_1 \Rightarrow E_2$) if every magma that
 satisfies~$E_1$ also satisfies~$E_2$. Deciding this relation is
 computationally asymmetric. A \textsc{False} instance~---~where
 $E_1 \not\Rightarrow E_2$~---~can be certified by exhibiting a single
-finite counterexample magma in which~$E_1$ holds but~$E_2$ fails; such
-certificates exist for all \textsc{False} cases among small magmas,
-making \textsc{False} decidable via finite search. A \textsc{True}
+finite counterexample magma in which~$E_1$ holds but~$E_2$ fails; finite
+counterexample search is often practically useful for \textsc{False}
+despite being theoretically incomplete. A \textsc{True}
 instance requires establishing that no counterexample exists among all
 magmas, including infinite ones, for which no general algorithm is
-known. The implication problem over magmas is undecidable in general;
-finite model search is complete for \textsc{False} but not for
-\textsc{True}.
+known. The implication problem over magmas is undecidable in general. Finite
+model search is not complete even for \textsc{False}: there exist
+implications that hold in all finite magmas but fail over infinite
+ones, so a fruitless finite search certifies nothing.
 
 \subsection{The Equational Theories Project}
 

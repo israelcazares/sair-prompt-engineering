@@ -1,0 +1,15 @@
+---
+description: Preserve scientific claim hierarchy during manuscript edits
+globs: papers/**
+alwaysApply: false
+---
+
+# Scientific Editing
+
+- If a correction requires a stronger empirical claim than the current manuscript, stop and ask for confirmation.
+- Do not simplify scientific language for style; preserve the hierarchy of claims.
+- Edit only textually identified passages. Never rewrite semantically similar text without explicit approval.
+- Do not commit manuscript edits unless the author explicitly approves the diff.
+- Default workflow: edit, compile, show the complete diff, then wait for approval.
+- If a correction changes a mathematical, statistical, or theoretical claim, report the original text, proposed text, why the original is incorrect, and the evidence supporting the correction.
+- Do not replace standard logical or mathematical terminology (for example, "semi-decidable", "recursively enumerable", "complete", or "undecidable") without showing the full context and receiving explicit approval.
