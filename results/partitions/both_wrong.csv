@@ -1,0 +1,53 @@
+id,eq1,eq2,label,an45c_predicted,an38_predicted
+hard3_0028,x = y * ((z * x) * x),x = ((y * z) * w) * (z * x),TRUE,FALSE,FALSE
+hard3_0035,x = (y * z) * (z * x),x = y * ((x * (x * y)) * x),FALSE,TRUE,TRUE
+hard3_0039,x = (x * (y * x)) * y,x = (x * x) * (x * (y * z)),FALSE,TRUE,TRUE
+hard3_0045,x = ((y * x) * y) * x,x * (y * z) = y * (x * z),FALSE,TRUE,TRUE
+hard3_0056,x * x = (y * x) * z,x * (x * y) = x * (z * z),FALSE,TRUE,TRUE
+hard3_0057,x * x = (y * z) * z,x * x = y * (y * x),FALSE,TRUE,TRUE
+hard3_0068,x = x * (y * (z * (z * z))),x = x * ((y * (y * z)) * x),TRUE,FALSE,FALSE
+hard3_0071,x = y * (y * (y * (x * y))),x = ((y * y) * x) * (z * z),FALSE,TRUE,TRUE
+hard3_0072,x = y * (y * (y * (x * y))),x = (((y * z) * z) * x) * y,FALSE,TRUE,TRUE
+hard3_0073,x = y * (z * (x * (y * x))),x = y * (((z * y) * x) * x),FALSE,TRUE,TRUE
+hard3_0074,x = y * (z * (x * (z * x))),x = (x * (x * x)) * (x * x),FALSE,TRUE,TRUE
+hard3_0075,x = y * (z * (x * (z * x))),x = ((x * x) * y) * (y * x),FALSE,TRUE,TRUE
+hard3_0078,x = y * (z * (y * (x * z))),x * (x * y) = (x * x) * y,FALSE,TRUE,TRUE
+hard3_0091,x = y * (y * ((x * y) * y)),x = (y * (z * z)) * (y * x),FALSE,TRUE,TRUE
+hard3_0092,x = y * (y * ((x * y) * y)),x * x = ((y * y) * x) * x,FALSE,TRUE,TRUE
+hard3_0093,x = y * (y * ((y * x) * y)),x = y * ((x * (x * y)) * x),FALSE,TRUE,TRUE
+hard3_0129,x = x * ((x * (y * z)) * w),(x * y) * x = (x * y) * z,FALSE,TRUE,TRUE
+hard3_0132,x = x * ((y * (y * y)) * z),x * y = x * (y * (y * z)),FALSE,TRUE,TRUE
+hard3_0146,x = y * ((z * (z * x)) * y),x = (x * x) * (x * (y * y)),FALSE,TRUE,TRUE
+hard3_0159,x = y * (((y * z) * z) * x),(x * y) * x = (y * x) * x,FALSE,TRUE,TRUE
+hard3_0161,x = (x * y) * (y * (z * y)),x = (x * (y * y)) * (y * z),FALSE,TRUE,TRUE
+hard3_0163,x = (y * x) * (x * (x * z)),x = y * (y * (z * (z * x))),FALSE,TRUE,TRUE
+hard3_0166,x = (y * x) * (x * (z * w)),x = ((y * y) * z) * y,FALSE,TRUE,TRUE
+hard3_0167,x = (y * x) * (x * (z * w)),x * y = z * (x * (z * z)),FALSE,TRUE,TRUE
+hard3_0186,x = (x * y) * ((y * z) * w),x = (x * (y * z)) * x,FALSE,TRUE,TRUE
+hard3_0190,x = (y * x) * ((x * x) * y),x * (y * z) = (x * z) * y,FALSE,TRUE,TRUE
+hard3_0191,x = (y * x) * ((x * z) * x),x * y = x * (x * (z * y)),FALSE,TRUE,TRUE
+hard3_0199,x = (x * (x * y)) * (z * y),x = (x * ((x * y) * x)) * z,TRUE,FALSE,FALSE
+hard3_0200,x = (x * (x * y)) * (z * z),x = (x * (y * x)) * (z * w),FALSE,TRUE,TRUE
+hard3_0206,x = (y * (y * x)) * (y * x),x * y = x * (z * (w * y)),FALSE,TRUE,TRUE
+hard3_0234,x = ((y * y) * x) * (x * z),x = y * ((y * x) * x),FALSE,TRUE,TRUE
+hard3_0235,x = ((y * y) * x) * (x * z),x = x * ((y * (z * w)) * u),FALSE,TRUE,TRUE
+hard3_0236,x = ((y * y) * x) * (x * z),x = (y * x) * ((y * x) * x),FALSE,TRUE,TRUE
+hard3_0237,x = ((y * y) * x) * (x * z),x * y = (x * z) * (x * w),FALSE,TRUE,TRUE
+hard3_0241,x = ((y * z) * x) * (x * w),x = (x * x) * ((y * x) * x),FALSE,TRUE,TRUE
+hard3_0293,x = ((y * z) * (y * x)) * x,x = y * (x * (x * (y * x))),FALSE,TRUE,TRUE
+hard3_0309,x = ((x * (y * z)) * y) * y,x * y = x * ((x * z) * z),FALSE,TRUE,TRUE
+hard3_0322,x = ((y * (z * y)) * z) * x,x * x = (x * (y * y)) * x,FALSE,TRUE,TRUE
+hard3_0327,x = (((x * x) * y) * z) * y,x = (x * y) * (z * (x * y)),FALSE,TRUE,TRUE
+hard3_0328,x = (((x * y) * x) * y) * y,x = (x * x) * (y * x),FALSE,TRUE,TRUE
+hard3_0330,x = (((x * y) * z) * x) * y,x = (x * (y * (x * z))) * w,FALSE,TRUE,TRUE
+hard3_0332,x = (((x * y) * z) * z) * z,x = (x * ((y * x) * z)) * w,FALSE,TRUE,TRUE
+hard3_0344,x * x = y * (x * (y * z)),x * (x * y) = z * (w * w),FALSE,TRUE,TRUE
+hard3_0345,x * x = y * (x * (z * w)),x * (y * x) = x * (y * y),FALSE,TRUE,TRUE
+hard3_0346,x * x = y * (x * (z * w)),x * (y * z) = y * (z * w),FALSE,TRUE,TRUE
+hard3_0347,x * x = y * (x * (z * w)),x * (y * x) = (x * z) * z,FALSE,TRUE,TRUE
+hard3_0356,x * y = z * (x * (x * y)),x * y = ((y * y) * z) * y,FALSE,TRUE,TRUE
+hard3_0357,x * y = z * (z * (y * x)),x * y = (x * z) * (y * z),FALSE,TRUE,TRUE
+hard3_0359,x * x = y * ((y * x) * z),x * y = (y * y) * (z * z),FALSE,TRUE,TRUE
+hard3_0370,x * x = (y * x) * (z * w),x * y = z * ((x * z) * w),FALSE,TRUE,TRUE
+hard3_0372,x * y = (x * y) * (z * y),x * (y * z) = (x * x) * z,FALSE,TRUE,TRUE
+hard3_0377,x * y = (z * x) * (w * y),x * y = (z * y) * y,FALSE,TRUE,TRUE

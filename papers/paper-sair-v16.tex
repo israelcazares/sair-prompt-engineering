@@ -346,8 +346,11 @@ multi-model setup:
 
 \textbf{gpt-oss-120b} (primary): An open-weight 117B-parameter
 Mixture-of-Experts model released by OpenAI under Apache~2.0
-license~\citep{openai2025gptoss}, accessed via DeepInfra bf16 routing
-on OpenRouter (\texttt{openai/gpt-oss-120b}). This model uses an
+license~\citep{openai2025gptoss}, accessed via Together~AI~bf16 for local full-scale evaluations
+($n=400$) and via OpenRouter/DeepInfra~bf16 for cross-provider
+validation, the latter matching the official competition
+pipeline~\citep{sair2026judge}
+(\texttt{openai/gpt-oss-120b}). This model uses an
 extended reasoning mode that produces chain-of-thought prior to its
 final verdict. All competition-credit evaluations use this model.
 
@@ -642,8 +645,11 @@ a gain of~$+25.4$ percentage points.
 The overall improvement is~$+19.5$~pp at $n=400$ (corrected pipeline).
 This gain appears to arise from reordering existing components rather
 than adding new content: AN38 contains the same STEP~1 logic but places
-it \emph{after} the CE table, producing only~70.8\% \textsc{True}
-recall and~76.9\% \textsc{False} recall at full scale. We hypothesize
+it \emph{after} the CE table, producing~78.5\% \textsc{True}
+recall and~65.4\% \textsc{False} recall at full scale ($n=400$).
+The ordering difference thus manifests primarily as a
+\textsc{True}-recall gap ($95.9\%$ vs.\ $78.5\%$) at a small
+\textsc{False}-recall cost ($63.4\%$ vs.\ $65.4\%$). We hypothesize
 that placing the trivial-magma check first primes the model's attention
 toward \textsc{True} verdicts before the CE search introduces
 \textsc{False}-directional pressure~---~though isolating this ordering
@@ -1256,9 +1262,10 @@ problem matrices for two submissions spanning the strategy spectrum:
 our own (AN45c, 2{,}252~bytes, heuristic reasoning guidance) and the
 competition winner's (9{,}834~bytes, rule-ordered deterministic
 classification; Section~\ref{sec:official-router}). For each submission
-this yields $200 \times 3$ run-level outcomes per model per problem
-set---7{,}200 outcomes across the scored board's nine model$\times$set
-cells, plus 1{,}800 for our submission on the research board.
+this yields $200 \times 3 = 600$ run-level outcomes per
+model$\times$set cell---5{,}400 outcomes across the scored board's
+nine cells per submission, plus 1{,}800 for our submission on the
+research board.
 
 To validate the extraction, we reconstructed each cell's official
 accuracy from the run-level data. Twenty of twenty-one model$\times$set
