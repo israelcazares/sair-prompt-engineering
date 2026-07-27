@@ -104,10 +104,12 @@ universal proof that no counterexample exists, including infinite
 algebraic structures.
 
 Unlike prompt engineering for standard benchmarks such as
-GSM8K~\citep{cobbe2021gsm8k}, this task involves semi-decidable
-algebraic implication where \textsc{False} is certifiable via finite
-counterexample but \textsc{True} requires universal quantification over
-all magmas~---~a fundamentally different reasoning regime.
+GSM8K~\citep{cobbe2021gsm8k}, algebraic implication over magmas
+exhibits an inherent asymmetry. While many positive implications can
+be established through formal proof, negative implications may
+require counterexample magmas that are not finite, making exhaustive
+finite search insufficient in general~\citep{tao2025etp}~---~a
+fundamentally different reasoning regime from standard benchmarks.
 
 This asymmetry creates a natural design space for prompt engineering.
 One might expect that providing a language model with a library of known
