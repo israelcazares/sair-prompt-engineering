@@ -47,19 +47,25 @@ variants, ranging from~0 to~4{,}878 bytes, across four evaluation
 splits and three language models (gpt-oss-120b, Llama~3.3~70B,
 Gemma~4~31B).
 
-Our central finding is a \textbf{single-prompt ceiling}~---~or more
-precisely, we term this an \textbf{empirical saturation region}: a zone
-where accuracy improvements become unstable and non-generalizable across
-problem distributions, rather than an absolute theoretical limit. Despite
-substantial engineering effort, balanced hard accuracy plateaus at
-approximately 60--79\% for gpt-oss-120b, compared to a~59.75\%
-no-cheatsheet baseline (95\%~CI: [54.9\%, 64.4\%]). We identify three
-mechanisms underlying this saturation region: (1)~the mathematical
-undecidability of the \textsc{True} case limits what any finite prompt
-can encode; (2)~complex rule systems decrease performance on weaker models
-(Llama~3.3~70B collapses to~0\% \textsc{True} recall with prompts
-exceeding~$\approx$2KB); and (3)~prompt ordering effects interact with
-model attention in fragile, non-monotonic ways.
+Our central finding is an \textbf{empirical saturation region} within
+the family of heuristic-guidance prompts we explored. Our two full-scale
+($n=400$) evaluations anchor the central result: AN38 reaches 71.8\%
+and AN45c reaches 79.3\% balanced hard accuracy for gpt-oss-120b,
+compared to a~59.75\% no-cheatsheet baseline (95\%~CI: [54.9\%,
+64.4\%]). Smaller-sample local evaluations shown in
+Table~\ref{tab:single} span 54--74\%, with correspondingly
+wider confidence intervals. Two considerations bear on this range
+within our explored family. First, a theoretical limitation applies
+to any prompt relying on finite counterexample enumeration: some
+\textsc{False} instances may require counterexamples that are not
+finite~\citep{tao2025etp}, though we have not established that this
+explains the specific errors observed on hard3. Second, full-leaderboard
+evidence associates rule-system content, not merely prompt length, with
+degraded \textsc{True} recall on Llama~3.3~70B
+(Section~\ref{sec:instability-llama}). Across our own prompt variants,
+accuracy changes are fragile and non-monotonic; variants that differ in
+ordering also differ in other respects, so we do not isolate an ordering
+effect.
 
 We also document a \textbf{distribution mismatch failure mode}: a
 rule that appeared correct when validated on a \textsc{False}-heavy
@@ -131,17 +137,20 @@ Llama~3.3~70B. Conversely, the most compact effective prompt (AN19c,
 gpt-oss-120b while being the only variant that maintained meaningful
 \textsc{True} recall on Llama.
 
-The phenomenon we document~---~call it the \textbf{single-prompt
-ceiling}~---~manifests as a bound on what a static text prompt can
-accomplish when the underlying task requires mathematical reasoning that
-the base model has not internalized. We provide empirical evidence that
-this ceiling lies at approximately 60--79\% balanced hard accuracy for
-gpt-oss-120b, a model that achieves only~26.5\% \textsc{False} recall
-with default reasoning and no cheatsheet on the official benchmark (our
-own controlled baseline measurement yields 38.0\% \textsc{False} recall
-under Together~AI inference; see Section~\ref{sec:results}). A
-prompt cannot teach a model the mathematics it does not know; it can
-only guide it to apply what it does know more reliably.
+The phenomenon we document within this prompt family~---~which we call
+the \textbf{single-prompt ceiling}~---~is the upper-performing empirical
+range achieved by our explored heuristic-guidance prompts on
+gpt-oss-120b for this task. Within this family, our full-scale results
+reached approximately 71--79\% balanced hard accuracy (AN38, AN45c),
+with smaller-sample variants spanning a wider range down to~54\%
+(Table~\ref{tab:single}); gpt-oss-120b achieves only~26.5\%
+\textsc{False} recall with default reasoning and no cheatsheet on the
+official benchmark (our own controlled baseline measurement
+yields~38.0\% \textsc{False} recall under Together~AI inference; see
+Section~\ref{sec:results}). We do not isolate which specific prompt
+properties drive the gap between our upper- and lower-performing
+variants within this family; Sections~\ref{sec:analysis}
+and~\ref{sec:ceiling} discuss candidate factors and their limitations.
 
 We make the following contributions:
 \begin{enumerate}
@@ -154,11 +163,18 @@ We make the following contributions:
   \item \textbf{Multi-model generalization analysis}: First systematic
     study of prompt portability across gpt-oss-120b, Llama~3.3~70B,
     and Gemma~4~31B on this task.
-  \item \textbf{Ordering effect}: Evidence that trivial-magma-first
-    ordering (AN45c) outperforms CE-table-first ordering (AN38) by
-    $+7.5$ percentage points at full scale ($n=400$; 95\% Wilson CIs
-    [75.0\%, 82.9\%] vs.\ [67.1\%, 75.9\%]) (local evaluation; see
-    Section~\ref{sec:official} for official benchmark divergence).
+  \item \textbf{Prompt-variant comparison}: AN45c, which places the
+    trivial-magma check before the counterexample table, outperforms
+    AN38, which places the counterexample table first, by~$+7.5$
+    percentage points at full scale ($n=400$; marginal 95\% Wilson CIs
+    [75.0\%, 82.9\%] vs.\ [67.1\%, 75.9\%]). Because both variants are
+    evaluated on the same 400 problems, we additionally report a
+    continuity-corrected McNemar test on paired per-problem predictions
+    ($\chi^2=9.14$, $p=0.0025$; $b=61$, $c=31$), providing evidence
+    against symmetric disagreement. AN45c and AN38 differ in ordering
+    and in other respects (Section~\ref{sec:method}); we hypothesize but
+    do not isolate an ordering effect (Section~\ref{sec:analysis}).
+    See Section~\ref{sec:official} for official-benchmark divergence.
   \item \textbf{Practical guidelines}: Minimal effective prompts for
     multi-model deployment, with analysis of why simpler beats complex.
   \item \textbf{Cross-distribution trade-off surface.} Official benchmark
@@ -268,17 +284,22 @@ and commonsense domains. Less is known about how prompt complexity
 interacts with formal algebraic reasoning, where rule fidelity~---~not
 just step count~---~determines correctness.
 
-\paragraph{Sycophancy and cognitive load in LLMs.}
+\paragraph{Prompt complexity and instruction-following reliability.}
 \citet{sharma2023sycophancy} documented that RLHF-trained models
 consistently exhibit sycophancy across varied free-form generation
 tasks, adjusting their stated conclusions toward what they perceive the
-user wants even when incorrect. A related phenomenon~---~which we term
-\emph{cognitive load collapse}~---~occurs when a prompt's rule system
-is too complex for a model to follow reliably, causing it to default to
-surface heuristics. \citet{shi2023distracted} showed that irrelevant
-context in math problems dramatically degrades accuracy, providing
-evidence that additional text can actively harm rather than help
-reasoning.
+user wants even when incorrect. Within our prompt family, we observe a
+related but distinct pattern specifically on Llama~3.3~70B: under
+certain rule-system content, it can default to a near-constant
+\textsc{False} output (Section~\ref{sec:multimodel}), a pattern better
+predicted by rule-system content than by prompt length alone
+(Section~\ref{sec:instability-llama}). Whether this reflects the same
+underlying mechanism as sycophancy is untested; we note it here as a
+related but distinct phenomenon. \citet{shi2023distracted} similarly
+showed that irrelevant context in math problems degrades accuracy,
+consistent with the general observation that additional prompt content
+does not uniformly help reasoning, though the mechanism may differ
+from ours.
 
 \paragraph{The Equational Theories Project.}
 The mathematical foundations of this competition derive from ongoing
@@ -818,36 +839,32 @@ result on DeepSeek is the most cost-efficient signal in the study
 
 \subsection{Formal Characterization}
 
-We define the \emph{empirical saturation region} of single-prompt
-engineering as the accuracy range where further prompt iterations produce
-unstable, non-generalizable improvements on a given model, holding
-inference parameters fixed. Empirically, the saturation region lies at
-approximately~71--79\% for gpt-oss-120b on hard3 at scale
-(AN38: 71.8\% at $n=400$; AN45c: 79.3\%~(95\%~CI: [75.0\%, 82.9\%])
-at $n=400$ with corrected pipeline). Despite more than~45 variants
-tested over five weeks, no full-scale evaluation exceeded this range
-on a balanced split.
+We define the \emph{empirical saturation region}, within the family
+of prompts we explored, as the accuracy range in which further prompt
+iterations produced changes that did not consistently generalize
+across problem distributions (Section~\ref{sec:official}), holding
+inference parameters fixed. The two prompt variants evaluated at full
+scale ($n=400$) scored 71.8\% (AN38; 95\%~CI: [67.1\%, 75.9\%]) and
+79.3\% (AN45c; 95\%~CI: [75.0\%, 82.9\%]). We use these as the
+full-scale anchors of the region analyzed here. Smaller-sample
+evaluations of additional variants shown in Table~\ref{tab:single},
+which carry wider confidence intervals, provide broader context but do
+not independently establish a saturation boundary.
 
-This saturation is not merely a measurement artifact. It manifests as a
-structural pattern: prompt elements that increase \textsc{True} recall
-tend to decrease \textsc{False} recall by approximately the same margin,
-and vice versa.
-
-The best-performing prompts do not form a dispersed cloud in
-(\textsc{True} recall, \textsc{False} recall) space~---~they
-approximate a Pareto front. Three variants define its boundary:
-AN19c~(\textsc{True}=91.7\%, \textsc{False}=34.6\%),
-AN45c~(\textsc{True}=90.0\%, \textsc{False}=80.0\%), and
-AN36~(\textsc{True}=50.0\%, \textsc{False}=88.5\%). AN45c dominates
-most other variants on both dimensions simultaneously~---~including
-AN38, AN35, AN35b, and AN43~---~but does not dominate AN36 on
-\textsc{False} recall~(80.0\% vs.~88.5\%) or AN19c on \textsc{True}
-recall~(90.0\% vs.~91.7\%). The saturation region therefore describes
-an empirical Pareto-optimal boundary within the single-prompt paradigm~---~not
-necessarily an absolute theoretical limit, but a practical constraint
-that our 45+ variant search did not overcome.
+Among variants for which Table~\ref{tab:single} reports
+class-conditional recalls, we observe an apparent trade-off: variants
+with higher \textsc{True} recall tend to have lower \textsc{False}
+recall, and vice versa. We do not construct a formal Pareto frontier
+across variants evaluated at different sample sizes ($n=50$ to
+$n=400$), since smaller-$n$ estimates carry substantially wider
+confidence intervals that would make any claimed dominance relation
+unreliable. At the two variants evaluated at full scale, the trade-off
+is visible directly: AN45c achieves higher \textsc{True} recall than
+AN38 (95.9\% vs.\ 78.5\%) at a slightly lower \textsc{False} recall
+(63.4\% vs.\ 65.4\%).
 
 \subsection{The Merge Pattern: $\mathrm{avg}(A,B)$, Not $\max(A,B)$}
+\label{sec:mergepattern}
 
 AN35 and AN35b are complementary specialists: AN35 achieves
 \textsc{True}=58.3\%, \textsc{False}=84.6\%; AN35b achieves
@@ -859,24 +876,29 @@ maxima. Three subsequent attempts (AN45d, AN45e, AN45f) replicated the
 averaging result. Combining complementary prompts in a static text file
 yields average performance, not maximum performance.
 
-\subsection{Why Routing Cannot Be Encoded in a Static Prompt}
+\subsection{Routing Was Not Achieved by Any Prompt in This Family}
 
-\textsc{True} and \textsc{False} hard problems require qualitatively
-different inference strategies. \textsc{True} problems are best handled
-by identifying structural properties forcing singleton magmas or by
-exhausting small counterexample candidates. \textsc{False} problems are
-best handled by finding a single finite counterexample quickly. A
-prompt that heavily weights the CE search primes \textsc{False}
-detection and suppresses \textsc{True}; a prompt that heavily weights
-the trivial-magma check does the opposite.
+Comparing AN45c and AN38~---~the two variants we evaluated at full
+scale~---~illustrates a contrast: AN45c, which places the trivial-magma
+check before the counterexample table, shows higher \textsc{True}
+recall and slightly lower \textsc{False} recall than AN38, which
+places the counterexample table first (Table~\ref{tab:single}). We did
+not systematically code all 45+ variants by strategy emphasis, so we
+report this as a contrast between these two variants rather than a
+general pattern across the family. We did not identify, among the
+variants we tested, a prompt whose observed predictions demonstrated
+reliable per-instance routing~---~applying one strategy for equations
+with a specific syntactic form and the other strategy otherwise. When
+we constructed a prompt from two complementary parents (AN38, from
+AN35 and AN35b), the result's recall profile was close to the
+arithmetic mean of its parents rather than close to either parent's
+maximum (Section~\ref{sec:mergepattern}); three subsequent merge
+attempts showed the same pattern.
 
-Solving this tension requires conditional routing: apply the
-\textsc{True} strategy when the equation has a specific syntactic form,
-apply the \textsc{False} strategy otherwise. A static prompt cannot
-implement this routing reliably because LLMs execute instructions
-probabilistically rather than conditionally~---~they interpolate
-between strategies in proportion to their textual weight rather than
-selecting the appropriate one per instance.
+We report this as an empirical pattern within our explored family. We
+did not measure attention weights or other internal signals, so we do
+not claim a general mechanism for how language models execute prompt
+instructions.
 
 \subsection{Theoretical Upper Bound and the Path Beyond}
 
@@ -1196,34 +1218,32 @@ directionally correct, strategies that explicitly constrain the model's
 decision process should be over-represented at the top of the official
 ranking.
 
-The evidence is compatible with the hypothesis. The winning submission
-is, by its own publicly visible description, an explicitly rule-ordered
-deterministic classifier: a fixed sequence of syntactic rules applied
-in priority order with a first-match stopping condition, rather than a
-reasoning guide.\footnote{We cite only the publicly visible
-categorical structure of leaderboard submissions and their published
-scores. A content-level analysis of other participants' prompts is
-outside the scope of this paper.} We treat this as external supporting
-evidence, not as proof: a single winning instance cannot establish
-that decision-space reduction is necessary for escaping the saturation
-region, and the leaderboard does not permit controlled comparison of
-strategy categories. What the observation does establish is that the
-strategy our hypothesis predicted would outperform reasoning
-guidance---formulated in Section~\ref{sec:analysis} before official
-results existed---is the strategy that won.
+The evidence is compatible with the hypothesis. The winning
+submission's publicly listed category places it as a rule-based
+classifier rather than a reasoning-guidance prompt, and among the
+five submissions exceeding 65\% on both boards it shows the smallest
+cross-board gap (Table~\ref{tab:robustfive}).\footnote{We cite only
+the publicly visible category and published scores of leaderboard
+submissions. A content-level analysis of other participants' prompts
+is outside the scope of this paper.} We treat this as external
+supporting evidence, not as proof: a single winning instance cannot
+establish that decision-space reduction is necessary for escaping the
+saturation region, and the leaderboard does not permit controlled
+comparison of strategy categories. One publicly documented winning
+strategy is consistent with the prediction, formulated in
+Section~\ref{sec:analysis} before official results existed, that
+strategies constraining the model's decision process would outperform
+reasoning guidance.
 
-A structurally distinct approach observed in the Contributor Network
-further supports the router hypothesis: one participant (Heath,
-\texttt{distilled-rules-12}) submitted a pure structural classifier
-computing five syntactic features of~$E_1$ (variable counts, node
-depths, LHS structure) and applying a hand-coded decision tree with no
-mathematical content. This approach achieves~80.0\% on hard2 and~59.0\%
-on hard3~---~competitive with CE-table approaches~---~suggesting that
-structural pattern classification alone, without any algebraic
-reasoning, captures a substantial fraction of the signal available to
-prompt-based methods. This constitutes independent empirical evidence
-for the router hypothesis: the task rewards structural pattern matching
-over symbolic reasoning.
+A second, categorically distinct submission is consistent with the
+same interpretation: one participant (Heath, \texttt{distilled-rules-12})
+is publicly categorized as a structural classifier rather than a
+CE-table or reasoning-guidance approach, achieving~80.0\% on hard2
+and~59.0\% on hard3---competitive with CE-table approaches in our
+comparison set. We note this as a second independent observation
+consistent with the hypothesis that structural classification
+strategies are competitive on this task; we do not characterize its
+internal design further.
 
 Notably, one participant (McKenna, unpublished) reported achieving
 approximately~70\% accuracy across all three evaluation models
@@ -1261,9 +1281,8 @@ rather than constraining it procedurally.
 
 We extracted per-problem, per-run outcomes from the public leaderboard
 problem matrices for two submissions spanning the strategy spectrum:
-our own (AN45c, 2{,}252~bytes, heuristic reasoning guidance) and the
-competition winner's (9{,}834~bytes, rule-ordered deterministic
-classification; Section~\ref{sec:official-router}). For each submission
+our own (AN45c, 2{,}252~bytes) and the winning submission
+(9{,}834~bytes; Section~\ref{sec:official-router}). For each submission
 this yields $200 \times 3 = 600$ run-level outcomes per
 model$\times$set cell---5{,}400 outcomes across the scored board's
 nine cells per submission, plus 1{,}800 for our submission on the
@@ -1314,13 +1333,15 @@ Two patterns stand out. First, on GPT-OSS~120B---the model where both
 prompts do their primary work---the winning submission's disagreement
 rate is five to nine times lower than ours. Under our heuristic
 guidance prompt, half of all hard problems (50.5\%) receive
-inconsistent verdicts across three identical runs; under the winner's
-rule-ordered classifier, only 9\% do. This pattern is consistent with
-the interpretation that a rule-ordered procedure constrains the
+inconsistent verdicts across three identical runs; under the winning
+submission, only 9\% do. The winning submission exhibits
+substantially lower run-to-run disagreement than our
+reasoning-guidance prompt on this model. This pattern is consistent
+with the interpretation that the winning submission constrains the
 model's decision process more tightly than reasoning guidance does:
-under the former, identical runs converge on identical verdicts; under
-the latter, the model resolves the same problem differently run to
-run.
+under the winning submission, identical runs converge on identical
+verdicts far more often; under ours, the model more often resolves
+the same problem differently run to run.
 
 Second, the pattern \emph{inverts} on Llama~3.3~70B. Our prompt makes
 Llama almost perfectly deterministic (1--2\% disagreement)---but

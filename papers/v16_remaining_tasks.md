@@ -9,6 +9,14 @@
 - [x] AN38 n=400 artifact recovered and published (session 1b)
 - [x] McNemar paired-comparison test computed: b=61, c=31, p≈0.0025
       (session 1b)
+- [x] Mixed-sample Pareto-front claim removed; full-scale recall
+      trade-off corrected (session 2, P1)
+- [x] Winner de-centered in Sections 8.4 and 9; observable behavior
+      separated from interpretation (session 2, P2)
+- [x] Competitor mechanism details: resolved conservatively — all
+      internal-mechanism descriptions (Dufius's rule ordering, Heath's
+      feature list/decision tree) removed; only public category and
+      published accuracy retained (session 2, de-centering pass)
 
 ## Pending — Session 2 (scope recalibration)
 - [ ] Ceiling scope: family-bounded language throughout
@@ -17,10 +25,8 @@
 - [ ] Trade-off section: rewrite with correlation analysis
       (r=0.74 global, 0.12/-0.23 at frontier)
 - [ ] Disagreement -> observed metric; delegation -> labeled interpretation
-- [ ] De-center winner in 8.4 and 9 (observable behavior only)
 - [ ] Semi-decidable sentence (lines ~106-109): rewrite asymmetry
       with correct direction; needs bibliography check
-- [ ] Competitor mechanism details: decision pending (Heath/Dufius)
 
 ## Pending — Session 3 (final sync)
 - [ ] Abstract rewrite (incl. McNemar result)
