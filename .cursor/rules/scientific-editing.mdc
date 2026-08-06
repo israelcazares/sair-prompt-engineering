@@ -6,6 +6,46 @@ alwaysApply: false
 
 # Scientific Editing
 
+## Paper objective (permanent context)
+
+**Target venue:** TMLR (Transactions on Machine Learning Research).
+
+**What this paper is:** An empirical study of heuristic prompt guidance
+for algebraic implication reasoning over magmas, characterizing its
+capabilities, limitations, robustness, and generalization across
+controlled prompt variants and evaluation settings.
+
+**Primary contribution:** The contribution of this paper is empirical
+evidence rather than a new prompting framework. Prompt variants are
+experimental treatments used to study reasoning behavior under
+controlled conditions.
+
+**What this paper is NOT:**
+- Not a new framework, method, or tool. The SAIR Mathematics
+  Distillation Challenge is the competition context, not a contribution
+  of this work.
+- Not a claim about prompting in general. All findings are bounded to
+  the explored family of heuristic prompting strategies.
+- Not a paper about the competition leaderboard or about any other
+  participant's submission. External leaderboard evidence evaluates
+  whether observed patterns extend beyond our prompts; it never
+  originates the narrative.
+
+**Narrative order (never invert):**
+Our controlled experiments produce the observations → the observations
+motivate the hypotheses → external leaderboard evidence evaluates
+whether the observed patterns extend beyond our prompts. Without
+controlled comparisons, leaderboard evidence establishes compatibility,
+not mechanism or causation.
+
+**Evidence hierarchy (preserve in every claim):**
+observed fact → observed contrast → proposed interpretation →
+compatible external evidence.
+
+**On competitors:** cite only publicly visible category, published
+scores, and observable behavior. Never reconstruct another
+participant's internal prompt design.
+
 - If a correction requires a stronger empirical claim than the current manuscript, stop and ask for confirmation.
 - Do not simplify scientific language for style; preserve the hierarchy of claims.
 - Edit only textually identified passages. Never rewrite semantically similar text without explicit approval.
