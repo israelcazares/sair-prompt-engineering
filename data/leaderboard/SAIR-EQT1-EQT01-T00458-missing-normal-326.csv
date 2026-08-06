@@ -1,0 +1,327 @@
+submission_id,board,model,problem_set,problem_index,problem_id,result,runs
+EQT01-T00458,scored,GPT-OSS 120B,normal,1,N_001,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,2,N_002,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,3,N_003,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,4,N_004,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,5,N_005,mixed,GRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,6,N_006,mixed,RRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,7,N_007,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,8,N_008,mixed,RRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,9,N_009,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,10,N_010,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,11,N_011,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,12,N_012,mixed,RGR
+EQT01-T00458,scored,GPT-OSS 120B,normal,13,N_013,mixed,RGG
+EQT01-T00458,scored,GPT-OSS 120B,normal,14,N_014,mixed,RRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,15,N_015,mixed,RRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,16,N_016,mixed,RGG
+EQT01-T00458,scored,GPT-OSS 120B,normal,17,N_017,mixed,GGR
+EQT01-T00458,scored,GPT-OSS 120B,normal,18,N_018,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,19,N_019,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,20,N_020,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,21,N_021,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,22,N_022,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,23,N_023,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,24,N_024,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,25,N_025,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,26,N_026,mixed,GRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,27,N_027,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,28,N_028,mixed,RGG
+EQT01-T00458,scored,GPT-OSS 120B,normal,29,N_029,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,30,N_030,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,31,N_031,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,32,N_032,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,33,N_033,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,34,N_034,mixed,GGR
+EQT01-T00458,scored,GPT-OSS 120B,normal,35,N_035,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,36,N_036,mixed,RGG
+EQT01-T00458,scored,GPT-OSS 120B,normal,37,N_037,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,38,N_038,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,39,N_039,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,40,N_040,mixed,GRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,41,N_041,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,42,N_042,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,43,N_043,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,44,N_044,mixed,GGR
+EQT01-T00458,scored,GPT-OSS 120B,normal,45,N_045,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,46,N_046,mixed,RRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,47,N_047,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,48,N_048,mixed,RRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,49,N_049,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,50,N_050,mixed,RGR
+EQT01-T00458,scored,GPT-OSS 120B,normal,51,N_051,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,52,N_052,mixed,RGG
+EQT01-T00458,scored,GPT-OSS 120B,normal,53,N_053,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,54,N_054,mixed,RGG
+EQT01-T00458,scored,GPT-OSS 120B,normal,55,N_055,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,56,N_056,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,57,N_057,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,58,N_058,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,59,N_059,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,60,N_060,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,61,N_061,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,62,N_062,mixed,GGR
+EQT01-T00458,scored,GPT-OSS 120B,normal,63,N_063,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,64,N_064,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,65,N_065,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,66,N_066,mixed,GRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,67,N_067,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,68,N_068,mixed,GRR
+EQT01-T00458,scored,GPT-OSS 120B,normal,69,N_069,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,70,N_070,mixed,GGR
+EQT01-T00458,scored,GPT-OSS 120B,normal,71,N_071,mixed,RRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,72,N_072,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,73,N_073,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,74,N_074,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,75,N_075,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,76,N_076,mixed,RRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,77,N_077,mixed,RGR
+EQT01-T00458,scored,GPT-OSS 120B,normal,78,N_078,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,79,N_079,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,80,N_080,mixed,RGR
+EQT01-T00458,scored,GPT-OSS 120B,normal,81,N_081,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,82,N_082,mixed,RRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,83,N_083,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,84,N_084,mixed,GRR
+EQT01-T00458,scored,GPT-OSS 120B,normal,85,N_085,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,86,N_086,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,87,N_087,mixed,RRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,88,N_088,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,89,N_089,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,90,N_090,mixed,GRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,91,N_091,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,92,N_092,mixed,GRR
+EQT01-T00458,scored,GPT-OSS 120B,normal,93,N_093,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,94,N_094,mixed,RRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,95,N_095,mixed,RGG
+EQT01-T00458,scored,GPT-OSS 120B,normal,96,N_096,mixed,GRR
+EQT01-T00458,scored,GPT-OSS 120B,normal,97,N_097,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,98,N_098,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,99,N_099,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,100,N_100,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,101,N_101,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,102,N_102,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,103,N_103,mixed,RGR
+EQT01-T00458,scored,GPT-OSS 120B,normal,104,N_104,mixed,RGG
+EQT01-T00458,scored,GPT-OSS 120B,normal,105,N_105,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,106,N_106,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,107,N_107,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,108,N_108,mixed,RGG
+EQT01-T00458,scored,GPT-OSS 120B,normal,109,N_109,mixed,RGG
+EQT01-T00458,scored,GPT-OSS 120B,normal,110,N_110,mixed,GRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,111,N_111,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,112,N_112,mixed,GRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,113,N_113,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,114,N_114,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,115,N_115,incorrect,R
+EQT01-T00458,scored,GPT-OSS 120B,normal,116,N_116,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,117,N_117,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,118,N_118,mixed,RRG
+EQT01-T00458,scored,GPT-OSS 120B,normal,119,N_119,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,120,N_120,mixed,RGR
+EQT01-T00458,scored,GPT-OSS 120B,normal,121,N_121,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,122,N_122,mixed,GRR
+EQT01-T00458,scored,GPT-OSS 120B,normal,123,N_123,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,124,N_124,mixed,RGR
+EQT01-T00458,scored,GPT-OSS 120B,normal,125,N_125,correct,G
+EQT01-T00458,scored,GPT-OSS 120B,normal,126,N_126,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,1,N_001,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,2,N_002,mixed,RGR
+EQT01-T00458,scored,Gemma 4 31B IT,normal,3,N_003,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,4,N_004,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,5,N_005,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,6,N_006,mixed,RGG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,7,N_007,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,8,N_008,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,9,N_009,mixed,GRG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,10,N_010,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,11,N_011,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,12,N_012,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,13,N_013,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,14,N_014,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,15,N_015,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,16,N_016,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,17,N_017,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,18,N_018,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,19,N_019,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,20,N_020,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,21,N_021,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,22,N_022,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,23,N_023,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,24,N_024,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,25,N_025,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,26,N_026,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,27,N_027,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,28,N_028,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,29,N_029,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,30,N_030,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,31,N_031,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,32,N_032,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,33,N_033,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,34,N_034,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,35,N_035,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,36,N_036,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,37,N_037,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,38,N_038,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,39,N_039,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,40,N_040,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,41,N_041,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,42,N_042,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,43,N_043,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,44,N_044,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,45,N_045,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,46,N_046,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,47,N_047,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,48,N_048,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,49,N_049,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,50,N_050,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,51,N_051,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,52,N_052,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,53,N_053,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,54,N_054,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,55,N_055,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,56,N_056,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,57,N_057,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,58,N_058,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,59,N_059,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,60,N_060,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,61,N_061,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,62,N_062,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,63,N_063,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,64,N_064,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,65,N_065,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,66,N_066,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,67,N_067,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,68,N_068,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,69,N_069,mixed,GRR
+EQT01-T00458,scored,Gemma 4 31B IT,normal,70,N_070,mixed,RGR
+EQT01-T00458,scored,Gemma 4 31B IT,normal,71,N_071,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,72,N_072,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,73,N_073,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,74,N_074,mixed,RGG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,75,N_075,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,76,N_076,mixed,RGG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,77,N_077,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,78,N_078,mixed,GRG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,79,N_079,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,80,N_080,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,81,N_081,mixed,RRG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,82,N_082,mixed,GRG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,83,N_083,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,84,N_084,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,85,N_085,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,86,N_086,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,87,N_087,mixed,GRR
+EQT01-T00458,scored,Gemma 4 31B IT,normal,88,N_088,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,89,N_089,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,90,N_090,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,91,N_091,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,92,N_092,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,93,N_093,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,94,N_094,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,95,N_095,mixed,GRR
+EQT01-T00458,scored,Gemma 4 31B IT,normal,96,N_096,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,97,N_097,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,98,N_098,mixed,GRR
+EQT01-T00458,scored,Gemma 4 31B IT,normal,99,N_099,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,100,N_100,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,101,N_101,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,102,N_102,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,103,N_103,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,104,N_104,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,105,N_105,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,106,N_106,mixed,GRG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,107,N_107,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,108,N_108,mixed,RRG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,109,N_109,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,110,N_110,mixed,RRG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,111,N_111,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,112,N_112,mixed,GRR
+EQT01-T00458,scored,Gemma 4 31B IT,normal,113,N_113,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,114,N_114,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,115,N_115,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,116,N_116,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,117,N_117,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,118,N_118,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,119,N_119,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,120,N_120,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,121,N_121,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,122,N_122,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,123,N_123,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,124,N_124,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,125,N_125,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,126,N_126,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,127,N_127,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,128,N_128,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,129,N_129,mixed,RRG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,130,N_130,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,131,N_131,mixed,RGR
+EQT01-T00458,scored,Gemma 4 31B IT,normal,132,N_132,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,133,N_133,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,134,N_134,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,135,N_135,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,136,N_136,mixed,RGG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,137,N_137,mixed,RGR
+EQT01-T00458,scored,Gemma 4 31B IT,normal,138,N_138,mixed,GRG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,139,N_139,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,140,N_140,mixed,RRG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,141,N_141,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,142,N_142,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,143,N_143,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,144,N_144,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,145,N_145,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,146,N_146,mixed,GGR
+EQT01-T00458,scored,Gemma 4 31B IT,normal,147,N_147,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,148,N_148,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,149,N_149,mixed,RGR
+EQT01-T00458,scored,Gemma 4 31B IT,normal,150,N_150,mixed,GRG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,151,N_151,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,152,N_152,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,153,N_153,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,154,N_154,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,155,N_155,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,156,N_156,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,157,N_157,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,158,N_158,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,159,N_159,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,160,N_160,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,161,N_161,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,162,N_162,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,163,N_163,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,164,N_164,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,165,N_165,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,166,N_166,mixed,RGG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,167,N_167,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,168,N_168,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,169,N_169,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,170,N_170,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,171,N_171,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,172,N_172,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,173,N_173,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,174,N_174,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,175,N_175,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,176,N_176,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,177,N_177,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,178,N_178,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,179,N_179,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,180,N_180,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,181,N_181,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,182,N_182,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,183,N_183,mixed,RGG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,184,N_184,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,185,N_185,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,186,N_186,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,187,N_187,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,188,N_188,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,189,N_189,incorrect,R
+EQT01-T00458,scored,Gemma 4 31B IT,normal,190,N_190,mixed,RRG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,191,N_191,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,192,N_192,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,193,N_193,mixed,GRR
+EQT01-T00458,scored,Gemma 4 31B IT,normal,194,N_194,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,195,N_195,mixed,GRG
+EQT01-T00458,scored,Gemma 4 31B IT,normal,196,N_196,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,197,N_197,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,198,N_198,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,199,N_199,correct,G
+EQT01-T00458,scored,Gemma 4 31B IT,normal,200,N_200,mixed,RRG
