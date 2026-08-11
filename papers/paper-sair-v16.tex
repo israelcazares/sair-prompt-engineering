@@ -84,11 +84,13 @@ not the addition of new content. We release all prompt variants,
 evaluation scripts, and results tables.
 
 Post-submission validation against the SAIR official benchmark reveals
-a cross-distribution trade-off surface: gains within the saturation
-region are distribution-fragile, with our most engineered variant
-(AN45c) falling below the no-cheatsheet baseline on the official
-evaluation while the simpler predecessor (AN38) produces a robust
-improvement. See Section~\ref{sec:official} for full analysis.
+that gains within the saturation region are distribution-fragile: our
+most engineered variant (AN45c) falls below the no-cheatsheet baseline
+on the official evaluation while the simpler predecessor (AN38)
+produces a robust improvement
+(Section~\ref{sec:local-official}). Separately, full-leaderboard
+evidence shows a directional research$\to$scored association under a
+homogeneous-linear null (Section~\ref{sec:official}).
 
 \textit{Note: This version incorporates the complete final competition leaderboard (310 evaluated submissions of 1{,}007 registered participants).}
 \end{abstract}
@@ -174,13 +176,13 @@ We make the following contributions:
     against symmetric disagreement. AN45c and AN38 differ in ordering
     and in other respects (Section~\ref{sec:method}); we hypothesize but
     do not isolate an ordering effect (Section~\ref{sec:analysis}).
-    See Section~\ref{sec:official} for official-benchmark divergence.
+    See Section~\ref{sec:local-official} for official-benchmark divergence.
   \item \textbf{Practical guidelines}: Minimal effective prompts for
     multi-model deployment, with analysis of why simpler beats complex.
-  \item \textbf{Cross-distribution trade-off surface.} Official benchmark
-    validation reveals that local gains within the saturation region do
-    not transfer across problem distributions
-    (Section~\ref{sec:official}).
+  \item \textbf{Cross-distribution validation.} Official benchmark and
+    leaderboard evidence show that local gains within the saturation
+    region need not transfer across problem distributions
+    (Sections~\ref{sec:local-official} and~\ref{sec:official}).
 \end{enumerate}
 
 The rest of the paper is organized as follows. Section~\ref{sec:background}
@@ -465,10 +467,11 @@ repository~\citep{cazares2026sair}.
 \section{Results}
 \label{sec:results}
 
-We present results along three axes: single-model performance across
+We present results along four axes: single-model performance across
 prompt variants (\S\ref{subsec:single}), cross-model generalization
-(\S\ref{subsec:cross}), and cross-dataset stability
-(\S\ref{subsec:dataset}).
+(\S\ref{subsec:cross}), cross-dataset stability
+(\S\ref{subsec:dataset}), and local vs.\ official benchmark divergence
+(Section~\ref{sec:local-official}).
 
 \paragraph{Sample size note.}
 Results for AN45c on gpt-oss-120b are based on $n=400$ hard3
@@ -647,6 +650,63 @@ normal-split results are uninformative for distinguishing hard-problem
 strategies.
 
 % ─────────────────────────────────────────────
+\subsection{Local vs.\ Official Benchmark Divergence}
+\label{sec:local-official}
+
+Table~\ref{tab:official_hard3} compares local evaluation results
+against the SAIR official benchmark on hard3 (the competition's
+reference format, as confirmed by the official smoke-test file
+\texttt{problems\_hard3\_20.jsonl}~\citep{sair2026judge}).
+
+\begin{table}[h]
+\centering
+\caption{Local vs.\ official benchmark results on hard3 (GPT-OSS 120B).
+Official benchmark: $n=20$, DeepInfra~bf16. Local: $n=400$,
+Together~AI~bf16. Baseline: no cheatsheet.}
+\label{tab:official_hard3}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Variant & Local Acc. & Official Acc. & $\Delta$ vs.\ baseline\textsuperscript{a} & Official F1 \\
+\midrule
+Baseline & 59.75\% & 56.3\% & --- & $\approx$53\% \\
+AN38     & 71.8\%  & 65.3\% & \textbf{+5.6pp} & \textbf{67.6\%} \\
+AN45c    & \textbf{79.25\%} & 55.5\% & $-$4.3pp & 63.7\% \\
+\bottomrule
+\multicolumn{5}{l}{\textsuperscript{a}Delta relative to official baseline (56.3\%).}
+\end{tabular}
+\end{table}
+
+AN38 produces a robust $+$5.6pp improvement over the official baseline
+on hard3, consistent with its local result (71.8\%). AN45c, despite
+achieving 79.25\% locally ($n=400$), scores 55.5\% on the official
+benchmark~---~4.3pp \emph{below} the no-cheatsheet baseline.
+
+\begin{table}[h]
+\centering
+\caption{Official benchmark results on hard2 (GPT-OSS 120B, $n=20$).
+Hard2 baseline: 56.3\% accuracy, F1 $\approx$64.9\%.}
+\label{tab:official_hard2}
+\small
+\begin{tabular}{lrrr}
+\toprule
+Variant & Official Acc. & $\Delta$ vs.\ baseline & Official F1 \\
+\midrule
+AN38  & 41.0\% & $-$15.3pp & 47.8\% \\
+AN45c & 48.0\% & $-$8.3pp  & \textbf{61.2\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+On hard2, both variants fall below the no-cheatsheet baseline. AN38
+incurs a larger accuracy penalty ($-$15.3pp) and F1 degradation
+($-$17.1pp), while AN45c is less damaging ($-$8.3pp accuracy,
+$-$3.7pp F1). Neither cheatsheet improves over baseline on hard2,
+confirming that both are calibrated toward the hard3 distribution.
+On the official hard2--hard3 pair, AN38's cross-split accuracy gap is
+24.3pp (41.0\% vs.\ 65.3\%) and AN45c's is 7.5pp (48.0\% vs.\ 55.5\%).
+
+% ─────────────────────────────────────────────
 \section{Analysis}
 \label{sec:analysis}
 
@@ -678,6 +738,18 @@ toward \textsc{True} verdicts before the CE search introduces
 \textsc{False}-directional pressure~---~though isolating this ordering
 effect from confounds requires controlled experiments beyond the scope
 of this study.
+
+The same STEP~1 gate is a candidate explanation for AN45c's
+local--official inversion (Section~\ref{sec:local-official}): despite
+79.25\% local accuracy ($n=400$), AN45c scores 55.5\% on official
+hard3~---~4.3pp below the no-cheatsheet baseline. We hypothesize that
+problems satisfying the singleton test are committed to \textsc{True}
+before counterexample evidence is considered, generating forced errors
+under distribution shift---compatible with the distribution-mismatch
+failure mode documented for AN3c on hard1/hard2
+(Section~\ref{sec:results}). This remains a hypothesis: isolating the
+gate from other AN45c--AN38 differences would require controlled
+ablations beyond the present study.
 
 \subsection{Why the Merge Ceiling Holds}
 
@@ -951,8 +1023,8 @@ board~\citep{sair2026leaderboardresearch} evaluates the same three models
 on a separate 200-problem set restricted to order-5
 magmas.\footnote{Because the two boards draw from different problem
 distributions, the pair (scored accuracy, research accuracy) provides,
-for every submission, exactly the kind of cross-distribution measurement
-that our AN45c/AN38 case study performed for our own prompts.}
+for every submission, a cross-distribution measurement under a fixed
+prompt.}
 
 Because both boards were published after the submission deadline, no
 participant---ourselves included---could optimize against them. The
@@ -965,80 +1037,27 @@ the evidence examined here.
 Summary statistics frame the difficulty of the task. On the scored
 board, mean accuracy across all 310~submissions is 55.3\% (median
 55.8\%), and the maximum is 69.1\%. On the research board, the mean is
-61.3\% and the maximum 82.4\%. Only 32 of 310~submissions exceed our
-locally measured no-cheatsheet baseline of 59.75\% on the scored board.
+61.3\% and the maximum 82.4\%.
 
-\subsection{The Local--Official Inversion}
-\label{sec:official-inversion}
-
-Table~\ref{tab:official_hard3} compares local evaluation results
-against the SAIR official benchmark on hard3 (the competition's
-reference format, as confirmed by the official smoke-test file
-\texttt{problems\_hard3\_20.jsonl}~\citep{sair2026judge}).
-
-\begin{table}[h]
-\centering
-\caption{Local vs.\ official benchmark results on hard3 (GPT-OSS 120B).
-Official benchmark: $n=20$, DeepInfra~bf16. Local: $n=400$,
-Together~AI~bf16. Baseline: no cheatsheet.}
-\label{tab:official_hard3}
-\small
-\begin{tabular}{lrrrr}
-\toprule
-Variant & Local Acc. & Official Acc. & $\Delta$ vs.\ baseline\textsuperscript{a} & Official F1 \\
-\midrule
-Baseline & 59.75\% & 56.3\% & --- & $\approx$53\% \\
-AN38     & 71.8\%  & 65.3\% & \textbf{+5.6pp} & \textbf{67.6\%} \\
-AN45c    & \textbf{79.25\%} & 55.5\% & $-$4.3pp & 63.7\% \\
-\bottomrule
-\multicolumn{5}{l}{\textsuperscript{a}Delta relative to official baseline (56.3\%).}
-\end{tabular}
-\end{table}
-
-AN38 produces a robust $+$5.6pp improvement over the official baseline
-on hard3, consistent with its local result (71.8\%). AN45c, despite
-achieving 79.25\% locally ($n=400$), scores 55.5\% on the official
-benchmark~---~4.3pp \emph{below} the no-cheatsheet baseline. The
-trivial-magma exit gate (STEP~1), which was AN45c's primary structural
-innovation over AN38, appears to generate forced errors on the official
-problem sample: problems that satisfy the singleton test are committed to
-\textsc{True} before counterexample evidence is considered. This is the
-same distribution-mismatch failure mode documented in Section~\ref{sec:results}
-for AN3c on hard1/hard2.
-
-\begin{table}[h]
-\centering
-\caption{Official benchmark results on hard2 (GPT-OSS 120B, $n=20$).
-Hard2 baseline: 56.3\% accuracy, F1 $\approx$64.9\%.}
-\label{tab:official_hard2}
-\small
-\begin{tabular}{lrrr}
-\toprule
-Variant & Official Acc. & $\Delta$ vs.\ baseline & Official F1 \\
-\midrule
-AN38  & 41.0\% & $-$15.3pp & 47.8\% \\
-AN45c & 48.0\% & $-$8.3pp  & \textbf{61.2\%} \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-On hard2, both variants fall below the no-cheatsheet baseline. AN38
-incurs a larger accuracy penalty ($-$15.3pp) and F1 degradation
-($-$17.1pp), while AN45c is less damaging ($-$8.3pp accuracy,
-$-$3.7pp F1). Neither cheatsheet improves over baseline on hard2,
-confirming that both are calibrated toward the hard3 distribution.
-
-\subsection{Cross-Distribution Trade-Off Surface}
-
-Of the 52 Contributor Network submissions, 13 had benchmark results
-available on both hard2 and hard3 as of competition close
-(April~20, 2026); Table~\ref{tab:crossdist} presents these 13 submissions.
+An earlier Contributor Network snapshot ($n{=}52$; April~20, 2026)
+reported dual hard2/hard3 scores for 11 external submissions
+(Table~\ref{tab:crossdist}). That snapshot already exhibited large
+cross-split collapses---Betka's 99.0\% on hard2 falls to 56.3\% on
+hard3 ($-$42.7pp); Woon Siang Yi's 81.3\% on hard3 falls to 51.0\% on
+hard2 ($-$30.3pp), with the participant labeling the submission
+\texttt{hard3\_overfitted}---and flagged Arjun Garg's
+\texttt{bank\_lookup\_v8} (83.0\% hard2, 70.8\% hard3) as the sole
+submission above 65\% on both splits. We treat this as a historical
+precursor: the full-leaderboard test in
+Section~\ref{sec:official-tradeoff} supersedes it at scale.
 
 \begin{table}[h]
 \centering
 \caption{Cross-distribution performance: hard2 vs.\ hard3
 (GPT-OSS 120B, SAIR official benchmark). Contributor Network
-data, April~20, 2026~\citep{sair2026leaderboard}.
+external submissions with dual-split scores as of
+April~20, 2026~\citep{sair2026leaderboard} ($n{=}11$; own
+submissions omitted; see Section~\ref{sec:local-official}).
 Participants cited by name under SAIR's open science framework.}
 \label{tab:crossdist}
 \small
@@ -1057,43 +1076,21 @@ Garg        & bank\_lookup\_v5      & 51.5\%          & 60.8\% & 9.3pp  & 69.3\%
 SimonRJ     & Stage 1 Prompt        & 58.0\%          & 58.3\% & 0.3pp  & 67.3\% \\
 Debtirtha Saha & Test 8             & 60.0\%          & 71.0\% & 11.0pp & 76.0\% \\
 Devanshu Dixit & chat\_v32          & 49.5\%          & 68.0\% & 18.5pp & 74.3\% \\
-\textbf{Cazares} & \textbf{AN38}   & 41.0\%          & 65.3\% & 24.3pp & \textbf{67.6\%} \\
-\textbf{Cazares} & \textbf{AN45c}  & 48.0\%          & 55.5\% & \textbf{7.5pp}  & 63.7\% \\
 \bottomrule
 \multicolumn{6}{l}{\textsuperscript{$\dagger$}Self-labeled ``hard3\_overfitted'' by participant.}
 \end{tabular}
 \end{table}
 
-The table reveals a consistent pattern: among the 52 Contributor
-Network submissions with benchmark results, only one~---~Arjun Garg's
-\texttt{bank\_lookup\_v8} (83.0\% hard2, 70.8\% hard3)~---~achieves
-above~65\% accuracy on both distributions simultaneously.
-Section~\ref{sec:official-tradeoff} revisits this exception with the complete leaderboard.
-All other
-submissions optimizing for one distribution collapse on the other, with
-accuracy gaps ranging from 11 to 62.7 percentage points
-(Table~\ref{tab:crossdist}). The highest-accuracy submissions on each split
-are explicitly or implicitly distribution-specific: Betka's 99.0\% on
-hard2 collapses to~56.3\% on hard3 ($-$42.7pp); Woon Siang Yi's
-81.3\% on hard3 collapses to~51.0\% on hard2 ($-$30.3pp), with the
-participant themselves labeling the submission \texttt{hard3\_overfitted}.
-We term this the \textbf{cross-distribution trade-off surface}: within
-the empirical saturation region, optimizing for one distribution trades
-against performance on complementary distributions. AN45c exhibits one
-of the smallest cross-split accuracy gaps (7.5pp) among submissions
-scoring above the no-cheatsheet baseline on at least one split,
-suggesting that distribution robustness and peak accuracy
-are competing objectives within the saturation zone.
-
 \subsection{Cross-Distribution Trade-Off at Full Scale}
 \label{sec:official-tradeoff}
 
 Version~15.2 of this paper, using the voluntary Contributor Network
-snapshot ($n{=}52$, 13 with dual-split scores), observed that only one
-submission exceeded 65\% accuracy on both hard2 and hard3, and flagged
-the full leaderboard as the natural falsification test: the
-cross-distribution trade-off surface would either survive at scale or
-the thesis would fail. The complete leaderboard resolves this test.
+snapshot ($n{=}52$, 11 external submissions with dual-split scores),
+observed that only one submission exceeded 65\% accuracy on both hard2
+and hard3, and flagged the full leaderboard as the natural
+falsification test of whether that dual-split robustness would persist
+at scale. The complete leaderboard resolves this test on the
+scored--research axis analyzed below.
 
 \begin{table}[t]
 \centering
@@ -1113,13 +1110,10 @@ $>$70\% on both boards & \textbf{0 / 310} \\
 \end{table}
 
 No submission among all 310 exceeds 70\% accuracy on both distributions
-(Table~\ref{tab:dualthreshold}). The trade-off is most visible at the
+(Table~\ref{tab:dualthreshold}). The pattern is most visible at the
 top of the research board: the five highest-scoring research submissions
 lose between 19 and 32~percentage points when evaluated on the official
-scored distribution (Table~\ref{tab:researchcollapse}), a pattern
-structurally identical to the AN45c inversion documented in
-Section~\ref{sec:official-inversion} (79.25\% local $\rightarrow$ 55.5\%
-official hard3, a 23.75pp drop).
+scored distribution (Table~\ref{tab:researchcollapse}).
 
 \begin{table}[t]
 \centering
@@ -1143,10 +1137,11 @@ zkdmt & 80.1\% & 52.2\% & 264 \\
 The exception identified in v15.2 also resolves. Arjun Garg's
 submission, which exceeded 65\% on both hard2 and hard3 in the
 Contributor Network snapshot and which we flagged as a potential
-falsifier of the trade-off surface, ranks 8th on the research board
+falsifier, ranks 8th on the research board
 (77.9\%) but 166th on the scored board (55.5\%)---below our own
-submission's scored accuracy. What appeared at $n{=}13$ to be an escape
-from the trade-off surface is, at $n{=}310$, another instance of it.
+submission's scored accuracy. What appeared at $n{=}11$ to be an escape
+from the dual-split pattern is, at $n{=}310$, another instance of
+cross-board fragility.
 
 Conversely, the five submissions that do clear 65\% on both boards
 (Table~\ref{tab:robustfive}) are characterized not by peak accuracy on
@@ -1154,9 +1149,7 @@ either distribution but by small cross-board gaps. The competition
 winner exhibits the smallest gap of the top group
 ($+1.0$pp), despite ranking only 15th--20th on the research board. At
 full scale, cross-distribution robustness---not peak accuracy on any
-single distribution---predicts official ranking. This generalizes,
-across 309 independently developed prompts, the lesson of our own
-AN38-over-AN45c submission decision (Section~\ref{sec:results}).
+single distribution---predicts official ranking.
 
 \begin{table}[t]
 \centering
@@ -1176,27 +1169,28 @@ yan-biao & 65.3\% & 74.3\% & $+9.0$ \\
 \end{tabular}
 \end{table}
 
-Two conclusions follow. First, the cross-distribution fragility
-documented for our own prompts in
-Section~\ref{sec:official-inversion} is not an idiosyncrasy of our
-design family: it is the dominant failure mode of the entire field of
-310~submissions. Second, the empirical saturation region identified in
-Section~\ref{sec:ceiling} for our prompt family (approximately
-60--79\% on local hard3) is consistent with the official ceiling
-observed across all participants: no submission exceeds 69.1\% on the
-official scored evaluation, and no submission exceeds 70\% on both
-distributions simultaneously.
+Two conclusions follow for this external evidence. First, under a
+homogeneous-linear null calibrated to the full sample
+(Pearson~$r{=}0.74$; 10{,}000 bootstrap replicates, seed~42),
+research-selected upper subsets fall outside the expected correlation
+interval at all three cuts examined (top~33\%/~25\%/~10\%), whereas
+scored-selected upper subsets do not do so consistently---an observed
+directional association on the research$\to$scored axis, not a claim of
+shared mechanism with the local--official divergence of
+Section~\ref{sec:local-official}~\citep{cazares2026sair}. Second, the
+empirical saturation region identified in Section~\ref{sec:ceiling} for
+our prompt family (approximately 71.8--79.3\% on local hard3 at full
+scale) is consistent with the official ceiling observed across
+participants: no submission exceeds 69.1\% on the official scored
+evaluation, and no submission exceeds 70\% on both boards
+simultaneously.
 
 \subsection{Implications for the Saturation Region}
 
 These results reframe the saturation region finding. The ceiling is not
 merely an upper bound on accuracy~---~it is a \emph{fragility zone}
-where gains are distribution-dependent and structural innovations
-introduce failure modes on unseen distributions. AN45c's local result
-(79.25\%, $n=400$) is valid under its measurement conditions; the
-23.75pp gap to the official benchmark is not measurement error but
-distribution mismatch, the same phenomenon documented internally in
-Section~\ref{sec:results}.
+where gains are distribution-dependent and may fail to transfer across
+evaluation distributions.
 
 For practitioners, this implies: a cheatsheet that substantially
 outperforms baseline on a held-out set does not guarantee
@@ -1454,19 +1448,16 @@ instruction-capacity collapse in Llama, token-gated reasoning in
 Gemma~---~are stable across variants and not correctable by prompt
 engineering alone.
 
-Post-submission analysis against the SAIR official benchmark
-(Section~\ref{sec:official}) reveals that AN45c (79.25\% local,
+Post-submission analysis reveals that AN45c (79.25\% local,
 $n=400$) scores~55.5\% on the official hard3 benchmark~---~4.3pp below
 the no-cheatsheet baseline~---~while AN38 produces a robust $+$5.6pp
 improvement (65.3\%) with the highest balanced F1 score (67.6\%) among
 non-overfit submissions in the Contributor Network ($n=52$ visible
-submissions, April~20, 2026). The cross-distribution trade-off surface
-(Table~\ref{tab:crossdist}) shows that among the 52 Contributor Network
-submissions, only Arjun Garg's \texttt{bank\_lookup\_v8} achieves above~65\%
-on both hard2 and hard3 simultaneously (83.0\% and 70.8\%), confirming
-that the saturation
-region is a fragility zone where distribution-specific gains trade
-against generalization.
+submissions, April~20, 2026; Section~\ref{sec:local-official}). On the
+full leaderboard (Section~\ref{sec:official-tradeoff}), no submission
+exceeds 70\% on both the scored and research boards, and
+research-selected upper subsets fall outside the homogeneous-null
+correlation interval at all three cuts examined.
 
 \paragraph{Limitations.}
 The primary AN45c result (79.25\%, $n=400$) is statistically reliable
@@ -1486,10 +1477,10 @@ The primary AN45c result (79.25\%, $n=400$, Together~AI~bf16) does not
 generalize to the SAIR official benchmark (55.5\%, $n=20$,
 DeepInfra~bf16), a gap of~$-$23.75pp. AN38's smaller gap ($-$6.5pp
 local to official) suggests that simpler prompts generalize more
-robustly within the saturation region. The Contributor Network data
-($n=52$ of 1{,}007 participants) is a voluntary public sample; the full
-competition leaderboard (scheduled April~30, 2026) may reveal additional
-patterns not visible in the current data.
+robustly within the saturation region. An earlier Contributor Network
+snapshot ($n{=}52$ of 1{,}007 participants) was a voluntary public
+sample; Section~\ref{sec:official} analyzes the final competition
+leaderboard ($n{=}310$).
 
 \paragraph{Future work.}
 Three directions follow from the ceiling characterization: (1)~an
