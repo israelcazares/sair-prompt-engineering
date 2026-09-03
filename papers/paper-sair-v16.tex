@@ -77,10 +77,11 @@ accuracy on hard3 ($n=400$; 95\%~CI: [75.0\%, 82.9\%]), with
 representing a~+19.5 percentage-point improvement over the
 no-cheatsheet baseline~(59.75\%; 95\%~CI: [54.9\%, 64.4\%]). A cross-provider validation run on
 OpenRouter/DeepInfra~bf16 ($n=20$) yielded~90--95\%, consistent with
-the full-scale result. The key design decision~---~placing the
-trivial-magma check before the counterexample table~---~accounts for
-the primary performance gain over its predecessor AN38~(71.8\%),
-not the addition of new content. We release all prompt variants,
+the full-scale result. The key design difference~---~placing the
+trivial-magma check before the counterexample table~---~is associated with
+the primary performance gain over its predecessor AN38~(71.8\%);
+we do not isolate this from other confounds between the two variants
+(Section~\ref{sec:analysis}). We release all prompt variants,
 evaluation scripts, and results tables.
 
 Post-submission validation against the SAIR official benchmark reveals
@@ -179,10 +180,12 @@ We make the following contributions:
     See Section~\ref{sec:local-official} for official-benchmark divergence.
   \item \textbf{Practical guidelines}: Minimal effective prompts for
     multi-model deployment, with analysis of why simpler beats complex.
-  \item \textbf{Cross-distribution validation.} Official benchmark and
-    leaderboard evidence show that local gains within the saturation
-    region need not transfer across problem distributions
-    (Sections~\ref{sec:local-official} and~\ref{sec:official}).
+  \item \textbf{Cross-distribution validation.} Official benchmark evidence
+    for our own variants indicates that local gains within the saturation
+    region need not transfer across problem distributions; leaderboard
+    evidence at scale (Section~\ref{sec:official}) is separately consistent
+    with a related but distinct pattern of asymmetric transfer across
+    evaluation distributions.
 \end{enumerate}
 
 The rest of the paper is organized as follows. Section~\ref{sec:background}
@@ -645,9 +648,9 @@ points above chance~---~because Block~1 misclassifies~51\% of
 degradation illustrates the distribution mismatch failure mode
 precisely. AN38 exhibits the complementary pathology: well-calibrated
 for hard3~(71.8\% full-scale) but near chance on hard1~(50.7\%). Both
-variants achieve $\approx$92\% on normal problems, confirming that
-normal-split results are uninformative for distinguishing hard-problem
-strategies.
+variants achieve $\approx$92\% on normal problems, consistent with
+normal-split results being uninformative for distinguishing between these
+two hard-problem strategies.
 
 % ─────────────────────────────────────────────
 \subsection{Local vs.\ Official Benchmark Divergence}
@@ -701,8 +704,10 @@ AN45c & 48.0\% & $-$8.3pp  & \textbf{61.2\%} \\
 On hard2, both variants fall below the no-cheatsheet baseline. AN38
 incurs a larger accuracy penalty ($-$15.3pp) and F1 degradation
 ($-$17.1pp), while AN45c is less damaging ($-$8.3pp accuracy,
-$-$3.7pp F1). Neither cheatsheet improves over baseline on hard2,
-confirming that both are calibrated toward the hard3 distribution.
+$-$3.7pp F1). Neither cheatsheet improves over baseline on hard2.
+This is consistent with both being calibrated toward the hard3
+distribution, though we cannot rule out alternative explanations such as
+hard2 being intrinsically harder for both variants.
 On the official hard2--hard3 pair, AN38's cross-split accuracy gap is
 24.3pp (41.0\% vs.\ 65.3\%) and AN45c's is 7.5pp (48.0\% vs.\ 55.5\%).
 
@@ -821,7 +826,7 @@ Our results suggest that large language models in this task behave not
 as symbolic theorem provers but as heuristic classifiers over algebraic
 structure patterns. The prompt encodes a decision boundary over
 structural features~---~variable repetition, nesting depth, singleton
-forcing~---~rather than a proof system. This framing explains both the
+forcing~---~rather than a proof system. This framing is compatible with both the
 effectiveness of counterexample tables (which encode explicit structural
 decision rules) and the failure of procedural approaches (which require
 genuine symbolic execution). We term this the \emph{router hypothesis}:
@@ -885,8 +890,9 @@ substantial improvement, but the imbalance persists.
 \textsc{True} recall (37.5\% with the best prompt; effectively~0\%
 with our CE-table prompt family). Within our design family, longer
 prompts collapsed \textsc{True} recall further; however,
-Section~\ref{sec:instability-llama} shows with full-leaderboard data
-that the collapse is driven by prompt content rather than length.
+Section~\ref{sec:instability-llama} reports full-leaderboard data
+consistent with the collapse being associated with prompt content rather
+than length.
 
 \textbf{Gemma~4~31B} is token-gated rather than directionally biased:
 its failure mode is token budget exhaustion, which triggers the STEP~1
@@ -899,9 +905,11 @@ and strong~(85\% with AN45c on $n=20$).
 DeepSeek~V3.2 with AN19c achieves~80\% on hard3 ($n=10$) at
 $\approx$\$0.0008 per problem~---~roughly one order of magnitude cheaper
 than gpt-oss-120b at comparable accuracy. With AN38~(1{,}776~bytes),
-DeepSeek drops to~60\%, confirming the pattern observed in Llama: CE
-table prompts hurt capable reasoners by introducing distracting
-structure that interferes with internal algebraic reasoning. The AN19c
+DeepSeek drops to~60\% ($n=10$), consistent with the pattern observed in
+Llama. We do not have a validated mechanism for why CE table prompts
+degrade performance on these two models; one candidate explanation is
+that added structure interferes with reasoning the model would otherwise
+perform natively, but this is speculative given the small sample. The AN19c
 result on DeepSeek is the most cost-efficient signal in the study
 ($n=10$; highest-priority target for scale validation).
 
@@ -998,7 +1006,7 @@ counterexamples and a Mace4-equivalent tool verifies them.
 \section{Official Benchmark Validation}
 \label{sec:official}
 
-The complete competition leaderboard provides an independent validation
+The complete competition leaderboard provides an independent out-of-sample
 dataset. We use it only to evaluate whether the empirical patterns
 identified in our controlled ablation study
 (Sections~\ref{sec:results}--\ref{sec:multimodel}) generalize beyond our
@@ -1339,8 +1347,8 @@ the same problem differently run to run.
 
 Second, the pattern \emph{inverts} on Llama~3.3~70B. Our prompt makes
 Llama almost perfectly deterministic (1--2\% disagreement)---but
-deterministic in a degenerate way. The per-run data reveals the exact
-mechanism of the Llama collapse documented in
+deterministic in a degenerate way. The per-run data is consistent with the following
+mechanism for the Llama collapse documented in
 Section~\ref{sec:multimodel}: on every problem set, our submission
 produces approximately 98--100 solid-correct and 98--100 solid-incorrect
 cells with near-zero \textsc{True}-class F1. On a balanced set, this is
@@ -1371,13 +1379,13 @@ which the prompt fails to constrain the model to \emph{any} decision,
 which is qualitatively different from failing to constrain it to the
 \emph{correct} one.
 
-\subsection{Content, Not Length, Drives the Llama Collapse}
+\subsection{Content, Not Length, Is Associated with the Llama Collapse}
 \label{sec:instability-llama}
 
 Earlier versions of this work attributed the Llama collapse to prompt
 length, based on the within-family observation that our prompts
 exceeding $\approx$2KB produced near-zero \textsc{True} recall. The
-full leaderboard refutes length as the driver. Across all
+full leaderboard data is inconsistent with length alone as the driver. Across all
 310~submissions, 179 exhibit the Llama collapse signature
 (\textsc{True}-class F1 below 5\% on the normal set), and their mean
 cheatsheet size (4.2KB) is \emph{smaller} than that of the
@@ -1385,13 +1393,13 @@ cheatsheet size (4.2KB) is \emph{smaller} than that of the
 2{,}252-byte submission collapses Llama; the winner's 9{,}834-byte
 submission does not. Within our design family, length covaried with
 rule-system complexity, producing a spurious length effect; at
-leaderboard scale, the collapse is evidently a function of prompt
+leaderboard scale, the collapse appears to be associated with prompt
 \emph{content}---which instructions the prompt gives and how they
 interact with Llama's instruction-following capacity---rather than of
 size. We accordingly retract the size-based formulation and restate
 the finding as content-dependent: certain prompt structures, including
-our CE-table family, drive Llama~3.3~70B into a deterministic
-single-class policy regardless of their length.
+our CE-table family, are associated with Llama~3.3~70B entering a
+deterministic single-class policy regardless of their length.
 
 \subsection{Interpretation and Scope}
 \label{sec:instability-interp}
@@ -1441,8 +1449,10 @@ AN38 is our most robust submission under distribution shift, producing
 $+$5.6pp over the official baseline (Section~\ref{sec:official}). A
 cross-provider validation run on OpenRouter/DeepInfra~bf16 ($n=20$)
 yielded~90--95\%, consistent with the full-scale local result. The token
-cap finding demonstrates that Gemma's performance (50\% vs.~85\%) is
-entirely determined by provider configuration, not model capability.
+cap finding shows that provider configuration accounts for a large part of
+the observed gap in Gemma's performance (50\% vs.~85\%) under our two
+token-budget settings; we do not claim this rules out any role for model
+capability.
 Model-specific bias profiles~---~\textsc{True} bias in gpt-oss-120b,
 instruction-capacity collapse in Llama, token-gated reasoning in
 Gemma~---~are stable across variants and not correctable by prompt
