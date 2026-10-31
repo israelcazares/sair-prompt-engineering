@@ -591,10 +591,10 @@ def main():
 
     # Verificar API key
     if not OPENROUTER_API_KEY:
-        print("[ERROR] Falta OPENROUTER_API_KEY.")
-        print("  Agrega la siguiente linea a tu archivo .env:")
-        print("    OPENROUTER_API_KEY=tu_key_aqui")
-        return
+        raise SystemExit(
+            "Falta OPENROUTER_API_KEY: expórtala en la sesión "
+            "(export OPENROUTER_API_KEY=...) antes de correr"
+        )
 
     # Test de conexion
     if not args.skip_test:

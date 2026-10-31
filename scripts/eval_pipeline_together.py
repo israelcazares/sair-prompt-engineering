@@ -674,10 +674,10 @@ def main():
     args = p.parse_args()
 
     if not TOGETHER_API_KEY:
-        print("[ERROR] Falta TOGETHER_API_KEY.")
-        print("  Agrega a tu archivo .env:")
-        print("    TOGETHER_API_KEY=tu_key_aqui")
-        return
+        raise SystemExit(
+            "Falta TOGETHER_API_KEY: expórtala en la sesión "
+            "(export TOGETHER_API_KEY=...) antes de correr"
+        )
 
     if not args.skip_test:
         if not test_api(args.model):
