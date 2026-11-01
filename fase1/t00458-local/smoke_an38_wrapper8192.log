@@ -1,0 +1,36 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[TEST] Verificando conexion a Together AI con modelo: openai/gpt-oss-120b
+[OK] API funcionando — respuesta: TRUE
+[CS] 'cheatsheets/cheat_sheet_variant_AN38.txt' — 1776 bytes
+[OK] Cargados 400 problemas (hard3)
+
+[COST] Estimacion para 5 problemas con openai/gpt-oss-120b:
+  ~552 tokens in / ~400 out por llamada
+  Costo estimado:  ~$0.0048 USD
+  Presupuesto max: $5.00 USD
+
+[EVAL] 5 problemas | modelo: openai/gpt-oss-120b
+[EVAL] Cheat sheet: 1776 bytes | FACTIBLE
+[EVAL] API: Together AI | Presupuesto: $5.00 USD
+  [   1/5] OK   | label=TRUE pred=TRUE  | acc=1.00 | 7.1s/prob | ETA 0h00m | $0.0018 | x = y * x
+  [   2/5] OK   | label=TRUE pred=TRUE  | acc=1.00 | 26.0s/prob | ETA 0h01m | $0.0107 | x = x * (x * y)
+  [   3/5] FAIL | label=TRUE pred=FALSE | acc=0.67 | 22.7s/prob | ETA 0h00m | $0.0143 | x = y * (x * x)
+  [   4/5] FAIL | label=TRUE pred=FALSE | acc=0.50 | 19.9s/prob | ETA 0h00m | $0.0165 | x = y * (z * w)
+  [   5/5] OK   | label=TRUE pred=TRUE  | acc=0.60 | 23.5s/prob | ETA 0h00m | $0.0233 | x = (y * z) * x
+
+[TIME] Completado en 2.0 minutos
+[COST] Total: $0.0233 USD  (3,753 in / 19,518 out)
+
+============================================================
+  AN38_wrapper8192_smoke_gpt-oss-120b
+  Modelo:      openai/gpt-oss-120b via together
+  Problemas:   5
+  Tiempo:      2.0 minutos
+  Determinism: temp=0 top_p=1 seed=42
+  f1 accuracy: 0.6000  (3/5)
+  TRUE  acc:   0.6000  (3/5)
+  FALSE acc:   0.0000  (0/0)
+  Size:        1776 bytes  (OK)
+  Costo total: $0.0233 USD  (3,753 in / 19,518 out)
+============================================================
+[SAVED] results/AN38_wrapper8192_smoke_gpt-oss-120b_20261101_180508.json

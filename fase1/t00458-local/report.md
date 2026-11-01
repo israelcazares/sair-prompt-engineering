@@ -200,6 +200,7 @@ El control (1) reproduce b=61, c=31, p=0.0025.
 | AN45c abril | raw autocontenido | 8,192 (inferido de tokens_out) | 2026-04-14 | 79.25% (317/400) | [75.0, 82.9] | 95.9% | 63.4% |
 | AN45c re-run | raw autocontenido | 8,192 (script L199) | 2026-11-01 | 79.50% (318/400) | [75.3, 83.2] | 98.5% | 61.5% |
 | T00458 | raw (plantilla + cuerpo AN38) | 8,192 (script L199) | 2026-11-01 | 82.50% (330/400) | [78.5, 85.9] | 95.9% | 69.8% |
+| AN38 wrapper 8192 | wrapper + cuerpo AN38, ecuaciones inline | 8,192 (script L199; max tokens_out = 8,192) | 2026-11-01 | 80.75% (323/400) | [76.6, 84.3] | 97.4% | 64.9% |
 
 Fechas de abril tomadas del timestamp en el nombre de cada JSON; fechas de noviembre tomadas de `metrics.timestamp`.
 
@@ -210,3 +211,73 @@ Fechas de abril tomadas del timestamp en el nombre de cada JSON; fechas de novie
 3. **max_tokens de las corridas de abril:** inferido del máximo de `tokens_out`; los JSON no lo registran.
 4. **Determinismo del proveedor:** temperature 0 y seed 42 se envían, pero no se verificó que Together garantice salidas idénticas.
 5. **Llamadas no pedidas por el prompt:** se hicieron 2 llamadas GET `/v1/models` (sin costo) para diagnosticar la llave original, que devolvió 401, y validar la nueva, que devolvió 200.
+
+---
+
+# Corrida adicional (2026-11-01): AN38 en modo wrapper con max_tokens 8,192
+
+Invocación de la corrida AN38 de abril en modo default (sin `--raw-prompt`), con el script sin cambios (envía `max_tokens=8192` para gpt-oss, L199): `/usr/bin/python3 scripts/eval_pipeline_together.py --cheatsheet cheatsheets/cheat_sheet_variant_AN38.txt --problems hard3 --model openai/gpt-oss-120b --budget 5 --name AN38_wrapper8192_gptoss_hard3`, con la salida en `2>&1 | tee fase1/t00458-local/run_an38_wrapper8192.log > /dev/null`. Los JSON que escribe el script en `results/` se movieron a `fase1/t00458-local/`. Análisis con `supplement_an38w8192.py`, un script nuevo solo con stdlib que reutiliza `load`/`wilson`/`mcnemar` de analyze.py y `pct` de supplement.py.
+
+## Smoke (5 problemas)
+
+- Mismos argumentos más `--max 5 --name AN38_wrapper8192_smoke`. Log: `smoke_an38_wrapper8192.log`. JSON: `smoke_an38_wrapper8192_5.json`.
+- El log contiene `[OK] Cargados 400 problemas (hard3)` (1 vez); `[INFO] Usando 10 problemas de ejemplo` aparece 0 veces.
+- n_total = 5. predicted: TRUE, TRUE, FALSE, FALSE, TRUE (3/5 correctas). Costo: $0.023271; 2.0 min; tokens in/out 3,753 / 19,518.
+- Prompt reconstruido con `build_prompt(eq1, eq2, cheatsheet)` para hard3_0001: línea 1 = rol ("You are a mathematician specializing in equational theories of magmas."); frase de tarea con las ecuaciones inline ("Equation 1 (x = y * x) implies Equation 2 (x = x * (x * ((y * z) * x))) over all magmas."); después el cuerpo completo de AN38; al final las instrucciones de formato VERDICT/REASONING/PROOF/COUNTEREXAMPLE. Placeholders: 0.
+
+## Corrida completa (n=400)
+
+| campo | valor |
+|---|---|
+| log | run_an38_wrapper8192.log; `[OK] Cargados 400 problemas (hard3)` sí (1); fallback de 10 problemas: 0 |
+| JSON | AN38_wrapper8192_gptoss_hard3_full.json |
+| n_total | 400 |
+| provider / model | together / openai/gpt-oss-120b |
+| size_bytes | 1776 |
+| parseadas / no parseadas | 400 / 0 |
+| budget_exceeded | False |
+| IDs idénticos a AN38 abril, T00458 y AN45c re-run | True |
+| costo (script, USD) | 2.253267 |
+| duración (min) | 219.3 |
+| tokens in / out | 302,765 / 1,950,502 |
+| reintentos por respuesta vacía (`[EMPTY]`) | 13 |
+
+La corrida se lanzó una sola vez.
+
+## Tope de tokens (`tokens_out`)
+
+| corrida | max | p99 | p95 | ==4096 | ==8192 | >4096 |
+|---|---|---|---|---|---|---|
+| AN38 abril (wrapper) | 4,096 | 4,096 | 4,096 | 268 | 0 | 0 |
+| AN38 wrapper 8192 | 8,192 | 8,192 | 7,938 | 0 | 15 | 275 |
+
+## Métricas
+
+| corrida | accuracy | Wilson 95% | TRUE recall | FALSE recall | F1(TRUE) | parse rate |
+|---|---|---|---|---|---|---|
+| AN38 wrapper 8192 | 80.75% (323/400) | [76.60, 84.31] | 97.44% (190/195) | 64.88% (133/205) | 0.8315 | 400/400 |
+
+## McNemar pareado con corrección de continuidad (χ² con 1 gl; b+c ≥ 25 en todos los pares)
+
+A = AN38 wrapper 8192. b = solo A correcto, c = solo B correcto.
+
+| # | A vs B | ambos ✓ | b | c | ambos ✗ | χ² | p |
+|---|---|---|---|---|---|---|---|
+| 1 | AN38 wrapper 8192 vs AN38 abril (wrapper 4096) | 262 | 61 | 25 | 52 | 14.2442 | 0.000160556 |
+| 2 | AN38 wrapper 8192 vs T00458 (raw 8192) | 306 | 17 | 24 | 53 | 0.8780 | 0.348737 |
+| 3 | AN38 wrapper 8192 vs AN45c re-run | 304 | 19 | 14 | 63 | 0.4848 | 0.486234 |
+
+## Costo acumulado de la sesión (según el script)
+
+| concepto | USD |
+|---|---|
+| smoke T00458 + T00458 + AN45c re-run | 4.632099 |
+| smoke AN38 wrapper 8192 | 0.023271 |
+| AN38 wrapper 8192 (n=400) | 2.253267 |
+| **total** | **6.908637** |
+
+## NO VERIFICADO (corrida adicional)
+
+1. **Costo realmente facturado.** Igual que antes: tarifa default de $1.00/M y sin contar los intentos descartados por `[EMPTY]`. En toda la sesión hubo 84 reintentos (71 + 13); a ≤ ~8,950 tokens cada uno añadirían como mucho unos $0.75, para un acumulado de ≤ ~$7.66, por debajo del tope de $9.
+2. **Truncamiento** de las 15 respuestas con exactamente 8,192 tokens: los JSON no guardan `finish_reason`.
+3. **Que la corrida AN38 de abril usara exactamente este mismo wrapper:** el código de `build_prompt` es el commiteado; la corrida de abril (2026-04-04) es anterior al primer commit del script.
