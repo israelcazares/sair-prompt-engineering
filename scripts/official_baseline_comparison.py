@@ -103,7 +103,13 @@ def mcnemar(t_ids, a, b):
         cc += cb and not ca
     disc = bb + cc
     stat = (abs(bb - cc) - 1) ** 2 / disc if disc else 0.0
-    p = math.erfc(math.sqrt(stat / 2)) if disc >= 25 else float("nan")
+    if disc == 0:
+        p = 1.0
+    elif disc < 25:
+        p = min(1.0, 2 * sum(math.comb(disc, i) for i in range(min(bb, cc) + 1))
+                / 2 ** disc)
+    else:
+        p = math.erfc(math.sqrt(stat / 2))
     return bb, cc, stat, p
 
 
@@ -184,7 +190,7 @@ def main():
     print("| model | set | T00458 | Base | Δpp | CI95 | p_perm | p_Holm | McNemar p | sbT | sbB |")
     print("|---|---|---|---|---|---|---|---|---|---|---|")
     for r, pa in zip(rows, p_adj):
-        pm = f"{r[10]:.4f}" if r[10] == r[10] else "exact(<25 disc)"
+        pm = f"{r[10]:.4f}" + (" exact" if r[8] + r[9] < 25 else "")
         print(f"| {r[0]} | {r[1]} | {r[2]:.2f} | {r[3]:.2f} | {r[4]:+.2f} | "
               f"[{r[5]:+.2f},{r[6]:+.2f}] | {r[7]:.4f} | {pa:.4f} | "
               f"{pm} (b={r[8]},c={r[9]}) | {r[11]:.2f} | {r[12]:.2f} |")
