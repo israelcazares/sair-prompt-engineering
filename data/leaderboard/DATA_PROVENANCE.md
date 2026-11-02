@@ -131,9 +131,14 @@ Evidence:
 
 1. The user's pasted text from the official submission's Cheatsheet tab is
    archived locally in `fase1/submission-check/submitted_cheatsheet.txt`.
-   `fase1/submission-check/report.md:3,15,28–55` records its origin, the
-   reported **“Size 2.19 KB”** on “My Submission”, and the comparison with the
-   AN38 body. These audit artifacts are not part of this release.
+   `fase1/submission-check/report.md:3,15,28–55` records its origin and the
+   comparison with the AN38 body. The author subsequently clarified the
+   two size displays: **My Submission reports “Size: 2,242 bytes”**
+   (Chrome extraction, row **A2**, as reported by the author), whereas the
+   leaderboard's Cheatsheet tab displays the rounded **“2.19 KB”**.
+   The referenced `12_my_submission.jpg` was not found in the local download
+   directory and is not included here. Row A2 is cited from the author's
+   report; it was not independently inspected in this release.
 2. `results/nov2026/T00458_cheatsheet.txt` has exactly 2,242 bytes and no final
    newline. It equals the pasted copy after removing boundary newlines only
    (the unnormalized copy is 2,244 bytes). It is also byte-identical to the
@@ -144,10 +149,9 @@ Evidence:
    precedes singleton forcing. SHA-256:
    `e21d0de3300e367a04f4c741c1c324064df33d28e7290ec98473df224fbdd1e8`.
 
-The page's rounded display does not establish an exact byte count. A raw
-download of the original uploaded file and whether the platform added any
-wrapper remain **NO VERIFICADO**; the 2,242-byte figure describes the released,
-locally evaluated reconstruction.
+The exact size reported on My Submission agrees with the 2,242-byte released
+reconstruction. The original uploaded binary is unavailable; its byte-for-byte
+identity and whether the platform added any wrapper remain **NO VERIFICADO**.
 
 `sair_matrix_extraction_v2.csv` has columns `submission_id`, `board`, `model`,
 `problem_set`, `problem_index`, `problem_id`, `result`, and `runs`; there is no

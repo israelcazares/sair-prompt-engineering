@@ -44,11 +44,14 @@ byte-identical to
 Its local November evaluation is listed with the other 400-problem runs in
 [`results/README.md`](results/README.md).
 
-The evidence is the user's copy from the submission's Cheatsheet tab and the
-reported **“Size 2.19 KB”** on “My Submission”, recorded in
-`fase1/submission-check/report.md:3,15,28–55` (local audit, not included here).
-The exact byte count is verified on the released file; a byte-exact original
-download from the platform is **NO VERIFICADO**. The complete evidence chain
+The **My Submission** page reports **“Size: 2,242 bytes”**, according to
+row **A2** of the Chrome extraction reported by the author. The leaderboard's
+Cheatsheet tab displays the rounded **“2.19 KB”**. The reconstructed file
+also measures 2,242 bytes and matches AN38_playground with SHA-256
+`e21d0de3300e367a04f4c741c1c324064df33d28e7290ec98473df224fbdd1e8`.
+The referenced screenshot `12_my_submission.jpg` was not found locally.
+The original uploaded binary is unavailable; byte-for-byte identity with
+that binary remains **NO VERIFICADO**. The complete evidence chain
 and unchanged leaderboard dataset hash are documented in
 [`data/leaderboard/DATA_PROVENANCE.md`](data/leaderboard/DATA_PROVENANCE.md#submission-eqt01-t00458--prompt-identity).
 
