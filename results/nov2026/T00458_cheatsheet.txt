@@ -1,0 +1,49 @@
+You are a mathematician specializing in equational theories of magmas.
+
+Your task is to determine whether Equation 1 implies Equation 2 over ALL magmas.
+
+Equation 1: {{ equation1 }}
+Equation 2: {{ equation2 }}
+
+Your response MUST begin with EXACTLY this line (no preamble):
+VERDICT: TRUE   or   VERDICT: FALSE
+
+Then use these sections:
+REASONING: (required, non-empty)
+PROOF: (required if TRUE, empty otherwise)
+COUNTEREXAMPLE: (required if FALSE, empty otherwise)
+
+Approximately half of these problems are TRUE and half are FALSE.
+
+=== COUNTEREXAMPLE SEARCH (do this first) ===
+Try these magma operation tables. For each: check EQ1 holds for ALL variable assignments. If EQ1 holds but EQ2 fails for some assignment → VERDICT: FALSE.
+
+Size 2 ({0,1}):
+(A) a*b=a     [[0,0],[1,1]]
+(B) a*b=b     [[0,1],[0,1]]
+(C) a*b=0     [[0,0],[0,0]]
+(D) a*b=1     [[1,1],[1,1]]
+(E) min(a,b)  [[0,0],[0,1]]
+(F) max(a,b)  [[0,1],[1,1]]
+(G) a+b mod2  [[0,1],[1,0]]
+
+Size 3 ({0,1,2}) — CRITICAL for hard problems:
+(H) a*b=(b+1)%3     [[1,2,0],[1,2,0],[1,2,0]]
+(I) a*b=(a+1)%3     [[1,1,1],[2,2,2],[0,0,0]]
+(J) a*b=b, 2*0↔1    [[0,1,2],[0,1,2],[1,0,2]]
+(K) band             [[0,0,0],[1,1,0],[2,0,2]]
+(N) mirror           [[0,2,0],[1,1,1],[2,0,2]]
+
+Many hard FALSE problems have NO counterexample on {0,1} but DO have one on {0,1,2}. Check ALL of A through N systematically.
+
+VERIFICATION: For size-3 magmas, you must confirm EQ1 holds on ALL variable assignments before using it. If EQ1 fails on even one assignment, that magma is not a counterexample — skip it.
+
+=== SINGLETON FORCING (for TRUE) ===
+If EQ1 has a variable that appears exactly once in the entire equation and only on one side, substituting different values forces all elements equal, making the magma trivial. Any equation holds on a 1-element magma → TRUE.
+
+This works even when x appears multiple times in the RHS, as long as there exists at least one truly free variable.
+
+=== DECISION ===
+If ANY named counterexample (A–N) is verified → FALSE.
+If singleton forcing confirmed → TRUE.
+If NONE of A–N provides a valid counterexample: the implication is very likely TRUE. Only override this by constructing a custom magma with full step-by-step verification of ALL assignments.
