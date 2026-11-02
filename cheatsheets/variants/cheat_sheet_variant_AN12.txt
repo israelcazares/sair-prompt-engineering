@@ -1,0 +1,95 @@
+=== MAGMA EQUATION IMPLICATION GUIDE ===
+
+You must decide: does Equation 1 (EQ1) imply Equation 2 (EQ2) over ALL magmas?
+TRUE = every magma satisfying EQ1 must satisfy EQ2.
+FALSE = there exists a magma satisfying EQ1 but not EQ2.
+
+Be concise. State verdict within first 500 tokens. Do not repeat the problem.
+
+============================
+PHASE 1: COUNTEREXAMPLE SEARCH (always do first)
+============================
+Try these magma tables on {0,1}. For each: check EQ1 holds for ALL 
+assignments in {0,1}. If EQ1 holds, check EQ2 on all assignments. 
+If EQ1 holds but EQ2 fails → VERDICT: FALSE. Stop.
+
+(A) Left-zero:  a*b=a   [[0,0],[1,1]]
+(B) Right-zero: a*b=b   [[0,1],[0,1]]
+(C) Const-0:    a*b=0   [[0,0],[0,0]]
+(D) Const-1:    a*b=1   [[1,1],[1,1]]
+(E) Min:        a*b=min(a,b)  [[0,0],[0,1]]
+(F) Max:        a*b=max(a,b)  [[0,1],[1,1]]
+(G) XOR:        a*b=(a+b)%2   [[0,1],[1,0]]
+
+If counterexample found → VERDICT: FALSE. Stop here.
+If NO counterexample found → proceed to Phase 2.
+
+============================
+PHASE 2: STRUCTURAL ANALYSIS (if no counterexample)
+============================
+Perform variable analysis on EQ1:
+ LHS_ONLY = variables in EQ1's left side but NOT right side
+ RHS_ONLY = variables in EQ1's right side but NOT left side
+
+S1 — SINGLETON FORCING (mathematically proven, always correct):
+  If LHS of EQ1 is a single variable x, and x does NOT appear 
+  anywhere in the RHS → every element equals the same value 
+  → magma is singleton → any equation holds → TRUE.
+  VERIFY: scan RHS character by character for "x". If "x" appears
+  even once, S1 does not apply.
+
+SELF-REFERENTIAL CHECK (mandatory):
+  Count how many times the LHS variable(s) appear in the RHS.
+  If the main variable x appears ≥2 times in the RHS of EQ1, 
+  the equation is self-referential and constraining — it does NOT 
+  force a singleton even if other variables appear free.
+  → Conclude FALSE.
+  Example: x = x * (x * (x * y)) — x appears 3 times in RHS → FALSE
+  Example: x = ((x * x) * y) * y — x appears 2 times in RHS → FALSE
+
+============================
+PHASE 3: DECISION
+============================
+Priority order:
+1. CE found in Phase 1 → FALSE
+2. S1 verified → TRUE
+3. Self-referential check triggered → FALSE
+4. No CE found → use reasoning below
+
+=== WHEN NO CE FOUND AND NO RULE DECIDES ===
+
+Think about what EQ1 forces:
+
+LEAN TRUE when:
+  • EQ1 has a variable on ONE side only (LHS_ONLY or RHS_ONLY is 
+    non-empty) AND that variable appears exactly once → constrains 
+    the magma severely, likely forces singleton
+  • EQ1 has 3+ distinct variables with at least one appearing only 
+    on one side → strong constraint → likely TRUE
+
+LEAN FALSE when:
+  • ALL variables appear on both sides of EQ1 (no free variables)
+  • EQ1 is symmetric (like x*y = y*x) — many magmas satisfy this
+  • EQ2 introduces new structural requirements not present in EQ1
+
+When genuinely uncertain, use your best mathematical judgment.
+About half of implications are TRUE and half are FALSE.
+
+============================
+EXAMPLES
+============================
+TRUE:  "x*y = x*z" ⊢ "x = y*x"
+  No CE. z only appears on RHS, once → constrains heavily → TRUE
+
+TRUE:  "x*y = y*z" ⊢ "x = y*(x*y)"
+  No CE. x not in RHS "y*z" → S1 → TRUE
+
+TRUE:  "x*x = y*z" ⊢ "x = y*x"
+  No CE. Self-ref check: x appears 0 times in RHS "y*z". 
+  y,z only on RHS → strong constraint → TRUE
+
+FALSE: "x*y = y*x" ⊢ "x = x*x"
+  CE: right-zero: commutativity holds, idempotency fails → FALSE
+
+FALSE: "x = x*(x*(x*y))" ⊢ ...
+  Self-ref: x appears 3 times in RHS → FALSE

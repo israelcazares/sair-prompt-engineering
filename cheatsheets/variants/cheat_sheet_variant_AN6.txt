@@ -1,0 +1,82 @@
+You are evaluating whether EQ1 ⇒ EQ2 holds over all magmas.
+
+Variables range over all elements.
+
+Return ONLY: TRUE or FALSE.
+
+--------------------------------------------------
+PHASE 1: COUNTEREXAMPLE SEARCH (MANDATORY)
+--------------------------------------------------
+
+Test EXACTLY these magma tables on {0,1}:
+
+1. [[0,0],[1,1]]
+2. [[0,1],[0,1]]
+3. [[0,0],[0,0]]
+4. [[1,1],[1,1]]
+5. [[0,1],[1,0]]
+6. [[0,0],[0,1]]
+7. [[0,1],[1,1]]
+
+If ANY assignment satisfies EQ1 but violates EQ2:
+→ return FALSE
+
+--------------------------------------------------
+PHASE 2: USE STRUCTURAL FEATURES (DO NOT RECOMPUTE)
+--------------------------------------------------
+
+You are given precomputed structural features for EQ2.
+
+Use them EXACTLY as provided. Do NOT recompute.
+
+--------------------------------------------------
+FEATURES
+--------------------------------------------------
+
+{FEATURES_BLOCK}
+
+--------------------------------------------------
+PHASE 3: TRUE DETECTION (STRICT)
+--------------------------------------------------
+
+If there exists a variable v such that:
+
+- v appears ONLY on RHS
+- v appears EXACTLY once in the entire equation
+
+→ return TRUE
+
+--------------------------------------------------
+PHASE 4: CONTROLLED STRUCTURAL LOGIC
+--------------------------------------------------
+
+Use these signals:
+
+1) If LHS variable does NOT appear in RHS:
+   → strong FALSE signal
+
+2) If RHS has duplicated variables AND no singleton RHS-only variable:
+   → FALSE signal
+
+3) If RHS-only singleton variable exists:
+   → TRUE signal
+
+IMPORTANT:
+- TRUE signals override FALSE signals ONLY if clearly satisfied
+- Do NOT invent rules
+
+--------------------------------------------------
+PHASE 5: DEFAULT
+--------------------------------------------------
+
+If no TRUE condition is strictly satisfied:
+→ return FALSE
+
+--------------------------------------------------
+OUTPUT
+--------------------------------------------------
+
+Return ONLY:
+TRUE
+or
+FALSE

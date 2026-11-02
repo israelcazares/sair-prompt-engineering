@@ -1,0 +1,105 @@
+## CORE PRINCIPLE
+
+A single valid counterexample ⇒ FALSE
+If Eq1 forces a singleton magma ⇒ TRUE (all equations hold)
+
+---
+
+## PHASE 1 — SINGLETON DETECTION (FIRST, ALWAYS)
+
+Check Eq1 ONLY.
+
+### TRUE patterns (apply confidently)
+
+S1. x = t AND x does NOT appear in t
+→ forces all elements equal → singleton → TRUE
+
+S2. vars(LHS) ∩ vars(RHS) = ∅
+→ both sides independent → must be constant → singleton → TRUE
+
+S3. A variable appears ONLY on one side of Eq1
+→ output must be constant over that variable → collapse → singleton → TRUE
+
+S4. x = t(x,y,z,...) with ≥2 extra variables AND deep nesting (depth ≥3)
+→ highly constrained → typically singleton → TRUE (use with caution)
+
+### Negative gates (if ANY applies, do NOT conclude singleton)
+
+NG1. x appears multiple times in RHS → NOT reliably singleton
+NG2. ALL variables appear on BOTH sides → NOT singleton
+NG3. RHS is dominated by x (self-referential) → NOT singleton
+
+If S1–S3 applies and no NG → VERDICT: TRUE
+If S4 applies and no NG → VERDICT: TRUE (lower confidence)
+
+---
+
+## PHASE 2 — COUNTEREXAMPLE SEARCH
+
+Try to find a small magma (size 2 or 3) where Eq1 holds universally but Eq2 fails.
+
+Quick candidates to try:
+- x◇y = x (left-projection)
+- x◇y = y (right-projection)
+- x◇y = 0 (constant zero)
+- x◇y = min(x,y) (AND/min)
+- Asymmetric 2×2 or 3×3 tables
+
+### Precomputed counterexample library
+
+If your own search finds nothing, try these validated tables.
+For each: (1) check if Eq1 holds for ALL assignments, (2) if yes, check if Eq2 FAILS for any assignment.
+IMPORTANT: Only conclude FALSE from a table if you are 100% certain of BOTH checks.
+
+Size 2 (elements {0,1}):
+
+T1 x◇y=x:  [0,0|1,1]
+T2 x◇y=y:  [0,1|0,1]
+T3 min:     [0,0|0,1]
+
+Size 3 (elements {0,1,2}):
+
+T4:  [0,0,0|0,0,0|0,1,0]
+T5:  [0,0,0|0,0,0|0,1,1]
+T6:  [0,0,0|0,0,0|0,2,0]
+T7:  [0,0,0|0,0,2|2,2,2]
+T8:  [0,0,0|1,1,2|1,1,2]
+T9:  [0,0,0|1,2,2|1,2,2]
+T10: [0,0,1|0,0,2|1,2,2]
+
+Notation: rows separated by |. T4 row 0=[0,0,0], row 1=[0,0,0], row 2=[0,1,0].
+So T4(2,1)=1, all others with row 2 are: T4(2,0)=0, T4(2,2)=0.
+
+If a valid counterexample is found → VERDICT: FALSE
+
+---
+
+## PHASE 3 — DECISION
+
+1. If singleton pattern (S1–S3) and no NG → TRUE
+2. If S4 and no NG → TRUE
+3. If counterexample found → FALSE
+4. Else → FALSE (default)
+
+---
+
+## CALIBRATION EXAMPLES
+
+TRUE (singleton forcing):
+- x = y◇(y◇z) → x not in RHS → S1 → TRUE
+- x◇y = (z◇w)◇(w◇z) → disjoint vars → S2 → TRUE
+- x = (y◇z)◇(w◇(y◇y)) → x not in RHS → S1 → TRUE
+
+FALSE (counterexample exists):
+- x = x◇(y◇((z◇x)◇x)) → x appears 4× in RHS → NG1 → not singleton → search tables
+- (x◇y)◇z = (z◇y)◇x → all vars both sides → NG2 → not singleton → search tables
+- x = (x◇(x◇y))◇(z◇z) → x dominates RHS → NG3 → not singleton → search tables
+
+---
+
+## OUTPUT FORMAT (STRICT)
+
+VERDICT: TRUE or FALSE
+REASONING: brief justification
+PROOF: required if TRUE
+COUNTEREXAMPLE: required if FALSE

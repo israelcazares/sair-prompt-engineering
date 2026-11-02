@@ -1,0 +1,145 @@
+## COUNTEREXAMPLE TABLE LIBRARY
+
+Before reasoning about structure, CHECK these precomputed magma tables.
+For each table, verify: (1) does Eq1 hold for ALL assignments? (2) if yes, does Eq2 FAIL for some assignment?
+If Eq1 holds but Eq2 fails on ANY table below → VERDICT: FALSE.
+
+### Size 2 tables (elements: {0,1})
+
+T1 Left-projection (a◇b=a):
+  ◇|0 1
+  0|0 0
+  1|1 1
+
+T2 Right-projection (a◇b=b):
+  ◇|0 1
+  0|0 1
+  1|0 1
+
+T3 Min/AND (a◇b=min(a,b)):
+  ◇|0 1
+  0|0 0
+  1|0 1
+
+### Size 3 tables (elements: {0,1,2})
+
+T4 Near-zero A (only 2◇1=1):
+  ◇|0 1 2
+  0|0 0 0
+  1|0 0 0
+  2|0 1 0
+
+T5 Near-zero B (2◇1=1, 2◇2=1):
+  ◇|0 1 2
+  0|0 0 0
+  1|0 0 0
+  2|0 1 1
+
+T6 Near-zero C (only 2◇1=2):
+  ◇|0 1 2
+  0|0 0 0
+  1|0 0 0
+  2|0 2 0
+
+T7 Block-absorbing (1◇2=2, 2◇x=2):
+  ◇|0 1 2
+  0|0 0 0
+  1|0 0 2
+  2|2 2 2
+
+T8 Layered A:
+  ◇|0 1 2
+  0|0 0 0
+  1|1 1 2
+  2|1 1 2
+
+T9 Layered B:
+  ◇|0 1 2
+  0|0 0 0
+  1|1 2 2
+  2|1 2 2
+
+T10 Diagonal-reflect:
+  ◇|0 1 2
+  0|0 0 1
+  1|0 0 2
+  2|1 2 2
+
+T11 Cyclic-partial:
+  ◇|0 1 2
+  0|0 2 1
+  1|0 0 1
+  2|0 2 0
+
+T12 Identity-partial:
+  ◇|0 1 2
+  0|0 1 2
+  1|0 0 0
+  2|0 1 0
+
+T13 Swap-constant:
+  ◇|0 1 2
+  0|0 0 1
+  1|0 0 1
+  2|1 0 0
+
+---
+
+## PHASE 1 — SYSTEMATIC COUNTEREXAMPLE CHECK
+
+For EACH table T1–T13 above:
+Step 1: Substitute the table into Eq1. Check if Eq1 holds for ALL variable assignments.
+Step 2: If Eq1 holds, substitute into Eq2. Check if Eq2 holds for ALL variable assignments.
+Step 3: If Eq2 fails for any assignment → this is a valid counterexample → VERDICT: FALSE.
+
+If no table disproves the implication, proceed to Phase 2.
+
+---
+
+## PHASE 2 — SINGLETON DETECTION
+
+Check whether Eq1 forces the magma to be a singleton (|M|=1). If so, ALL equations hold trivially → TRUE.
+
+### Singleton patterns (check Eq1 only)
+
+S1. Eq1 has form x = t where x does NOT appear in t
+→ x equals a fixed value → all elements must be equal → singleton → TRUE
+
+S2. vars(LHS) and vars(RHS) are completely disjoint
+→ both sides must be constant → singleton → TRUE
+
+S3. A variable appears ONLY on one side and the other side does not contain it
+→ the operation must absorb that variable → forces constant → singleton → TRUE
+
+S4. Eq1 has form x = t(x, y, z, ...) with ≥2 extra free variables in deep nesting (depth ≥3)
+→ highly constrained → typically singleton → TRUE (use with caution)
+
+### Negative gates (if ANY applies, do NOT conclude singleton)
+
+NG1. x appears multiple times in RHS of x = RHS → NOT reliably singleton
+NG2. ALL variables appear on BOTH sides → NOT singleton
+NG3. RHS is mostly self-referential (x dominates RHS) → NOT singleton
+
+---
+
+## PHASE 3 — DECISION
+
+1. If any table T1–T13 provides counterexample → FALSE
+2. If S1 or S2 applies and no NG → TRUE
+3. If S3 applies and no NG → TRUE
+4. If S4 applies and no NG → TRUE (lower confidence)
+5. Otherwise → FALSE (default)
+
+---
+
+## CALIBRATION EXAMPLES
+
+TRUE (singleton forcing):
+- Eq1: x = y◇(y◇z) → x not in RHS → S1 → TRUE
+- Eq1: x◇y = (z◇w)◇(w◇z) → disjoint sides → S2 → TRUE
+- Eq1: x = (y◇z)◇(w◇(y◇y)) → x not in RHS, 3 extra vars → S1 → TRUE
+
+FALSE (counterexamples exist):
+- Eq1: x = x◇(y◇((z◇x)◇x)) → x appears 4 times in RHS → NG1 → check tables
+- Eq1: (x◇y)◇z = (z◇y)◇x → all vars on both sides → NG2 → check tables
+- Eq1: x = (x◇(x◇y))◇(z◇z) → x dominates RHS → NG3 → check tables

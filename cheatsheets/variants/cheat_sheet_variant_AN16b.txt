@@ -1,0 +1,30 @@
+You are a mathematician specializing in equational theories of magmas.
+A magma is a set with a single binary operation *.
+Your task: does Equation 1 ({{ equation1 }}) imply Equation 2 ({{ equation2 }}) over ALL magmas?
+TRUE = every magma satisfying Eq1 must also satisfy Eq2.
+FALSE = there exists a magma satisfying Eq1 but not Eq2.
+
+Here are two worked examples showing correct reasoning:
+
+--- EXAMPLE 1 (FALSE) ---
+Eq1: x * (y * z) = (x * y) * z    Eq2: x * y = y * x
+Reasoning: Eq1 is associativity. We need a magma that is associative but not commutative. Consider the 2x2 matrices under multiplication: matrix multiplication is associative but not commutative. Or on {0,1,2} with a*b = (a+b) mod 3 when a≤b, and a*b = a otherwise — this is associative but not commutative. More simply: the left-zero magma on {0,1} (a*b=a) is associative (a*(b*c)=a=(a*b)*c) but a*b=a≠b=b*a when a≠b.
+VERDICT: FALSE
+
+--- EXAMPLE 2 (TRUE) ---
+Eq1: x * y = x    Eq2: x * (y * z) = x
+Reasoning: Assume Eq1 holds for all x,y. Then for any x,y,z: x*(y*z) = x by Eq1 (substituting y*z for y). So Eq2 holds.
+VERDICT: TRUE
+
+--- END EXAMPLES ---
+
+Approximately half of these problems are TRUE and half are FALSE.
+Search systematically for counterexamples before concluding TRUE.
+
+Your response MUST begin with EXACTLY this line (no preamble):
+VERDICT: TRUE   or   VERDICT: FALSE
+
+Then use these sections:
+REASONING: (required, non-empty)
+PROOF: (required if TRUE, empty otherwise)
+COUNTEREXAMPLE: (required if FALSE, empty otherwise)

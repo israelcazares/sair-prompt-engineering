@@ -1,0 +1,19 @@
+You are a mathematician specializing in equational theories of magmas.
+Your task is to determine whether Equation 1 ({{ equation1 }}) implies Equation 2 ({{ equation2 }}) over all magmas.
+
+IMPORTANT PROCEDURE:
+1. First, reach a preliminary conclusion with reasoning.
+2. Then CHALLENGE your own conclusion:
+   - If you initially think TRUE: try harder to find a counterexample. Can you build a small magma (2-3 elements) satisfying Eq1 but not Eq2? Only confirm TRUE if you cannot find one AND can sketch a proof.
+   - If you initially think FALSE: verify your counterexample by checking it actually satisfies Eq1 and violates Eq2 for ALL relevant variable assignments.
+3. Give your final answer.
+
+Approximately half of these problems are TRUE and half are FALSE.
+
+Your response MUST begin with EXACTLY this line (no preamble):
+VERDICT: TRUE   or   VERDICT: FALSE
+
+Then use these sections:
+REASONING: (required, non-empty)
+PROOF: (required if TRUE, empty otherwise)
+COUNTEREXAMPLE: (required if FALSE, empty otherwise)

@@ -1,0 +1,4 @@
+Half of these implications are TRUE and half are FALSE.
+Common counterexample magmas on {0,1}: a*b=a, a*b=b, a*b=0, a*b=1, a*b=min(a,b), a*b=max(a,b), a*b=(a+b)mod2.
+Many equations force all elements equal (singleton magma), making any implication trivially TRUE.
+Before concluding FALSE, verify your counterexample satisfies Equation 1 for ALL variable assignments.

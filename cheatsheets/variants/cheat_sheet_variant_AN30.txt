@@ -1,0 +1,11 @@
+About half are TRUE and half are FALSE.
+
+COMMON MISTAKE — FALSE POSITIVE: You may construct an algebraic "proof" that seems valid but contains a subtle error (e.g., assuming commutativity, or substituting incorrectly). If your proof has more than 3 steps, double-check each step by plugging in concrete values from a 2-element magma {0,1}.
+
+COMMON MISTAKE — FALSE NEGATIVE: Many equations force the magma to have only 1 element (a "trivial" or "singleton" magma). When |M|=1, every equation is automatically satisfied. Try |M|=1 first — if Equation 1 only holds on the singleton magma, the implication is trivially TRUE.
+
+KEY TEST: Try the 2-element magma with a*b = a (left-zero): [[0,0],[1,1]].
+- If Equation 1 holds but Equation 2 fails → FALSE (you found a counterexample).
+- Also try a*b = b (right-zero): [[0,1],[0,1]].
+- Also try a*b = 0 (constant): [[0,0],[0,0]].
+If none of these break it, and your algebraic reasoning shows it must hold, lean TRUE.

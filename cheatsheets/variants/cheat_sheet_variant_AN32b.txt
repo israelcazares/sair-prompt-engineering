@@ -1,0 +1,4 @@
+Approximately half of these problems are TRUE and half are FALSE.
+Many equations force the magma to collapse to 1 element, making the implication trivially TRUE.
+Key structural insight: check the "spine" of each equation. Left-spine equations nest operations leftward like ((a*b)*c)*d. Right-spine equations nest rightward like a*(b*(c*d)). Same-spine implications (both left or both right) are much more likely TRUE. Cross-spine implications are more likely FALSE.
+Before concluding FALSE, verify your counterexample satisfies Equation 1 for ALL variable assignments.

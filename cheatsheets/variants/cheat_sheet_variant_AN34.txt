@@ -1,0 +1,5 @@
+Approximately half of these problems are TRUE and half are FALSE.
+Test these 7 magmas on {0,1}. Check if Eq1 holds for ALL inputs. If Eq1 holds but Eq2 fails for some input, answer FALSE.
+  a*b=a | a*b=b | a*b=0 | a*b=1 | a*b=min(a,b) | a*b=max(a,b) | a*b=(a+b)mod2
+If none of the 7 magmas produces a counterexample, the implication is very likely TRUE — many equations force all elements equal.
+Before concluding FALSE, verify your counterexample satisfies Equation 1 for ALL variable assignments.

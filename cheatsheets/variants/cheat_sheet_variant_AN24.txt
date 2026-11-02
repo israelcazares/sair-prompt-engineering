@@ -1,0 +1,5 @@
+Approximately half of these problems are TRUE and half are FALSE.
+
+If Equation 1 has the form x = f(x,y,...) where variables appear that don't appear in Equation 2, it often forces the magma to have only 1 element, making ANY equation trivially TRUE.
+
+If both equations use the same variables and have similar complexity, try a 2-element magma {0,1} with the operation table: check x*y=0, x*y=x, x*y=y, x*y=1. If any satisfies Eq1 but violates Eq2, then FALSE.

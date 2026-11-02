@@ -1,0 +1,93 @@
+=== MAGMA EQUATION IMPLICATION CHEAT SHEET ===
+
+You must decide: does Equation 1 (EQ1) imply Equation 2 (EQ2) over ALL magmas?
+TRUE = every magma satisfying EQ1 must satisfy EQ2.
+FALSE = there exists a magma satisfying EQ1 but not EQ2.
+
+Be concise. State verdict within first 500 tokens. Do not repeat the problem.
+
+============================
+PHASE 1: COUNTEREXAMPLE SEARCH (always do first)
+============================
+Try these magma tables on {0,1}. For each: check EQ1 holds for ALL 
+assignments in {0,1}. If EQ1 holds, check EQ2 on all assignments. 
+If EQ1 holds but EQ2 fails → VERDICT: FALSE. Stop.
+
+(A) Left-zero:  a*b=a   [[0,0],[1,1]]
+(B) Right-zero: a*b=b   [[0,1],[0,1]]
+(C) Const-0:    a*b=0   [[0,0],[0,0]]
+(D) Const-1:    a*b=1   [[1,1],[1,1]]
+(E) Min:        a*b=min(a,b)  [[0,0],[0,1]]
+(F) Max:        a*b=max(a,b)  [[0,1],[1,1]]
+(G) XOR:        a*b=(a+b)%2   [[0,1],[1,0]]
+
+If counterexample found → VERDICT: FALSE. Stop here.
+
+============================
+PHASE 2: VARIABLE ANALYSIS (mandatory before any TRUE)
+============================
+You MUST explicitly perform this analysis before concluding TRUE.
+
+Write out:
+ LHS_ONLY = variables appearing in EQ1's left side but NOT right side
+ RHS_ONLY = variables appearing in EQ1's right side but NOT left side  
+ BOTH = variables appearing on both sides of EQ1
+
+Then apply these rules:
+
+S1: If LHS is a single variable x, and x does NOT appear in RHS at all
+    → x must equal a fixed value → singleton forced → TRUE.
+    VERIFY: scan the RHS string character by character. Does "x" appear? 
+    If it appears EVEN ONCE, S1 does not apply.
+
+DISJOINT: If vars(LHS) ∩ vars(RHS) = ∅ (no shared variables)
+    → both sides must independently equal a constant → singleton → TRUE.
+
+MULTI-FREE: If LHS is a single variable x, and there are ≥2 variables
+    that each appear ONLY on the right side of EQ1 AND each appears
+    exactly ONCE in the full equation, AND x does NOT appear ≥2 times 
+    in the right side of EQ1 → multiple free variables force strong 
+    collapse → singleton → TRUE.
+    VERIFY: for each candidate free variable, count its occurrences in 
+    the ENTIRE equation (both sides). Must be exactly 1 each. Also 
+    count x occurrences in RHS only. Must be 0 or 1.
+
+============================
+PHASE 3: DECISION
+============================
+Priority order:
+1. CE found in Phase 1 → FALSE
+2. S1 verified → TRUE
+3. DISJOINT verified → TRUE
+4. MULTI-FREE verified → TRUE
+5. Everything else → FALSE
+
+CRITICAL: Most implications between different equations are FALSE.
+Only say TRUE when you have absolute mathematical proof that the 
+equation forces singleton (all elements equal).
+
+A single "free variable" in a complex equation does NOT reliably 
+force singleton. The rules above are deliberately conservative.
+When uncertain → FALSE.
+
+============================
+EXAMPLES
+============================
+TRUE:  "x = ((y * y) * z) * x" — only 1 free var (z), MULTI-FREE 
+  needs ≥2, so does NOT apply. But you may still reason if singleton. 
+  Be very careful. When uncertain → FALSE.
+
+TRUE:  "x = x * ((y * z) * (w * u))" — y, z, w, u each appear once 
+  total, all RHS-only, x appears once in RHS. MULTI-FREE applies → TRUE.
+
+TRUE:  "x = ((y * z) * w) * x" — y, z, w all appear once, all 
+  RHS-only, x once in RHS. MULTI-FREE with 3 free vars → TRUE.
+
+FALSE: "x*y = y*x" ⊢ "x = x*x"
+  CE: right-zero [[0,1],[0,1]]: comm holds, idem fails → FALSE
+
+FALSE: "x = (y * x) * (x * z)" — z free but x appears twice in RHS.
+  MULTI-FREE blocked (x ≥2 in RHS). Not singleton → FALSE.
+
+FALSE: "x * y = (x * (y * x)) * z" — z free but only 1 free var
+  AND x appears twice in RHS. Not singleton → FALSE.

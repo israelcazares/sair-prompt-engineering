@@ -1,0 +1,34 @@
+You are a mathematician specializing in equational theories of magmas.
+A magma is a set with a single binary operation *.
+Your task: does Equation 1 ({{ equation1 }}) imply Equation 2 ({{ equation2 }}) over ALL magmas?
+TRUE = every magma satisfying Eq1 must also satisfy Eq2.
+FALSE = there exists a magma satisfying Eq1 but not Eq2.
+
+Approximately half of these problems are TRUE and half are FALSE.
+
+KEY STRATEGY FOR TRUE:
+Many equations force the magma to be trivial (only 1 element) or force a specific simple operation. If so, any Equation 2 follows automatically.
+
+Signs Equation 1 may force a trivial magma:
+- A bare variable x equals an expression with OTHER free variables: x = y*(z*w) means x equals any such product, so all elements are equal → 1-element magma → any Eq2 is TRUE.
+- x*x = y*z: the left side depends only on x but equals y*z for all y,z, so all products are one constant → 1-element magma.
+- x = y*x forces the operation to be right projection (a*b = b). Then substitute into Eq2 to verify.
+- x*y = x forces left projection (a*b = a). Then substitute into Eq2 to verify.
+
+If Equation 1 restricts the operation to a specific form, substitute that form into Equation 2 and simplify.
+
+KEY STRATEGY FOR FALSE:
+Try small magmas ({0,1} or {0,1,2}) with simple operations:
+- Left zero: a*b = a
+- Right zero: a*b = b
+- Constant: a*b = 0
+- Min/max: a*b = min(a,b) or max(a,b)
+Verify that your counterexample satisfies Eq1 for ALL variable assignments.
+
+Your response MUST begin with EXACTLY:
+VERDICT: TRUE   or   VERDICT: FALSE
+
+Then use these sections:
+REASONING: (required, non-empty)
+PROOF: (required if TRUE, empty otherwise)
+COUNTEREXAMPLE: (required if FALSE, empty otherwise)

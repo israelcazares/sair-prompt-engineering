@@ -1,0 +1,4 @@
+Approximately half of these problems are TRUE and half are FALSE.
+Many equations that look complex actually force the magma to have only 1 element, making the implication trivially TRUE.
+STRUCTURAL KEY: Equations have a "spine" — left-spine nests leftward like ((a*b)*c)*d, right-spine nests rightward like a*(b*(c*d)). A recently proven theorem shows pure left-spine laws almost always imply other left-spine laws (TRUE). But when Equation 1 is right-spine and Equation 2 has different structure, the implication is usually FALSE.
+Before concluding FALSE, verify your counterexample satisfies Equation 1 for ALL variable assignments.

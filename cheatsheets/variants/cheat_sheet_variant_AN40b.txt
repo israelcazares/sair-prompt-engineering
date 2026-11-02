@@ -1,0 +1,8 @@
+Approximately half of these problems are TRUE and half are FALSE.
+Many equations that look complex actually force the magma to have only 1 element, making the implication trivially TRUE.
+INVARIANT TEST: Check if Equation 1 forces a structural property—commutativity (x*y=y*x), idempotency (x*x=x), or a constant (x*y=x for all y). If it does, test whether Equation 2 has models VIOLATING that property. If yes, the implication is FALSE.
+COUNTEREXAMPLE SEARCH: Try these size-2 magmas on {0,1} satisfying EQ1 — if any FAILS EQ2, answer FALSE:
+A: 0*0=0,0*1=0,1*0=0,1*1=0 (left-zero)  B: 0*0=0,0*1=1,1*0=0,1*1=1 (right-zero)
+C: 0*0=0,0*1=0,1*0=0,1*1=1 (min)  D: 0*0=0,0*1=1,1*0=1,1*1=1 (max)
+E: 0*0=0,0*1=1,1*0=1,1*1=0 (xor)  F: 0*0=1,0*1=0,1*0=0,1*1=0 (const 0→1)  G: 0*0=1,0*1=1,1*0=1,1*1=1 (const 1)
+Before concluding FALSE, verify your counterexample satisfies Equation 1 for ALL variable assignments.

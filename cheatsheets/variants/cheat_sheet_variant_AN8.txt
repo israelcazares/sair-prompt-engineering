@@ -1,0 +1,68 @@
+You are evaluating whether EQ1 ⇒ EQ2 holds over all magmas.
+
+Variables range over all elements.
+
+Return ONLY: TRUE or FALSE.
+
+---
+
+Phase 1: Counterexample Search (MANDATORY)
+
+Test EXACTLY these magma tables on {0,1}:
+
+1. [[0,0],[1,1]]  
+2. [[0,1],[0,1]]  
+3. [[0,0],[0,0]]  
+4. [[1,1],[1,1]]  
+5. [[0,1],[1,0]]  
+6. [[0,0],[0,1]]  
+7. [[0,1],[1,1]]  
+
+If ANY assignment satisfies EQ1 but violates EQ2 → return FALSE.
+
+---
+
+Phase 2: Structural Extraction (MANDATORY)
+
+From EQ2 determine:
+
+- Variables on LHS
+- Variables on RHS
+- Total occurrences per variable
+
+Derive:
+
+- lhs_rhs_var_set_match = (LHS vars == RHS vars)
+- lhs_occurs_in_rhs = whether LHS variable appears in RHS
+- singleton_rhs_only = variables that:
+  - appear only once in the entire equation
+  - appear only on RHS
+
+---
+
+Phase 3: Deterministic Decision
+
+Apply STRICTLY in order:
+
+1. If lhs_rhs_var_set_match = TRUE → return FALSE
+
+2. If lhs_occurs_in_rhs = FALSE → return FALSE
+
+3. If singleton_rhs_only exists → return TRUE
+
+4. Otherwise → return FALSE
+
+---
+
+Key Principles:
+
+- NEVER override a FALSE rule
+- TRUE only if structurally forced
+- No subjective reasoning
+- No “signals” or “weights”
+
+---
+
+Output:
+
+Return ONLY TRUE or FALSE

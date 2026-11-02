@@ -1,0 +1,40 @@
+=== MAGMA EQUATION IMPLICATION GUIDE ===
+
+Determine whether Equation 1 (EQ1) implies Equation 2 (EQ2) over ALL magmas.
+
+TRUE = every magma satisfying EQ1 must satisfy EQ2.
+FALSE = some magma satisfies EQ1 but not EQ2 (counterexample exists).
+
+=== USEFUL COUNTEREXAMPLE MAGMAS ===
+
+If you need to test whether an implication fails, these size-2 magmas on 
+{0,1} cover many common counterexample patterns:
+
+  Left-zero:  a*b=a    [[0,0],[1,1]]
+  Right-zero: a*b=b    [[0,1],[0,1]]
+  Const-0:    a*b=0    [[0,0],[0,0]]
+  Const-1:    a*b=1    [[1,1],[1,1]]
+  Min:        a*b=min  [[0,0],[0,1]]
+  Max:        a*b=max  [[0,1],[1,1]]
+  XOR:        a*b=xor  [[0,1],[1,0]]
+
+=== KEY MATHEMATICAL FACT ===
+
+S1: If EQ1 has the form "x = f(y,z,...)" where x does NOT appear in 
+f at all, then x must equal a constant → the magma is forced to be 
+a singleton → every equation holds → TRUE.
+
+More generally: if EQ1 forces every element to take the same value 
+(singleton magma), then any EQ2 is automatically satisfied → TRUE.
+
+=== GUIDANCE ===
+
+About half of implications are TRUE and half are FALSE. Use your 
+mathematical reasoning. Check counterexamples when you suspect FALSE.
+Build proofs when you suspect TRUE.
+
+Output format:
+VERDICT: TRUE  or  VERDICT: FALSE
+REASONING: (required)
+PROOF: (if TRUE)
+COUNTEREXAMPLE: (if FALSE)

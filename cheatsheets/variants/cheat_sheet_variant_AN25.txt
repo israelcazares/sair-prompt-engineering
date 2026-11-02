@@ -1,0 +1,2 @@
+Approximately half of these problems are TRUE and half are FALSE.
+Many equations force all elements to be equal (one-element magma), making any other equation trivially true. Check this first: if Equation 1 implies x=y for all x,y, then the answer is TRUE regardless of Equation 2.

@@ -1,0 +1,124 @@
+You are a mathematician specializing in equational theories of magmas.
+
+Your task is to determine whether Equation 1 implies Equation 2 over ALL magmas.
+
+Equation 1: {{ equation1 }}
+Equation 2: {{ equation2 }}
+
+Your response MUST begin with EXACTLY this line (no preamble):
+VERDICT: TRUE   or   VERDICT: FALSE
+
+Then use these sections:
+REASONING: (required, non-empty)
+PROOF: (required if TRUE, empty otherwise)
+COUNTEREXAMPLE: (required if FALSE, empty otherwise)
+
+=== MAGMA EQUATION IMPLICATION CHEAT SHEET ===
+
+TRUE = every magma satisfying EQ1 must satisfy EQ2.
+FALSE = there exists a magma satisfying EQ1 but not EQ2.
+
+Be concise. State verdict within first 500 tokens. Do not repeat the problem.
+
+============================
+PHASE 1: COUNTEREXAMPLE SEARCH (always do first)
+============================
+Try these magma tables on {0,1}. For each: check EQ1 holds for ALL 
+assignments in {0,1}. If EQ1 holds, check EQ2 on all assignments. 
+If EQ1 holds but EQ2 fails → VERDICT: FALSE. Stop.
+
+(A) Left-zero:  a*b=a   [[0,0],[1,1]]
+(B) Right-zero: a*b=b   [[0,1],[0,1]]
+(C) Const-0:    a*b=0   [[0,0],[0,0]]
+(D) Const-1:    a*b=1   [[1,1],[1,1]]
+(E) Min:        a*b=min(a,b)  [[0,0],[0,1]]
+(F) Max:        a*b=max(a,b)  [[0,1],[1,1]]
+(G) XOR:        a*b=(a+b)%2   [[0,1],[1,0]]
+
+If counterexample found → VERDICT: FALSE. Stop here.
+
+============================
+PHASE 2: VARIABLE ANALYSIS (mandatory before any TRUE)
+============================
+You MUST explicitly perform this analysis before concluding TRUE.
+
+Write out:
+ LHS_ONLY = variables appearing in EQ1's left side but NOT right side
+ RHS_ONLY = variables appearing in EQ1's right side but NOT left side  
+ BOTH = variables appearing on both sides of EQ1
+
+=== CHECK BLOCKS FIRST (before applying S1/S2) ===
+
+BLOCK 1 — SELF-REFERENTIAL CHECK:
+  Count how many times x appears in the RHS of EQ1.
+  If x appears ≥2 times in RHS → the equation is self-referential.
+  S2 is NOT trustworthy. Conclude FALSE.
+  Example: x = (y * x) * (x * z) — x twice in RHS → FALSE
+  Example: x = (y * x) * (x * (x * z)) — x three times → FALSE
+  *** You MUST count x occurrences in RHS before using S2. ***
+
+BLOCK 2 — NO FREE VARIABLES:
+  If ALL variables appear on BOTH sides of EQ1 → no free variables.
+  S2 does not apply. Conclude FALSE.
+  Example: x * y = (y * x) * y → x,y both sides → FALSE
+
+BLOCK 3 — REPEATED VARIABLE IN LHS:
+  If the LEFT side of EQ1 contains any variable MORE THAN ONCE
+  (e.g., x * x, or (x * y) * x where x appears twice), then EQ1 
+  constrains a product expression, NOT a variable directly.
+  The free-variable singleton argument does NOT apply.
+  Conclude FALSE.
+  Example: x * x = y * (z * (x * z)) → LHS has x twice → FALSE
+  Example: (x * y) * x = (z * w) * u → LHS has x twice → FALSE
+  Example: (x * x) * y = (y * y) * z → LHS has x twice → FALSE
+
+If ANY BLOCK fires → do NOT use S2. Answer FALSE.
+
+=== SINGLETON-FORCING RULES (only if no BLOCK fired) ===
+
+S1: If LHS is a single variable x, and x does NOT appear in RHS at all 
+    → x must equal a fixed value → singleton forced.
+    VERIFY: scan the RHS string character by character. Does "x" appear? 
+    If it appears EVEN ONCE, S1 does not apply.
+
+S2: If there exists a variable y in RHS_ONLY (appears ONLY on the right 
+    side of EQ1), and y appears EXACTLY once in RHS → singleton forced.
+    VERIFY: count every occurrence of y in the full equation. It must 
+    appear exactly once total (on the RHS only).
+
+============================
+PHASE 3: DECISION
+============================
+Priority order:
+1. CE found in Phase 1 → FALSE
+2. Any BLOCK fired → FALSE
+3. S1 verified (x confirmed absent from RHS) → TRUE
+4. S2 verified AND no BLOCK fired → TRUE
+5. Everything else → FALSE
+
+CRITICAL: The vast majority of complex implications are FALSE. 
+If you cannot confirm with certainty that a variable is truly free 
+and the equation truly forces singleton — answer FALSE.
+
+============================
+EXAMPLES
+============================
+TRUE:  "x*y = x*z" ⊢ "x = y*x"
+  BLOCKs: x once in RHS, no repeat in LHS, z is RHS-only → no blocks.
+  S2: z in RHS_ONLY, once → singleton → TRUE
+
+TRUE:  "x*y = y*z" ⊢ "x = y*(x*y)"
+  BLOCKs: no blocks.
+  S1: LHS has x, RHS="y*z" has no x → singleton → TRUE
+
+FALSE: "x*y = y*x" ⊢ "x = x*x"
+  CE: right-zero [[0,1],[0,1]]: comm holds, idem fails → FALSE
+
+FALSE: "x = (y * x) * (x * z)" ⊢ ...
+  BLOCK 1: x in RHS 2 times → BLOCKED → FALSE
+
+FALSE: "x * x = y * (z * (x * z))" ⊢ ...
+  BLOCK 3: LHS has x twice (x * x) → BLOCKED → FALSE
+
+FALSE: "(x * y) * x = (z * w) * u" ⊢ ...
+  BLOCK 3: LHS has x twice → BLOCKED → FALSE

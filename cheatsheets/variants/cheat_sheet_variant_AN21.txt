@@ -1,0 +1,3 @@
+Approximately half of these problems are TRUE and half are FALSE.
+If Equation 1 forces all elements to be equal (1-element magma), then any Equation 2 follows — answer TRUE. This happens when a lone variable equals an expression with other free variables.
+IMPORTANT: Do not conclude TRUE just because you cannot find a counterexample. Many FALSE implications require counterexamples with 3+ elements or non-obvious operations. When you do find a counterexample, verify it satisfies Equation 1 for ALL variable assignments.

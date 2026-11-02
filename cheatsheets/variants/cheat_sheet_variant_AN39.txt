@@ -1,0 +1,4 @@
+Approximately half of these problems are TRUE and half are FALSE.
+Many equations that look complex actually force the magma to have only 1 element, making the implication trivially TRUE.
+Equation strength: an equation with MORE distinct variable positions and DEEPER nesting is MORE constraining. A stronger equation (EQ1) can imply a weaker one (EQ2), but a weaker equation rarely implies a stronger one. If EQ1 looks simpler or less constrained than EQ2, suspect FALSE.
+Before concluding FALSE, verify your counterexample satisfies Equation 1 for ALL variable assignments.

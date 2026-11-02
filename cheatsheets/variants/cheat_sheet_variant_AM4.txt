@@ -1,0 +1,104 @@
+=== MAGMA EQUATION IMPLICATION CHEAT SHEET ===
+
+You must decide: does Equation 1 (EQ1) imply Equation 2 (EQ2) over ALL magmas?
+TRUE = every magma satisfying EQ1 must satisfy EQ2.
+FALSE = there exists a magma satisfying EQ1 but not EQ2.
+
+Be concise. State verdict within first 500 tokens. Do not repeat the problem.
+
+============================
+PHASE 1: COUNTEREXAMPLE SEARCH (always do first)
+============================
+Try these magma tables on {0,1}. For each: check EQ1 holds for ALL 
+assignments in {0,1}. If EQ1 holds, check EQ2 on all assignments. 
+If EQ1 holds but EQ2 fails → VERDICT: FALSE. Stop.
+
+ALSO TRACK: which tables satisfy EQ1 (even if EQ2 also holds).
+This matters for Phase 2.
+
+(A) Left-zero:  a*b=a   [[0,0],[1,1]]
+(B) Right-zero: a*b=b   [[0,1],[0,1]]
+(C) Const-0:    a*b=0   [[0,0],[0,0]]
+(D) Const-1:    a*b=1   [[1,1],[1,1]]
+(E) Min:        a*b=min(a,b)  [[0,0],[0,1]]
+(F) Max:        a*b=max(a,b)  [[0,1],[1,1]]
+(G) XOR:        a*b=(a+b)%2   [[0,1],[1,0]]
+
+If counterexample found → VERDICT: FALSE. Stop here.
+
+============================
+PHASE 2: VARIABLE ANALYSIS (mandatory before any TRUE)
+============================
+Write out:
+ LHS_ONLY = variables appearing in EQ1's left side but NOT right side
+ RHS_ONLY = variables appearing in EQ1's right side but NOT left side  
+ BOTH = variables appearing on both sides of EQ1
+
+Singleton-forcing rules:
+
+S1: If LHS is a single variable x, and x does NOT appear in RHS at all 
+    → x must equal a fixed value → singleton forced.
+    VERIFY: scan the RHS string character by character. Does "x" appear? 
+    If it appears EVEN ONCE, S1 does not apply.
+    (Symmetric version: if RHS is a single variable not in LHS → same.)
+
+S2: If a variable y appears ONLY on one side (say RHS_ONLY), and appears
+    EXACTLY once → this is a FREE VARIABLE hint that the equation may 
+    force singleton.
+    
+    *** S2 CAUTION ***: S2 is NOT always correct. It fails when:
+    - The free variable is INSIDE a nested expression with shared 
+      variables. Example: "(x*y)*x = (y*z)*x" has z free on RHS, but
+      right-zero satisfies EQ1 over {0,1} → NOT singleton → S2 WRONG.
+    - CHECK: did ANY table in Phase 1 satisfy EQ1? If so, EQ1 has 
+      non-trivial models and S2 is UNRELIABLE.
+    
+    S2 is RELIABLE when:
+    - No table satisfies EQ1 (EQ1 likely forces singleton)
+    - The free variable is not deeply entangled with shared variables
+
+S3: If vars(LHS) and vars(RHS) share NO variables at all (completely
+    disjoint) → both sides must equal a constant → singleton forced.
+
+NEGATIVE GATES (any blocks TRUE):
+NG1: If BOTH contains ALL variables in the equation → not singleton.
+NG2: Standard identities (commutativity, associativity, idempotency) 
+     → not singleton.
+
+============================
+PHASE 3: DECISION
+============================
+Priority order:
+1. CE found in Phase 1 → FALSE
+2. S1 verified (x confirmed absent from RHS) → TRUE
+3. S3 verified (completely disjoint variable sets) → TRUE
+4. S2 verified AND no table satisfied EQ1 in Phase 1 → TRUE
+5. Everything else → FALSE
+
+CRITICAL: If S2 fires but a table DID satisfy EQ1 in Phase 1, 
+do NOT trust S2. The answer is most likely FALSE.
+
+The vast majority of complex implications are FALSE. Only say TRUE 
+when your singleton proof is airtight. When in doubt, FALSE.
+
+============================
+EXAMPLES
+============================
+TRUE:  "x = y * (z * ((w * u) * u))" ⊢ anything
+  S1: LHS is x, x not in RHS → singleton → TRUE
+
+TRUE: "x * y = z * (w * (u * u))" ⊢ anything  
+  S3: LHS vars {x,y}, RHS vars {z,w,u} — completely disjoint → TRUE
+
+TRUE:  "x = ((y * (x * y)) * z) * w" ⊢ anything
+  S2: z,w are RHS_ONLY. Phase 1: no table satisfies EQ1 → S2 reliable → TRUE
+
+FALSE: "x*y = y*x" ⊢ "x = x*x"
+  CE: right-zero [[0,1],[0,1]]: comm holds, idem fails → FALSE
+
+FALSE: "x*x = x" ⊢ "(x*y)*z = x*(y*z)"  
+  CE: non-assoc idempotent magma → FALSE
+
+S2 WRONG EXAMPLE:
+  "(x*y)*x = (y*z)*x" — z is RHS_ONLY, once. But Phase 1 shows
+  right-zero satisfies EQ1 → S2 unreliable → default FALSE.

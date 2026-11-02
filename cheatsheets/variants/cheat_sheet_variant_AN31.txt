@@ -1,0 +1,15 @@
+About half are TRUE and half are FALSE.
+
+STRATEGY: Test these 2-element magmas {0,1} against BOTH equations. If Eq1 holds but Eq2 fails → FALSE.
+
+  M1: a*b = a     table: [[0,0],[1,1]]
+  M2: a*b = b     table: [[0,1],[0,1]]
+  M3: a*b = 0     table: [[0,0],[0,0]]
+  M4: a*b = 1     table: [[1,1],[1,1]]
+  M5: 0*0=0,0*1=1,1*0=1,1*1=0  table: [[0,1],[1,0]]
+
+For each magma: substitute ALL variable assignments (x,y,z,w ∈ {0,1}) into Eq1. If ANY assignment fails Eq1, skip that magma. If ALL pass Eq1, check Eq2 the same way. If ANY assignment fails Eq2, answer FALSE.
+
+If NO magma gives a counterexample AND the equation has a variable on one side that doesn't appear on the other side, answer TRUE (the absent variable forces a trivial structure).
+
+Otherwise, if no counterexample found, lean TRUE — most implications without counterexamples in small magmas are true.

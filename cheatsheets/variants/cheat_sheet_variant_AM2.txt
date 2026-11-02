@@ -1,0 +1,142 @@
+=== MAGMA EQUATION IMPLICATION CHEAT SHEET ===
+
+You must decide: does Equation 1 (EQ1) imply Equation 2 (EQ2) over ALL magmas?
+TRUE = every magma satisfying EQ1 must satisfy EQ2.
+FALSE = there exists a magma satisfying EQ1 but not EQ2.
+
+Be concise. State verdict within first 500 tokens. Do not repeat the problem.
+
+============================
+PHASE 1: COUNTEREXAMPLE SEARCH (always do first)
+============================
+Try these magma tables on {0,1}. For each: check EQ1 holds for ALL
+assignments in {0,1}. If EQ1 holds, check EQ2 on all assignments.
+If EQ1 holds but EQ2 fails → VERDICT: FALSE. Stop.
+
+(A) Left-zero:  a*b=a   [[0,0],[1,1]]
+(B) Right-zero: a*b=b   [[0,1],[0,1]]
+(C) Const-0:    a*b=0   [[0,0],[0,0]]
+(D) Const-1:    a*b=1   [[1,1],[1,1]]
+(E) Min:        a*b=min(a,b)  [[0,0],[0,1]]
+(F) Max:        a*b=max(a,b)  [[0,1],[1,1]]
+(G) XOR:        a*b=(a+b)%2   [[0,1],[1,0]]
+
+If counterexample found → VERDICT: FALSE. Stop here.
+
+============================
+PHASE 2: VARIABLE ANALYSIS (mandatory before any TRUE)
+============================
+You MUST explicitly perform this analysis before concluding TRUE.
+
+Write out:
+ LHS_ONLY = variables appearing in EQ1's left side but NOT right side
+ RHS_ONLY = variables appearing in EQ1's right side but NOT left side
+ BOTH = variables appearing on both sides of EQ1
+
+Then apply singleton-forcing rules:
+
+S1: If LHS is a single variable x, and x does NOT appear in RHS at all
+    → x must equal a fixed value → singleton forced.
+    VERIFY: scan the RHS string character by character. Does "x" appear?
+    If it appears EVEN ONCE, S1 does not apply.
+
+S2: If there exists a variable y in RHS_ONLY (appears ONLY on the right
+    side of EQ1), and y appears EXACTLY once in RHS → singleton forced.
+    VERIFY: count every occurrence of y in the full equation. It must
+    appear exactly once total (on the RHS only).
+
+S3: If vars(LHS) and vars(RHS) share NO variables at all (completely
+    disjoint) → both sides must equal a constant → singleton forced.
+    Example: "x*y = z*w" → LHS={x,y}, RHS={z,w}, no overlap → TRUE.
+
+NEGATIVE GATES (any blocks TRUE):
+NG1: If BOTH contains ALL variables in the equation → not singleton.
+NG2: Standard identities (commutativity, associativity, idempotency)
+     → not singleton.
+
+============================
+PHASE 3: DECISION
+============================
+Priority order:
+1. CE found in Phase 1 → FALSE
+2. S1 verified (x confirmed absent from RHS) → TRUE
+3. S2 verified (free variable confirmed unique + one-sided) → TRUE
+4. S3 verified (completely disjoint variable sets) → TRUE
+5. Everything else → FALSE
+
+CRITICAL: If you are UNSURE whether S1/S2/S3 applies — if the equation
+is deeply nested and you cannot confirm with 100% certainty that a
+variable is truly free — the answer is FALSE.
+
+The vast majority of complex implications are FALSE. Only say TRUE
+when your singleton proof is airtight. When in doubt, FALSE.
+
+============================
+EXAMPLES (study these carefully before solving)
+============================
+
+TRUE:  "x*y = x*z" ⊢ "x = y*x"
+  LHS_ONLY={}, RHS_ONLY={z}, BOTH={x,y}. z in RHS_ONLY, once → S2 → TRUE
+
+TRUE:  "x*y = y*z" ⊢ "x = y*(x*y)"
+  LHS_ONLY={x}, RHS_ONLY={z}, BOTH={y}. S1: x not in RHS? RHS="y*z".
+  No x → S1 fires. Also S2: z free → TRUE
+
+TRUE:  "x = (y*y)*(z*(z*z))" ⊢ anything
+  LHS_ONLY={x}, RHS_ONLY={y,z}, BOTH={}. S1: x not in RHS → TRUE.
+  Also S3: disjoint vars {x} vs {y,z} → TRUE
+
+TRUE:  "x = ((y*y)*z)*x" ⊢ anything
+  LHS_ONLY={}, RHS_ONLY={y,z}, BOTH={x}. BUT S1 fails (x in RHS).
+  Check S2: y in RHS_ONLY. Count y in RHS: "((y*y)*z)*x" → y appears
+  TWICE → S2 fails for y. Check z: z in RHS_ONLY, appears ONCE → S2 → TRUE
+
+TRUE:  "x*y = ((z*y)*x)*x" ⊢ anything
+  LHS_ONLY={}, RHS_ONLY={z}, BOTH={x,y}. Check S2: z in RHS_ONLY.
+  Count z in RHS: "((z*y)*x)*x" → z appears ONCE → S2 → TRUE.
+  WARNING: x appears 3 times, y appears 2 times — looks complex.
+  But z being free and unique is SUFFICIENT for singleton.
+
+TRUE:  "x = x*((y*z)*(w*u))" ⊢ anything
+  LHS_ONLY={}, RHS_ONLY={y,z,w,u}, BOTH={x}. S1 fails (x in RHS).
+  Check S2: y in RHS_ONLY, count in RHS "x*((y*z)*(w*u))" → y once → S2 → TRUE.
+  Many extra variables on one side strongly suggests singleton.
+
+FALSE: "x*y = y*x" ⊢ "x = x*x"
+  CE: right-zero table [[0,1],[0,1]]: commutativity holds, idem fails → FALSE
+
+FALSE: "x*x = x" ⊢ "(x*y)*z = x*(y*z)"
+  CE: many non-associative idempotent magmas → FALSE
+
+FALSE: "x = (y*x)*(x*(x*z))" ⊢ ...
+  LHS={x}, RHS={y,x,z}, BOTH={x}. S1 fails (x in RHS). 
+  Check S2: y in RHS_ONLY — count y in "((y*x)*(x*(x*z)))" → once.
+  BUT CAREFUL: this equation has x appearing 4 TIMES on the RHS.
+  In fact, this equation does NOT force singleton — non-trivial magmas
+  satisfy it. VERDICT: FALSE.
+  Lesson: S2 requires the free variable to force collapse. When the
+  shared variable (x) is heavily repeated, the "free" variable may
+  not actually force anything. Apply S2 only when you can confirm the
+  shared variable does not dominate.
+
+FALSE: "x*y = (y*(y*x))*x" ⊢ ...
+  LHS={x,y}, RHS={x,y}, BOTH={x,y}. ALL vars on both sides → NG1.
+  No S1/S2/S3 possible. VERDICT: FALSE.
+
+FALSE: "x = (x*y)*(x*(y*z))" ⊢ ...
+  LHS={x}, RHS={x,y,z}, BOTH={x}. x in RHS → S1 fails.
+  y in RHS_ONLY but y appears TWICE → S2 fails.
+  z in RHS_ONLY, z appears once BUT x appears 3 times and dominates.
+  This does NOT force singleton. VERDICT: FALSE.
+
+FALSE: "x*x = y*(z*(x*z))" ⊢ ...
+  LHS={x}, RHS={y,z,x}, BOTH={x}. S1 fails. y once → but x on both
+  sides and z appears twice. Not singleton. VERDICT: FALSE.
+
+============================
+OUTPUT FORMAT (STRICT)
+============================
+VERDICT: [TRUE/FALSE]
+REASONING: [your Phase 1-2 analysis]
+PROOF: [if TRUE — cite which singleton rule S1/S2/S3 and show verification]
+COUNTEREXAMPLE: [if FALSE — show table and failed assignment, or default reasoning]

@@ -1,0 +1,5 @@
+Approximately half of these problems are TRUE and half are FALSE.
+
+If Equation 1 equates a bare variable to an expression with other free variables (like x = y*(z*w)), it may force a 1-element magma where any Equation 2 holds automatically.
+If Equation 1 forces a specific operation (like a*b=a or a*b=b), substitute into Equation 2.
+For FALSE, try small counterexamples: left-zero (a*b=a), right-zero (a*b=b), constant (a*b=c).

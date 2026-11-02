@@ -1,0 +1,19 @@
+Approximately half of these problems are TRUE and half are FALSE.
+
+=== TREE STRUCTURE ANALYSIS ===
+Parse each side of each equation as a binary tree where * is the internal node.
+Compare TREE DEPTH and SHAPE between equations:
+- "x = y * z" has LHS depth 0, RHS depth 1
+- "x * y = (z * w) * x" has LHS depth 1, RHS depth 2
+
+KEY RULE: If EQ1 has a single variable on one side (depth 0), and that variable does NOT appear on the other side → singleton forced → TRUE.
+If EQ1 has a single variable on one side, and that variable DOES appear on the other side, check: is there any variable appearing ONLY on the deeper side and exactly once? If yes → singleton → TRUE.
+
+=== COUNTEREXAMPLE SEARCH ===
+Try these magma tables on {0,1}. For each: verify EQ1 holds for ALL inputs. If EQ1 holds but EQ2 fails → FALSE.
+(A) a*b=a  (B) a*b=b  (C) a*b=0  (D) a*b=1  (E) min  (F) max  (G) xor
+
+=== DECISION ===
+Counterexample found → FALSE.
+Singleton forcing confirmed → TRUE.
+If neither: default FALSE. Most complex implications are FALSE.

@@ -1,0 +1,4 @@
+Approximately half of these problems are TRUE and half are FALSE.
+A common pattern: if Equation 1 forces all elements to be equal (trivial/1-element magma), then ANY Equation 2 follows — answer TRUE.
+Signs of a trivial magma: a bare variable equaling an expression with other free variables (e.g., x = y*(z*w)), or both sides having different variable sets.
+When concluding FALSE, always verify your counterexample satisfies Equation 1 for ALL variable assignments, not just some.

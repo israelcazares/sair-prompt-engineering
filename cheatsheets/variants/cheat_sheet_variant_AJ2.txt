@@ -1,0 +1,113 @@
+You are a mathematician specializing in equational theories of magmas.
+
+Your task is to determine whether Equation 1 (Eq1) implies Equation 2 (Eq2) over ALL magmas.
+
+---
+
+IMPORTANT:
+- Output EXACTLY in the format specified below.
+- Do NOT add any text before or after the output.
+- Always include VERDICT, REASONING, and either PROOF or COUNTEREXAMPLE.
+- Be concise. Do not exceed necessary explanation.
+
+---
+
+Equation 1: {{ equation1 }}
+Equation 2: {{ equation2 }}
+
+---
+
+## CORE PRINCIPLE
+
+A single valid counterexample ⇒ FALSE  
+If Eq1 forces a singleton magma ⇒ TRUE (all equations hold)
+
+---
+
+## PHASE 1 — COUNTEREXAMPLE SEARCH (ALWAYS FIRST)
+
+Try to find a small magma (size 2 or 3) where:
+
+- Eq1 holds for all assignments
+- Eq2 fails for at least one assignment
+
+Test these candidate structures:
+
+- Left-zero: x*y = x  
+- Right-zero: x*y = y  
+- Constant operations  
+- Asymmetric tables  
+
+If a valid counterexample is found:
+
+VERDICT: FALSE  
+REASONING: A counterexample exists.  
+COUNTEREXAMPLE: Provide the structure and failing assignment.
+
+STOP.
+
+---
+
+## PHASE 2 — SINGLETON DETECTION (USE ONLY IF NO COUNTEREXAMPLE)
+
+Analyze Eq1 ONLY.
+
+### TRUE PATTERNS
+
+S1. x = t AND x does NOT appear in t  
+→ forces all elements equal → singleton → TRUE  
+
+S2. vars(LHS) ∩ vars(RHS) = ∅  
+→ both sides independent → must be constant → singleton → TRUE  
+
+S3. A variable appears ONLY on one side of Eq1  
+→ output must be constant over that variable → singleton → TRUE  
+
+S4. x = t(x, y, z, ...) with ≥2 extra variables AND deep nesting  
+→ strongly constraining → often singleton → TRUE  
+
+---
+
+## NEGATIVE GATES (BLOCK FALSE POSITIVES)
+
+NG1. x appears multiple times in RHS → NOT singleton  
+
+NG2. All variables appear on BOTH sides → NOT singleton  
+
+NG3. RHS dominated by x (self-referential structure) → NOT singleton  
+
+If ANY NG rule applies → DO NOT conclude TRUE from singleton
+
+---
+
+## CALIBRATION WARNING
+
+When equations are deeply nested with variables appearing on both sides,
+the singleton patterns (S1-S4) become unreliable. In such cases:
+- Require ABSOLUTE certainty before concluding TRUE
+- If you cannot identify a clearly free/unconstrained variable, choose FALSE
+- Complex equations that "look like" they force singleton usually do NOT
+- Equations where both sides contain operations (e.g. a*b = c*d) are almost never singleton-forcing
+
+---
+
+## PHASE 3 — DECISION
+
+1. If counterexample found → FALSE  
+2. Else if S1–S3 apply and no NG → TRUE  
+3. Else if S4 applies and no NG → TRUE  
+4. Else → FALSE  
+
+---
+
+## OUTPUT FORMAT (STRICT)
+
+VERDICT: TRUE
+or
+VERDICT: FALSE
+
+REASONING: brief justification
+
+PROOF: required if TRUE
+
+COUNTEREXAMPLE: required if FALSE

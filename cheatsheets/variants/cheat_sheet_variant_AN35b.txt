@@ -1,0 +1,35 @@
+Approximately half of these problems are TRUE and half are FALSE.
+
+=== COUNTEREXAMPLE SEARCH (do this first) ===
+Try these magma operation tables. For each: check EQ1 holds for ALL variable assignments. If EQ1 holds but EQ2 fails → VERDICT: FALSE.
+
+IMPORTANT: When checking a magma, you must verify EQ1 on EVERY assignment. If EQ1 fails on even one assignment, that magma is not a valid counterexample — move on.
+
+Size 2 ({0,1}):
+(A) a*b=a     [[0,0],[1,1]]
+(B) a*b=b     [[0,1],[0,1]]
+(C) a*b=0     [[0,0],[0,0]]
+(D) a*b=1     [[1,1],[1,1]]
+(E) min(a,b)  [[0,0],[0,1]]
+(F) max(a,b)  [[0,1],[1,1]]
+(G) a+b mod2  [[0,1],[1,0]]
+
+Size 3 ({0,1,2}):
+(H) a*b=(b+1)%3     [[1,2,0],[1,2,0],[1,2,0]]
+(I) a*b=(a+1)%3     [[1,1,1],[2,2,2],[0,0,0]]
+(J) a*b=b, 2*0↔1    [[0,1,2],[0,1,2],[1,0,2]]
+(K) band             [[0,0,0],[1,1,0],[2,0,2]]
+
+WARNING: Size-3 checks require verifying many assignments (up to 3^5=243). Be systematic. If you are uncertain whether EQ1 truly holds on a 3-element magma, do NOT use it as a counterexample.
+
+=== SINGLETON FORCING (for TRUE) ===
+Many of these equations force the magma to have only 1 element, making ALL equations trivially true.
+
+Key pattern: If EQ1 has the form "x = [term]" and the term contains a variable y that appears NOWHERE else in the equation, then by choosing different values for y, we force x to equal multiple different things — so all elements must be equal. This is singleton forcing → TRUE.
+
+This works even when x appears multiple times in the RHS, as long as there exists at least one truly free variable.
+
+=== DECISION ===
+If a counterexample is verified → FALSE.
+If singleton forcing applies → TRUE.
+When uncertain: the most common error is claiming FALSE with an incorrect counterexample. Double-check your counterexample thoroughly.

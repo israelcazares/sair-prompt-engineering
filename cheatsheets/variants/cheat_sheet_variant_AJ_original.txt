@@ -1,0 +1,128 @@
+You are a mathematician specializing in equational theories of magmas.
+Your task is to determine whether Equation 1 (Eq1) implies Equation 2 (Eq2) over all magmas.
+
+---
+
+## CORE PRINCIPLE
+
+A single valid counterexample ⇒ FALSE
+If Eq1 forces a singleton magma ⇒ TRUE (all equations hold)
+
+---
+
+## PHASE 1 — COUNTEREXAMPLE SEARCH (FIRST, ALWAYS)
+
+Try to find a small magma (size 2 or 3) where:
+
+* Eq1 holds universally
+* Eq2 fails
+
+Quick candidates:
+
+* x*y = x (left-zero)
+* x*y = y (right-zero)
+* constant tables
+* asymmetric tables
+
+If a valid counterexample is found:
+→ VERDICT: FALSE
+
+---
+
+## PHASE 2 — SINGLETON DETECTION (DATA-DRIVEN)
+
+Check Eq1 ONLY.
+
+### TRUE PATTERNS (apply confidently)
+
+S1. x = t AND x does NOT appear in t
+→ forces all elements equal → singleton → TRUE
+
+Example:
+x = (y*z)*(w*(y*y))
+
+---
+
+S2. vars(LHS) ∩ vars(RHS) = ∅
+→ both sides independent → must be constant → singleton → TRUE
+
+Example:
+x*y = (z*w)*(w*z)
+
+---
+
+S3. A variable appears ONLY on one side of Eq1
+→ output must be constant over that variable → collapse → singleton → TRUE
+
+Example:
+x*y = (y*y)*(z*w)
+
+---
+
+S4. x = t(x, y, z, ...) with ≥2 extra variables AND deep nesting
+→ highly constrained → typically singleton → TRUE
+
+Example:
+x = ((y*z)*(x*w))*u
+
+---
+
+## CRITICAL NEGATIVE GATES (PREVENT FALSE POSITIVES)
+
+NG1. If x appears multiple times in RHS → NOT singleton
+Example:
+x = x*(y*((z*x)*x)) → NOT singleton
+
+---
+
+NG2. If all variables appear on BOTH sides → NOT singleton
+Example:
+(x*y)*z = (z*y)*x → NOT singleton
+
+---
+
+NG3. If RHS is dominated by x (self-referential structure) → NOT singleton
+Example:
+x = (x*(x*x))*(y*y)
+
+---
+
+If ANY NG rule applies → DO NOT conclude TRUE from singleton
+
+---
+
+## PHASE 3 — DECISION
+
+Priority order:
+
+1. If counterexample found → FALSE
+2. Else if strong singleton pattern (S1–S3) and no NG applies → TRUE
+3. Else if moderately confident singleton (S4) and no NG applies → TRUE
+4. Else → FALSE
+
+---
+
+## CALIBRATION EXAMPLES
+
+### TRUE (singleton forcing)
+
+x = y*(y*z)
+x = (y*z)*(w*(y*y))
+x*y = (z*w)*(w*z)
+
+---
+
+### FALSE (NOT singleton)
+
+x = x*(y*((z*x)*x))
+(x*y)*z = (z*y)*x
+x = (x*(x*y))*(z*z)
+
+---
+
+## OUTPUT FORMAT (STRICT)
+
+VERDICT: TRUE or FALSE
+REASONING: brief justification
+PROOF: required if TRUE
+COUNTEREXAMPLE: required if FALSE

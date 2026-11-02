@@ -1,0 +1,16 @@
+Approximately half of these problems are TRUE and half are FALSE.
+
+=== COUNTEREXAMPLE SEARCH (always do first) ===
+Try these magma tables. Check EQ1 for ALL assignments. If EQ1 holds but EQ2 fails → FALSE.
+
+{0,1}: (A) a*b=a [[0,0],[1,1]] (B) a*b=b [[0,1],[0,1]] (C) a*b=0 [[0,0],[0,0]] (D) a*b=1 [[1,1],[1,1]] (E) min [[0,0],[0,1]] (F) max [[0,1],[1,1]] (G) xor [[0,1],[1,0]]
+
+{0,1,2}: (H) a*b=(b+1)%3 [[1,2,0],[1,2,0],[1,2,0]] (I) a*b=(a+1)%3 [[1,1,1],[2,2,2],[0,0,0]]
+
+For hard problems, size-2 counterexamples often don't exist. ALWAYS try size-3 magmas H and I before concluding TRUE. Be careful: with 3 elements and 3+ variables, you must check ALL assignments (up to 3^5). If unsure whether EQ1 holds, that magma is NOT a valid counterexample.
+
+=== SINGLETON FORCING ===
+If EQ1 has form "x = [RHS]" where some variable y appears ONLY in the RHS and ONLY ONCE → the magma has 1 element → any equation holds → TRUE.
+
+=== WHEN UNCERTAIN ===
+If no counterexample found and no singleton forcing: consider whether EQ1 constrains the magma so heavily that EQ2 must follow. Many equations that look different actually force singleton (1-element) magmas, making the implication trivially TRUE. The most common mistake is inventing a counterexample that doesn't actually satisfy EQ1.

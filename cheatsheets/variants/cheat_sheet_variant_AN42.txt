@@ -1,0 +1,22 @@
+Approximately half of these problems are TRUE and half are FALSE.
+
+=== REWRITING ANALYSIS ===
+Treat EQ1 as a REWRITE RULE: orient it left→right (or whichever side is more complex).
+Ask: can you derive EQ2 by repeatedly applying EQ1 as a rewrite?
+
+Step 1: Take EQ2's left side. Try substituting EQ1 into it.
+Step 2: Try to rewrite toward EQ2's right side.
+If you can reach it in 1-2 steps → TRUE.
+If EQ1's rewrite doesn't produce any useful simplification → suspect FALSE.
+
+=== SINGLETON SHORTCUT ===
+If EQ1 has form "x = [term]" and some variable in the term appears NOWHERE else → that variable is free → magma must be singleton → TRUE for any EQ2.
+
+=== COUNTEREXAMPLE SEARCH ===
+Try these magma tables on {0,1}. Verify EQ1 holds for ALL inputs. If EQ1 holds but EQ2 fails → FALSE.
+(A) a*b=a  (B) a*b=b  (C) a*b=0  (D) a*b=1  (E) min  (F) max  (G) xor
+
+=== DECISION ===
+Counterexample found → FALSE.
+Singleton forcing or successful rewrite → TRUE.
+If neither: default FALSE.

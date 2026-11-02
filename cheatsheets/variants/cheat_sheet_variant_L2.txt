@@ -1,0 +1,97 @@
+=== MAGMA EQUATION IMPLICATION CHEAT SHEET ===
+
+You must decide: does Equation 1 (EQ1) imply Equation 2 (EQ2) over ALL magmas?
+TRUE = every magma satisfying EQ1 must satisfy EQ2.
+FALSE = there exists a magma satisfying EQ1 but not EQ2.
+
+Follow each step IN ORDER. Do not skip steps.
+
+============================
+STEP 1: QUICK SINGLETON CHECK
+============================
+If the LEFT side of EQ1 is a SINGLE VARIABLE (just one letter like "x")
+AND that variable does NOT appear ANYWHERE on the right side:
+→ VERDICT: TRUE. The equation forces a one-element magma.
+
+Check: write out the RHS. Scan every character. If the variable from 
+LHS appears even once, this rule does NOT apply.
+
+Example: "x = y * (z * w)" → LHS is "x", RHS is "y * (z * w)". 
+Is "x" anywhere in RHS? NO → TRUE.
+
+Example: "x = (y * x) * z" → LHS is "x", RHS has "x" in it → 
+this rule does NOT apply. Go to Step 2.
+
+If LHS is NOT a single variable (like "x * y"), go to Step 2.
+
+============================
+STEP 2: COUNTEREXAMPLE SEARCH (mandatory)
+============================
+You MUST try ALL 7 tables below. For each table:
+  (a) Substitute ALL possible {0,1} values for each variable in EQ1
+  (b) For EVERY substitution, compute LHS and RHS of EQ1 using the table
+  (c) If LHS ≠ RHS for ANY substitution → EQ1 FAILS in this table → skip it
+  (d) If EQ1 holds for ALL substitutions → now check EQ2 the same way
+  (e) If EQ2 FAILS for ANY substitution → this table is a COUNTEREXAMPLE
+
+If you find a counterexample → VERDICT: FALSE.
+
+The 7 tables (operation a*b on {0,1}):
+
+(A) Left-zero:  a*b=a       0*0=0, 0*1=0, 1*0=1, 1*1=1
+(B) Right-zero: a*b=b       0*0=0, 0*1=1, 1*0=0, 1*1=1
+(C) Constant-0: a*b=0       0*0=0, 0*1=0, 1*0=0, 1*1=0
+(D) Constant-1: a*b=1       0*0=1, 0*1=1, 1*0=1, 1*1=1
+(E) Minimum:    a*b=min(a,b) 0*0=0, 0*1=0, 1*0=0, 1*1=1
+(F) Maximum:    a*b=max(a,b) 0*0=0, 0*1=1, 1*0=1, 1*1=1
+(G) XOR:        a*b=(a+b)%2  0*0=0, 0*1=1, 1*0=1, 1*1=0
+
+============================
+STEP 3: FINAL DECISION
+============================
+If Step 1 said TRUE → TRUE.
+If Step 2 found a counterexample → FALSE.
+If neither → FALSE. (Most implications without obvious singleton proofs are false.)
+
+============================
+WORKED EXAMPLES
+============================
+
+--- Example 1 (TRUE via Step 1) ---
+EQ1: x = y * (z * ((w * u) * u))
+EQ2: x = (y * (z * x)) * (x * w)
+Step 1: LHS = "x" (single variable). Is "x" in RHS "y * (z * ((w * u) * u))"?
+  Scanning: y, *, (, z, *, (, (, w, *, u, ), *, u, ), ) → no "x" found.
+  → VERDICT: TRUE (singleton forced).
+
+--- Example 2 (FALSE via Step 2) ---
+EQ1: x * y = y * x  (commutativity)
+EQ2: x = x * x       (idempotence)
+Step 1: LHS = "x * y", not a single variable. Go to Step 2.
+Step 2: Try right-zero (a*b=b):
+  EQ1: x*y=y, y*x=x. Need y=x? No: EQ1 says x*y = y*x → b = a. 
+  Actually: x*y = y (right-zero), y*x = x (right-zero). Need y = x for all x,y? No.
+  Wait: EQ1 is "x*y = y*x". In right-zero: LHS = y, RHS = x. These differ when x≠y.
+  So EQ1 FAILS in right-zero. Skip.
+  Try left-zero (a*b=a): LHS = x, RHS = y. Fails when x≠y. Skip.
+  Try min: LHS = min(x,y), RHS = min(y,x) = min(x,y). EQ1 holds!
+  Check EQ2 in min: x = min(x,x) = x. EQ2 holds. Not a counterexample.
+  Try max: similar, EQ1 holds, EQ2 holds.
+  Try XOR: LHS = (x+y)%2, RHS = (y+x)%2. Equal. EQ1 holds.
+  Check EQ2: x = (x+x)%2 = 0. Need x=0 for all x. Fails for x=1.
+  → COUNTEREXAMPLE: XOR table. VERDICT: FALSE.
+
+--- Example 3 (FALSE via Step 2) ---
+EQ1: x * x = x  (idempotence)
+EQ2: (x * y) * z = x * (y * z)  (associativity)
+Step 1: LHS = "x * x", not single variable. Go to Step 2.
+Step 2: Try min: min(x,x)=x ✓ for all x. EQ1 holds in min.
+  Check EQ2: min(min(x,y),z) vs min(x,min(y,z)). Both = min(x,y,z). Holds.
+  Try max: max(x,x)=x ✓. EQ2: max(max(x,y),z)=max(x,y,z)=max(x,max(y,z)). Holds.
+  Try left-zero: x*x=x ✓. EQ2: (x*y)*z = x*z = x. x*(y*z) = x. Holds.
+  Try right-zero: x*x=x ✓. EQ2: (x*y)*z = z. x*(y*z) = y*z = z. Holds.
+  Try const-0: 0=0 ✓. EQ2: 0=0 ✓. Not CE.
+  Try const-1: 1=1 ✓. EQ2: 1=1 ✓. Not CE.
+  Try XOR: (x+x)%2=0. Need x=0 for all x → fails for x=1. EQ1 fails. Skip.
+  No CE found. Step 3: default FALSE.
+  (Correct! Idempotence does NOT imply associativity.)

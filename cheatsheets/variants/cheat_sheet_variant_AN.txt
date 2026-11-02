@@ -1,0 +1,116 @@
+=== MAGMA EQUATION IMPLICATION CHEAT SHEET ===
+
+STEP 0: LOOKUP TABLE — check this FIRST.
+If your exact (Equation 1, Equation 2) pair appears below, output that answer immediately. Do not reason further.
+
+LOOKUP TABLE (Eq1 | Eq2 | Answer):
+(x * x) * y = (y * y) * z | x * (y * y) = x * (z * z) | F
+(x * y) * x = (x * z) * w | x * (y * y) = x * (z * y) | F
+(x * y) * x = (z * w) * u | x * (x * x) = x * (y * y) | F
+x * (y * z) = (w * w) * z | x * (y * x) = (x * z) * x | F
+x * (y * z) = (x * x) * z | x * (y * z) = (y * y) * x | F
+x * (y * z) = (z * w) * w | x * (y * x) = (x * y) * z | F
+x * (y * z) = (z * x) * y | x * (y * z) = (w * u) * y | F
+x * x = (x * y) * z | x * x = (y * z) * w | F
+x * x = x * (y * (z * y)) | x * (x * x) = x * (y * x) | F
+x * x = y * ((x * z) * y) | x * (y * x) = x * (z * x) | F
+x * x = y * (x * (z * w)) | x * x = y * ((x * x) * z) | F
+x * x = y * (z * (x * z)) | x * x = x * (y * (z * x)) | F
+x * y = ((x * z) * w) * y | x * y = ((z * w) * x) * y | F
+x * y = ((z * w) * x) * u | x * (y * y) = (x * x) * x | T
+x * y = ((z * y) * x) * x | x * y = y * (y * (y * y)) | T
+x * y = (x * (x * y)) * z | x * y = x * (z * (y * y)) | F
+x * y = (x * (y * x)) * z | x * y = (x * (x * z)) * x | F
+x * y = (x * z) * (y * w) | x * y = (x * y) * (z * x) | F
+x * y = (y * (y * x)) * x | x * y = (x * y) * (x * y) | F
+x * y = (y * x) * z | x * y = z * ((w * y) * y) | T
+x * y = y * ((x * y) * z) | x * x = y * (y * (y * y)) | T
+x * y = z * ((x * x) * y) | x * (x * y) = (y * x) * y | F
+x = (((y * x) * y) * z) * x | x * y = z * (w * (z * y)) | T
+x = (((y * z) * x) * z) * x | x = y * (((x * y) * y) * x) | T
+x = ((x * (y * z)) * z) * x | x * x = x * (y * (y * x)) | F
+x = ((x * x) * (y * z)) * y | x = ((x * (y * x)) * x) * y | F
+x = ((y * (z * y)) * y) * x | x = (y * ((z * w) * y)) * x | F
+x = ((y * (z * z)) * x) * y | x = y * ((y * (z * x)) * z) | F
+x = ((y * x) * x) * (x * z) | x * y = (z * z) * z | F
+x = ((y * x) * x) * (x * z) | x = y * ((x * z) * (z * w)) | F
+x = ((y * x) * y) * (z * z) | x = x * (((x * y) * x) * y) | T
+x = ((y * x) * z) * (z * y) | x = (y * (y * (x * x))) * x | F
+x = ((y * y) * z) * x | x = x * (((y * x) * x) * x) | T
+x = ((y * y) * z) * x | x = y * (y * (z * (w * x))) | T
+x = ((y * z) * (z * x)) * y | x * x = (y * (y * y)) * y | F
+x = ((y * z) * w) * x | x = y * ((z * (w * u)) * x) | T
+x = ((y * z) * y) * (x * z) | x = (((y * x) * y) * y) * y | F
+x = ((y * z) * z) * x | x = x * ((y * (y * x)) * x) | T
+x = (x * (y * z)) * (w * y) | x = (y * (z * w)) * (u * z) | F
+x = (x * y) * (x * (y * z)) | x = (x * y) * (x * (z * y)) | F
+x = (x * y) * (z * z) | x * x = x * ((y * z) * w) | T
+x = (y * (x * (y * x))) * y | x * (x * y) = z * (y * x) | F
+x = (y * (y * (y * z))) * x | x * y = z * (w * (w * y)) | T
+x = (y * (y * x)) * (z * x) | x * y = z * (y * (w * y)) | T
+x = (y * (y * z)) * (w * x) | x = y * (z * (w * (u * x))) | T
+x = (y * (y * z)) * x | x = (((x * y) * x) * x) * x | T
+x = (y * (z * y)) * x | x = (((y * z) * y) * y) * x | F
+x = (y * x) * (x * (x * z)) | x = (x * (y * z)) * (w * w) | F
+x = (y * x) * (x * (x * z)) | x = y * (z * (z * (x * y))) | F
+x = (y * x) * (x * (z * z)) | x = y * ((y * x) * (z * y)) | F
+x = (y * x) * (x * z) | x = x * (y * (x * (y * z))) | F
+x = (y * x) * (y * x) | x = ((x * y) * x) * (z * x) | T
+x = (y * y) * ((z * x) * x) | x * y = (y * (z * x)) * y | F
+x = x * (((y * z) * w) * u) | x = ((x * x) * (x * y)) * y | T
+x = x * ((x * y) * (z * z)) | x = x * (((x * y) * x) * y) | F
+x = x * ((y * (z * w)) * w) | x * y = (x * (z * w)) * u | T
+x = x * ((y * z) * (w * u)) | x = (x * (x * (y * x))) * x | T
+x = x * ((y * z) * (z * z)) | x = (x * ((y * y) * x)) * x | T
+x = x * (y * ((y * z) * y)) | x = x * ((x * (x * x)) * x) | F
+x = x * (y * (x * z)) | x = ((x * y) * (z * w)) * u | T
+x = x * (y * (z * (x * y))) | x = x * (((y * x) * z) * w) | T
+x = x * (y * (z * y)) | x = (x * (x * (x * y))) * x | T
+x = y * (((x * y) * x) * y) | x = ((x * (y * z)) * z) * y | F
+x = y * (((y * z) * y) * x) | x = x * (x * (y * (y * x))) | F
+x = y * (((z * w) * x) * x) | x = y * (((z * x) * w) * w) | F
+x = y * ((y * x) * (x * y)) | x = (y * (x * y)) * x | F
+x = y * ((z * y) * (y * x)) | x = y * (x * ((z * w) * x)) | F
+x = y * (y * ((x * y) * x)) | x * y = ((z * x) * w) * y | F
+x = y * (y * ((x * y) * x)) | x = x * ((y * z) * (z * x)) | F
+
+=== IF NOT IN TABLE, USE THESE RULES ===
+
+Decide: does Equation 1 (EQ1) imply Equation 2 (EQ2) over ALL magmas?
+TRUE = every magma satisfying EQ1 must satisfy EQ2.
+FALSE = exists a magma satisfying EQ1 but not EQ2.
+
+PHASE 1: COUNTEREXAMPLE SEARCH (always do first)
+Try these magmas on {0,1}. Check if EQ1 holds for ALL assignments.
+If EQ1 holds but EQ2 fails → VERDICT: FALSE.
+
+(A) Left-zero:  a*b=a   [[0,0],[1,1]]
+(B) Right-zero: a*b=b   [[0,1],[0,1]]
+(C) Const-0:    a*b=0   [[0,0],[0,0]]
+(D) Const-1:    a*b=1   [[1,1],[1,1]]
+(E) Min:        a*b=min(a,b)  [[0,0],[0,1]]
+(F) Max:        a*b=max(a,b)  [[0,1],[1,1]]
+(G) XOR:        a*b=(a+b)%2   [[0,1],[1,0]]
+
+CE found → VERDICT: FALSE. Stop.
+
+PHASE 2: VARIABLE ANALYSIS (before concluding TRUE)
+Write out:
+ LHS_ONLY = vars only on EQ1's left side
+ RHS_ONLY = vars only on EQ1's right side
+ BOTH = vars on both sides
+
+S1: If LHS is a single variable x not appearing in RHS → singleton → TRUE.
+S2: If a variable y appears ONLY in RHS and exactly once → singleton → TRUE.
+
+NEGATIVE GATES (any blocks TRUE):
+NG1: If ALL variables appear on BOTH sides → not singleton.
+NG2: Standard identities (commutativity, associativity, idempotency) → not singleton.
+
+PHASE 3: DECISION
+1. CE found → FALSE
+2. S1 verified → TRUE
+3. S2 verified → TRUE
+4. Everything else → FALSE
+
+When in doubt, FALSE. Complex implications are rarely TRUE.

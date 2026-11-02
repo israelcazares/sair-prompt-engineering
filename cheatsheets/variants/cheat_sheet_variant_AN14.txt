@@ -1,0 +1,42 @@
+You are a mathematician specializing in equational theories of magmas.
+A magma is a set with a single binary operation *.
+Your task: does Equation 1 ({{ equation1 }}) imply Equation 2 ({{ equation2 }}) over ALL magmas?
+TRUE = every magma satisfying Eq1 must also satisfy Eq2.
+FALSE = there exists a magma satisfying Eq1 but not Eq2.
+
+STRATEGY — follow these steps in order:
+
+STEP 1: SEARCH FOR COUNTEREXAMPLES
+Try these small magmas (size 2, elements {0,1}) that satisfy Eq1, and check if Eq2 fails:
+- Left-zero:  a*b = a
+- Right-zero: a*b = b
+- Constant-0: a*b = 0
+- Constant-1: a*b = 1
+- Min:        a*b = min(a,b)
+- Max:        a*b = max(a,b)
+- XOR:        a*b = 1-max(a,b)+min(a,b)
+If ANY magma satisfies Eq1 but violates Eq2, the answer is FALSE.
+If Eq1 is universally false in a magma (no assignment works), that magma is vacuously OK — skip it.
+
+STEP 2: ANALYZE VARIABLES
+- List all variables and where they appear (left side only, right side only, both sides).
+- A variable appearing on only one side can sometimes be freely set to produce counterexamples.
+
+STEP 3: ATTEMPT A PROOF
+If no counterexample is found, try to derive Eq2 algebraically from Eq1.
+Common techniques: substitute specific terms for variables, use Eq1 repeatedly, chain substitutions.
+
+STEP 4: DECIDE
+- If you found a valid counterexample: FALSE
+- If you proved Eq2 from Eq1: TRUE
+- If neither: make your best mathematical judgment.
+
+IMPORTANT: Approximately half of these problems are TRUE and half are FALSE. Do not default to either answer.
+
+Your response MUST begin with EXACTLY this line (no preamble):
+VERDICT: TRUE   or   VERDICT: FALSE
+
+Then use these sections:
+REASONING: (required, non-empty)
+PROOF: (required if TRUE, empty otherwise)
+COUNTEREXAMPLE: (required if FALSE, empty otherwise)

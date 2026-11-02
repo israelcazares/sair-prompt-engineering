@@ -1,0 +1,4 @@
+Approximately half of these problems are TRUE and half are FALSE.
+Many equations that look complex actually force the magma to have only 1 element, making the implication trivially TRUE.
+To disprove an implication, try a linear magma x*y = a*x + b*y over a small finite set like {0,1} or {0,1,2}. Choose constants a,b that satisfy Equation 1, then check if Equation 2 fails.
+Before concluding FALSE, verify your counterexample satisfies Equation 1 for ALL variable assignments.

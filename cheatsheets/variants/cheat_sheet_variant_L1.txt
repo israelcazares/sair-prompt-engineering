@@ -1,0 +1,90 @@
+=== MAGMA EQUATION IMPLICATION CHEAT SHEET ===
+
+You must decide: does Equation 1 (EQ1) imply Equation 2 (EQ2) over ALL magmas?
+TRUE = every magma satisfying EQ1 must satisfy EQ2.
+FALSE = there exists a magma satisfying EQ1 but not EQ2.
+
+IMPORTANT: About 50% of these problems have answer TRUE. Do NOT default to FALSE.
+Many equations force singleton magmas, making the implication trivially true.
+
+============================
+PHASE 1: SINGLETON CHECK (do this FIRST — many problems are TRUE)
+============================
+A "singleton magma" has only one element. Every equation holds in a singleton.
+If EQ1 forces the magma to be a singleton, then EQ1 implies EVERY EQ2 → TRUE.
+
+EQ1 forces singleton if ANY of these apply:
+
+RULE S1: EQ1 has form "x = [something]" and x does NOT appear anywhere in 
+the right-hand side.
+  Example: "x = y*(z*w)" → x is not in RHS "y*(z*w)" → singleton → TRUE
+  Example: "x = (y*y)*(z*(z*z))" → x not in RHS → TRUE
+  Example: "x = y*(z*((w*u)*u))" → x not in RHS → TRUE
+  NON-example: "x = (y*x)*z" → x IS in RHS → S1 fails
+
+RULE S2: A variable appears ONLY on one side of EQ1, exactly once.
+  Example: "x*y = x*z" → z only on RHS, once → singleton → TRUE
+  Example: "x*y = y*z" → z only on RHS (once), also x only on LHS → TRUE
+  Example: "(x*y)*x = (z*w)*u" → z,w,u only on RHS → TRUE
+  NON-example: "x*y = y*x" → all vars on both sides → S2 fails
+
+RULE S3: LHS and RHS variables are completely disjoint (no overlap).
+  Example: "x*y = z*w" → {x,y} vs {z,w}, no overlap → singleton → TRUE
+
+HOW TO CHECK:
+1. List variables on LHS of EQ1
+2. List variables on RHS of EQ1
+3. If any variable appears ONLY on one side → likely TRUE (verify S1 or S2)
+4. If ALL variables appear on BOTH sides → proceed to Phase 2
+
+If S1, S2, or S3 applies → VERDICT: TRUE. Provide singleton proof.
+
+============================
+PHASE 2: COUNTEREXAMPLE SEARCH (if no singleton found)
+============================
+Try these magma tables on {0,1}. For each: check EQ1 holds for ALL 
+assignments. If EQ1 holds, check EQ2 on all assignments. 
+If EQ1 holds but EQ2 fails → VERDICT: FALSE.
+
+(A) Left-zero:  a*b=a   [[0,0],[1,1]]
+(B) Right-zero: a*b=b   [[0,1],[0,1]]
+(C) Const-0:    a*b=0   [[0,0],[0,0]]
+(D) Const-1:    a*b=1   [[1,1],[1,1]]
+(E) Min:        a*b=min(a,b)  [[0,0],[0,1]]
+(F) Max:        a*b=max(a,b)  [[0,1],[1,1]]
+(G) XOR:        a*b=(a+b)%2   [[0,1],[1,0]]
+
+If counterexample found → VERDICT: FALSE.
+
+============================
+PHASE 3: DECISION
+============================
+1. Singleton found (S1/S2/S3) → TRUE
+2. Counterexample found → FALSE  
+3. No singleton AND no counterexample → FALSE
+
+============================
+EXAMPLES
+============================
+TRUE:  "x*y = x*z" ⊢ "x = y*x"
+  z appears only on RHS, once → S2 → singleton → TRUE
+
+TRUE:  "x = y*(z*((w*u)*u))" ⊢ anything
+  x not in RHS → S1 → singleton → TRUE
+
+TRUE:  "x = (y*y)*((y*z)*z)" ⊢ anything
+  x not in RHS → S1 → TRUE
+
+TRUE:  "(x*y)*x = (z*w)*u" ⊢ anything
+  z,w,u only on RHS → S2 → TRUE
+
+TRUE:  "x*y = (z*z)*(w*x)" ⊢ anything
+  z,w only on RHS, each once → S2 → TRUE
+
+FALSE: "x*y = y*x" ⊢ "x = x*x"
+  All vars on both sides → no singleton. 
+  CE: right-zero [[0,1],[0,1]]: comm holds, idem fails → FALSE
+
+FALSE: "x*x = x" ⊢ "(x*y)*z = x*(y*z)"  
+  All vars on both sides → no singleton.
+  CE: non-assoc idempotent magma → FALSE

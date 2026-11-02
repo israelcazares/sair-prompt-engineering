@@ -1,0 +1,25 @@
+Determine whether Equation 1 implies Equation 2 in all magmas.
+
+Equation 1: {{ equation1 }}
+Equation 2: {{ equation2 }}
+
+About half are TRUE and half are FALSE.
+
+VERDICT: TRUE or FALSE
+REASONING:
+PROOF:
+COUNTEREXAMPLE:
+
+STEP 1 — TRIVIAL MAGMA (check first):
+If Eq1 has a variable that appears only on one side of the "=", the structure forces a 1-element magma where every equation holds automatically → TRUE.
+
+STEP 2 — CE SEARCH (only if step 1 did not apply):
+H: a*b=(b+1)%3  [[1,2,0],[1,2,0],[1,2,0]]
+I: a*b=(a+1)%3  [[1,1,1],[2,2,2],[0,0,0]]
+J: a*b=b,2*0=1  [[0,1,2],[0,1,2],[1,0,2]]
+K: band         [[0,0,0],[1,1,0],[2,0,2]]
+N: mirror       [[0,2,0],[1,1,1],[2,0,2]]
+For each: verify Eq1 holds for ALL variable assignments. If Eq1 holds and Eq2 fails for any assignment → STOP → VERDICT: FALSE. A verified counterexample is definitive — do not override it with a proof attempt.
+
+STEP 3 — DECIDE:
+CE found → FALSE. Trivial magma confirmed → TRUE. Otherwise → TRUE.

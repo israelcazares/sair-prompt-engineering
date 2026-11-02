@@ -1,0 +1,4 @@
+Approximately half of these problems are TRUE and half are FALSE.
+Key insight: Most FALSE cases can be disproved by a 2-element magma {0,1} using one of: x*y=0, x*y=x, x*y=y, x*y=1, x*y=min(x,y), x*y=max(x,y).
+Key insight: Most TRUE cases hold because Equation 1 forces the magma to collapse to 1 element, making any equation trivially true.
+Test counterexamples systematically before deciding.

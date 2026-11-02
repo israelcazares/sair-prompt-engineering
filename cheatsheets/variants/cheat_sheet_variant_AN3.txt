@@ -1,0 +1,136 @@
+=== MAGMA EQUATION IMPLICATION CHEAT SHEET ===
+
+TASK: Does Equation 1 (EQ1) imply Equation 2 (EQ2) over ALL magmas?
+TRUE = every magma satisfying EQ1 must satisfy EQ2.
+FALSE = there EXISTS a magma satisfying EQ1 but NOT EQ2.
+
+CRITICAL FACT: Most implications between different equations are FALSE.
+FALSE only needs ONE counterexample. TRUE needs proof for ALL magmas.
+Your DEFAULT assumption should be FALSE unless you have ironclad proof.
+
+============================
+PHASE 1: COUNTEREXAMPLE SEARCH (always do first)
+============================
+Test these magma tables on {0,1}. For each: check if EQ1 holds for ALL
+assignments. If EQ1 holds, check EQ2 for ALL assignments.
+If EQ1 holds but EQ2 fails → VERDICT: FALSE. Stop immediately.
+
+(A) Left-zero:  a*b=a   [[0,0],[1,1]]
+(B) Right-zero: a*b=b   [[0,1],[0,1]]
+(C) Const-0:    a*b=0   [[0,0],[0,0]]
+(D) Const-1:    a*b=1   [[1,1],[1,1]]
+(E) Min:        a*b=min  [[0,0],[0,1]]
+(F) Max:        a*b=max  [[0,1],[1,1]]
+(G) XOR:        a*b=(a+b)%2  [[0,1],[1,0]]
+
+CE found → VERDICT: FALSE. Stop here.
+
+============================
+PHASE 2: ADVERSARIAL CONSTRUCTION (try to break it)
+============================
+If Phase 1 found no CE, do NOT skip to TRUE. Actively try to break
+the implication with adversarial reasoning:
+
+Step A: What does EQ1 REQUIRE of the operation *?
+  - Does it force idempotence (x*x = x)?
+  - Does it force a left/right identity or zero?
+  - What structure does it impose?
+
+Step B: Can a non-trivial magma (size ≥ 2) satisfy EQ1?
+  - If EQ1 is very constraining, maybe only singleton works → TRUE
+  - If EQ1 allows a non-trivial magma, check if that magma violates EQ2
+
+Step C: Try constructing a specific counterexample:
+  - Think: what operation * satisfies EQ1's constraints?
+  - Does that * also satisfy EQ2? If NOT → FALSE.
+  - Consider operations where x*x behaves one way but x*y (x≠y) another.
+
+Any CE found → VERDICT: FALSE. Stop.
+
+============================
+PHASE 3: NEGATIVE GATES (FALSE signals — check before any TRUE claim)
+============================
+These patterns strongly indicate the equation does NOT force singleton.
+If ANY gate fires, do NOT conclude TRUE from singleton/free-variable logic.
+
+NG1: Variable x appears ≥2 times on the RIGHT side of EQ1
+  → Self-referential structure → non-trivial magmas likely exist
+  → DO NOT apply any singleton rule. Lean FALSE.
+  Examples:
+    x = (y * x) * (x * z)     ← x appears twice in RHS
+    x = x * ((x * y) * (z * z)) ← x appears twice in RHS
+
+NG2: Every variable in EQ1 appears on BOTH sides of the equation
+  → No free variables → no collapse mechanism → NOT singleton
+  → VERDICT: FALSE
+  Example: x * y = (y * x) * y  ← x, y both appear on both sides
+
+If ANY NG gate fires → do NOT conclude TRUE from variable analysis.
+
+============================
+PHASE 4: SINGLETON TEST (extremely strict — last resort for TRUE)
+============================
+The main way the answer is TRUE: EQ1 forces |M| = 1 (all elements equal).
+
+Apply ONLY if no NG gate fired in Phase 3:
+
+T1: LHS is a single variable x, and x does NOT appear anywhere in RHS.
+  → x = fixed constant → all elements equal → singleton → TRUE.
+  VERIFY: scan RHS character by character. x must be COMPLETELY ABSENT.
+
+T2: vars(LHS) ∩ vars(RHS) = ∅ (completely disjoint variable sets).
+  → Both sides must independently equal a constant → singleton → TRUE.
+
+T3: LHS is a single variable x, x appears in RHS, and there exists a
+  variable y that appears ONLY on the right side of EQ1, appearing
+  exactly once in the FULL equation.
+  → y is a free variable, meaning the expression containing y must
+  produce the same result for ALL values of y → forces collapse.
+  CAUTION: This rule is UNRELIABLE for complex equations. If the
+  equation has deep nesting or x appears multiple times, this rule
+  may give false positives. When uncertain, choose FALSE.
+  VERIFY: Count EVERY occurrence of y in the full equation. It must
+  appear exactly once total. And LHS must be a single variable.
+
+If NONE of T1/T2/T3 clearly applies → VERDICT: FALSE.
+
+============================
+PHASE 5: FINAL DECISION
+============================
+Priority order:
+1. CE found in Phase 1 or 2 → FALSE
+2. NG gate fires (Phase 3) → FALSE
+3. T1 verified → TRUE
+4. T2 verified → TRUE
+5. T3 verified with high confidence (simple equation, no NG) → TRUE
+6. EVERYTHING ELSE → FALSE
+
+CALIBRATION REMINDER:
+- In complex/hard problems, roughly 65% are FALSE.
+- If your analysis is uncertain, FALSE is the correct statistical choice.
+- Only say TRUE when you have an AIRTIGHT singleton proof.
+- A "free variable" in a complex equation does NOT guarantee singleton.
+- When in doubt: FALSE, FALSE, FALSE.
+
+============================
+EXAMPLES
+============================
+TRUE: "x = ((y * y) * z) * x" has z appearing only once, only on RHS.
+  LHS=x (single var). No NG (x once in RHS). T3: z free → singleton → TRUE.
+
+TRUE: "x = x * ((y * z) * (w * u))" has y,z,w,u each once, only RHS.
+  LHS=x. No NG. T3: multiple free vars → singleton → TRUE.
+
+FALSE: "x = (y * x) * (x * z)" — NG1: x appears twice in RHS.
+  Even though z is free, NG1 fires → do NOT apply T3 → FALSE.
+
+FALSE: "x * y = (x * (y * x)) * z" — NG1: x appears twice in RHS.
+  LHS is x*y (not single variable). NG fires → FALSE.
+
+FALSE: "x * x = x * (y * (z * y))" — though z appears once in RHS,
+  LHS is x*x (NOT a single variable). Equation does not force singleton.
+  → FALSE.
+
+FALSE: "x * y = (y * x) * y" — all vars on both sides → NG2 → FALSE.
+
+Be concise. State verdict within first 500 tokens. Do not repeat the problem.

@@ -1,0 +1,4 @@
+Approximately half of these problems are TRUE and half are FALSE.
+Many equations that look complex actually force the magma to have only 1 element, making the implication trivially TRUE.
+However, many implications are FALSE because a simple 2-element magma {0,1} with operations like x*y=0 or x*y=x can satisfy Equation 1 but violate Equation 2.
+Before concluding TRUE, try these 2-element counterexamples. Before concluding FALSE, verify your counterexample satisfies Equation 1 for ALL variable assignments.
