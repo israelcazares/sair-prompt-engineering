@@ -119,3 +119,39 @@ Board names map as `Evaluation (Scored)` → `scored` and `Order-5 (Research)`
 → `research`; pairing uses identical `problem_id` strings within model/set.
 The original comparison algorithm, including its handling of low-discordance
 McNemar cells, is unchanged.
+
+## Submission EQT01-T00458 — prompt identity
+
+The submission label is **AN38 body with self-contained output template
+(2,242 bytes)**. The earlier README identification as AN45c is superseded
+by this provenance record. Local experiments named AN45c retain their
+experiment names and outcomes.
+
+Evidence:
+
+1. The user's pasted text from the official submission's Cheatsheet tab is
+   archived locally in `fase1/submission-check/submitted_cheatsheet.txt`.
+   `fase1/submission-check/report.md:3,15,28–55` records its origin, the
+   reported **“Size 2.19 KB”** on “My Submission”, and the comparison with the
+   AN38 body. These audit artifacts are not part of this release.
+2. `results/nov2026/T00458_cheatsheet.txt` has exactly 2,242 bytes and no final
+   newline. It equals the pasted copy after removing boundary newlines only
+   (the unnormalized copy is 2,244 bytes). It is also byte-identical to the
+   newly released `cheatsheets/variants/cheat_sheet_variant_AN38_playground.txt`.
+3. The released construction is lines 1–15 of
+   `cheatsheets/cheat_sheet_variant_AN45c.txt` (the common output template)
+   followed by the AN38 body, with no final newline. Its counterexample search
+   precedes singleton forcing. SHA-256:
+   `e21d0de3300e367a04f4c741c1c324064df33d28e7290ec98473df224fbdd1e8`.
+
+The page's rounded display does not establish an exact byte count. A raw
+download of the original uploaded file and whether the platform added any
+wrapper remain **NO VERIFICADO**; the 2,242-byte figure describes the released,
+locally evaluated reconstruction.
+
+`sair_matrix_extraction_v2.csv` has columns `submission_id`, `board`, `model`,
+`problem_set`, `problem_index`, `problem_id`, `result`, and `runs`; there is no
+variant column to relabel. No CSV cell was changed. Its SHA-256 remains
+`45617fc9c21166bbb15da72bb1254c5ccbfe4faf8b5eb632411b98b1b4f778e7`.
+Manuscript and earlier audit statements retain their historical wording;
+this section records the corrected submission identity for the data release.

@@ -10,44 +10,72 @@ This repository is the companion codebase for the paper:
 
 **"Less Is More: Cognitive Load and the Single-Prompt Ceiling in LLM Mathematical Reasoning"**
 
-The paper in this repo corresponds to **v15.2** (current arXiv / Zenodo version).
+The repository includes the v15.2 release and a v16 manuscript. This branch
+prepares the v16 data release; manuscript files are unchanged.
 Previous TeX sources are kept in `papers/archive/` for historical traceability only.
 
 ## Context
 
-This repo contains all prompt variants, evaluation pipelines, and results for the SAIR Foundation Mathematics Distillation Challenge: Equational Theories Stage 1 (April 2026, deadline April 20, 2026).
+This repo contains 76 prompt variants, evaluation pipelines, and released screening and full-scale results for the SAIR Foundation Mathematics Distillation Challenge: Equational Theories Stage 1 (April 2026, deadline April 20, 2026). The variant and result manifests document the available artifacts and their provenance.
 
 - **Task:** Given two magma equations Eq1 and Eq2, determine if Eq1 implies Eq2 over ALL magmas (TRUE/FALSE binary classification).
 - **Competition:** [SAIR Mathematics Distillation Challenge](https://competition.sair.foundation/competitions/mathematics-distillation-challenge-equational-theories-stage1/overview)
 - **Official judge repo:** [SAIRcompetition/equational-theories-stage1-judge](https://github.com/SAIRcompetition/equational-theories-stage1-judge)
 
-## Key Results
+## April local results
 
 | Variant                  | Dataset | n   | Accuracy | TRUE% | FALSE% |
 |-------------------------|---------|-----|----------|-------|--------|
-| AN45c (submitted)       | hard3   | 400 | 79.25%   | 95.9% | 63.4%  |
+| AN45c (local variant)   | hard3   | 400 | 79.25%   | 95.9% | 63.4%  |
 | AN38                    | hard3   | 400 | 71.8%    | 78.5% | 65.4%  |
 | AN19c                   | hard3   | 50  | 62.0%    | 91.7% | 34.6%  |
 | AN3c                    | hard1   | 69  | 78.3%    | 66.7% | 84.4%  |
 | Baseline (no cheatsheet)| hard3   | 400 | 59.75%   | 82.6% | 38.0%  |
 
-*Cross-provider validation:* AN45c achieved 95% (19/20) on OpenRouter/DeepInfra bf16 (official SAIR provider).
+*Cross-provider validation:* the archived local AN45c run on OpenRouter/DeepInfra records 95% (19/20), in `results/AN45c_openrouter_deepinfra_hard3_20_20260413.txt:13–33`.
+
+## Official submission EQT01-T00458
+
+**AN38 body with self-contained output template (2,242 bytes)**.
+The released reconstruction is
+[`results/nov2026/T00458_cheatsheet.txt`](results/nov2026/T00458_cheatsheet.txt),
+byte-identical to
+[`cheatsheets/variants/cheat_sheet_variant_AN38_playground.txt`](cheatsheets/variants/cheat_sheet_variant_AN38_playground.txt).
+Its local November evaluation is listed with the other 400-problem runs in
+[`results/README.md`](results/README.md).
+
+The evidence is the user's copy from the submission's Cheatsheet tab and the
+reported **“Size 2.19 KB”** on “My Submission”, recorded in
+`fase1/submission-check/report.md:3,15,28–55` (local audit, not included here).
+The exact byte count is verified on the released file; a byte-exact original
+download from the platform is **NO VERIFICADO**. The complete evidence chain
+and unchanged leaderboard dataset hash are documented in
+[`data/leaderboard/DATA_PROVENANCE.md`](data/leaderboard/DATA_PROVENANCE.md#submission-eqt01-t00458--prompt-identity).
 
 ## Files Description
 
-- `cheatsheets/cheat_sheet_variant_AN45c.txt` — submitted prompt (2,252 bytes)
-- `cheatsheets/cheat_sheet_variant_AN38.txt` — runner-up, best stable full-scale
+- `cheatsheets/cheat_sheet_variant_AN45c.txt` — local AN45c prompt (2,252 bytes)
+- `cheatsheets/cheat_sheet_variant_AN38.txt` — AN38 body (1,776 bytes)
 - `cheatsheets/cheat_sheet_variant_AN19c.txt` — best multi-model (289 bytes)
 - `cheatsheets/cheat_sheet_variant_AN3c.txt` — best on hard1 (FALSE-heavy distribution)
 
-These four files are exactly the prompts used in the gpt-oss runs reported in the paper (byte sizes match Table 1/2: AN45c 2,252; AN38 1,776; AN3c 4,306; AN19c 289). Playground wrappers used only in exploratory multi-model runs (Gemma, Llama) are not included in this curated repo.
+These four files are preserved at their original paths; their byte sizes match
+the corresponding base variants in the paper. The other 72 files, including
+playground versions, are in `cheatsheets/variants/`. Its `MANIFEST.csv` lists
+all 76 variants, SHA-256 hashes, source modification times, manuscript mentions,
+and associated released results. Historical prompt hashes are not stored in
+the result JSONs.
 
 - `scripts/eval_pipeline_together.py` — Together AI evaluation pipeline (used for all n=400 runs)
 - `scripts/eval_pipeline_openrouter.py` — OpenRouter pipeline (used for cross-provider validation)
 - `papers/paper-sair.tex` + `papers/references.bib` — paper source (v15.2 canonical)
 - `papers/paper-sair.pdf` — compiled PDF
 - `papers/archive/` — previous TeX versions (v13, v15) for historical traceability
-- `results/` — all evaluation JSON outputs
+- `results/README.md` — all released n=400 runs, dates, token-limit evidence and prompt construction
+- `results/screening/` — screening and auxiliary results with a manifest
+- `results/nov2026/` — three full-scale November runs, logs and T00458 reconstruction
+- `data/leaderboard/official_baseline_matrix.csv` — official Baseline per-problem matrix
+- `scripts/official_baseline_comparison.py` — paired comparison against EQT01-T00458
 
 ## Reproduction
 
