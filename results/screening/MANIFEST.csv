@@ -1,0 +1,36 @@
+file,variant,model,provider,split,n,correct,accuracy,inferred_max_tokens,problem_id_range,cited_in_paper
+AN10_hard3_50_gpt-oss-120b_20260401_084958.json,AN10,openai/gpt-oss-120b,together,hard3,50,32,0.64,4096,hard3_0001..hard3_0050,papers/paper-sair-v16.tex:523
+AN19c_gemma4_hard3_v2_gemma-4-31B-it_20260410_094517.json,AN19c,google/gemma-4-31B-it,together,hard3,20,11,0.55,512,hard3_0001..hard3_0020,papers/paper-sair-v16.tex:589;papers/paper-sair-v16.tex:867
+AN19c_gptoss_hard3_50_gpt-oss-120b_20260401_171431.json,AN19c,openai/gpt-oss-120b,together,hard3,50,31,0.62,4096,hard3_0001..hard3_0050,papers/paper-sair-v16.tex:524;papers/paper-sair-v16.tex:589;papers/paper-sair-v16.tex:867
+AN19c_hard3_50_gptoss_Llama-3.3-70B-Instruct-Turbo_20260401_160336.json,AN19c,meta-llama/Llama-3.3-70B-Instruct-Turbo,together,hard3,50,30,0.6,NO VERIFICADO,hard3_0001..hard3_0050,papers/paper-sair-v16.tex:589;papers/paper-sair-v16.tex:867
+AN19c_hard3_50_llama_Llama-3.3-70B-Instruct-Turbo_20260401_160152.json,AN19c,meta-llama/Llama-3.3-70B-Instruct-Turbo,together,hard3,50,30,0.6,NO VERIFICADO,hard3_0001..hard3_0050,papers/paper-sair-v16.tex:589;papers/paper-sair-v16.tex:867
+AN35_gptoss_hard3_gpt-oss-120b_20260403_010112.json,AN35,openai/gpt-oss-120b,together,hard3,50,39,0.78,4096,hard3_0001..hard3_0050,no
+AN35_gptoss_hard3_gpt-oss-120b_20260403_010402.json,AN35,openai/gpt-oss-120b,together,hard3,50,36,0.72,4096,hard3_0001..hard3_0050,papers/paper-sair-v16.tex:516
+AN35b_gptoss_hard3_gpt-oss-120b_20260403_081400.json,AN35b,openai/gpt-oss-120b,together,hard3,50,36,0.72,4096,hard3_0001..hard3_0050,papers/paper-sair-v16.tex:517
+AN36_gptoss_hard3_gpt-oss-120b_20260403_085122.json,AN36,openai/gpt-oss-120b,together,hard3,50,35,0.7,4096,hard3_0001..hard3_0050,papers/paper-sair-v16.tex:519
+AN38_gemma_hard3_gemma-4-31B-it_20260410_112917.json,AN38,google/gemma-4-31B-it,together,hard3,50,27,0.54,512,hard3_0001..hard3_0050,papers/paper-sair-v16.tex:588;papers/paper-sair-v16.tex:868
+AN38_gptoss_hard1_gpt-oss-120b_20260404_030144.json,AN38,openai/gpt-oss-120b,together,hard1,69,35,0.507246376812,4096,hard1_0001..hard1_0069,papers/paper-sair-v16.tex:634
+AN38_gptoss_hard2_full_gpt-oss-120b_20260404_112041.json,AN38,openai/gpt-oss-120b,together,hard2,200,103,0.515,4096,hard2_0001..hard2_0200,papers/paper-sair-v16.tex:635
+AN38_gptoss_hard3_gpt-oss-120b_20260403_150230.json,AN38,openai/gpt-oss-120b,together,hard3,50,37,0.74,4096,hard3_0001..hard3_0050,papers/paper-sair-v16.tex:514;papers/paper-sair-v16.tex:588;papers/paper-sair-v16.tex:868
+AN38_gptoss_normal_200_gpt-oss-120b_20260404_214756.json,AN38,openai/gpt-oss-120b,together,normal,200,184,0.92,4096,normal_0001..normal_0200,papers/paper-sair-v16.tex:637
+AN38_llama_hard3_Llama-3.3-70B-Instruct-Turbo_20260410_110742.json,AN38,meta-llama/Llama-3.3-70B-Instruct-Turbo,together,hard3,50,26,0.52,8192,hard3_0001..hard3_0050,papers/paper-sair-v16.tex:588;papers/paper-sair-v16.tex:868
+AN39_gptoss_hard3_gpt-oss-120b_20260403_225910.json,AN39,openai/gpt-oss-120b,together,hard3,50,35,0.7,4096,hard3_0001..hard3_0050,papers/paper-sair-v16.tex:520
+AN3c_agnostic_llama_Llama-3.3-70B-Instruct-Turbo_20260327_115737.json,AN3c_agnostic,meta-llama/Llama-3.3-70B-Instruct-Turbo,together,hard1,20,16,0.8,NO VERIFICADO,hard1_0001..hard1_0020,no
+AN3c_gptoss_hard1_gpt-oss-120b_20260403_183835.json,AN3c,openai/gpt-oss-120b,together,hard1,69,54,0.782608695652,4096,hard1_0001..hard1_0069,papers/paper-sair-v16.tex:536;papers/paper-sair-v16.tex:629
+AN3c_gptoss_hard2_gpt-oss-120b_20260403_182939.json,AN3c,openai/gpt-oss-120b,together,hard2,50,30,0.6,4096,hard2_0001..hard2_0050,papers/paper-sair-v16.tex:630
+AN3c_hard1_gpt-oss-120b_20260326_104934.json,AN3c,openai/gpt-oss-120b,together,hard1,69,54,0.782608695652,4096,hard1_0001..hard1_0069,papers/paper-sair-v16.tex:536;papers/paper-sair-v16.tex:629
+AN3c_hard3_50_gpt-oss-120b_20260401_084442.json,AN3c,openai/gpt-oss-120b,together,hard3,50,32,0.64,4096,hard3_0001..hard3_0050,papers/paper-sair-v16.tex:522;papers/paper-sair-v16.tex:631
+AN3c_llama_test_Llama-3.3-70B-Instruct-Turbo_20260327_110549.json,AN3c,meta-llama/Llama-3.3-70B-Instruct-Turbo,together,hard1,20,16,0.8,NO VERIFICADO,hard1_0001..hard1_0020,no
+AN3c_normal100_gpt-oss-120b_20260326_115150.json,AN3c,openai/gpt-oss-120b,together,normal,100,92,0.92,4096,normal_0001..normal_0100,papers/paper-sair-v16.tex:632
+AN40_gptoss_hard3_gpt-oss-120b_20260404_012238.json,AN40,openai/gpt-oss-120b,together,hard3,50,30,0.6,4096,hard3_0001..hard3_0050,papers/paper-sair-v16.tex:526
+AN41_gptoss_hard3_gpt-oss-120b_20260404_014836.json,AN41,openai/gpt-oss-120b,together,hard3,50,29,0.58,4096,hard3_0001..hard3_0050,papers/paper-sair-v16.tex:527
+AN42_gptoss_hard3_gpt-oss-120b_20260404_021124.json,AN42,openai/gpt-oss-120b,together,hard3,50,31,0.62,4096,hard3_0001..hard3_0050,papers/paper-sair-v16.tex:525
+AN43_gptoss_hard3_gpt-oss-120b_20260406_110112.json,AN43,openai/gpt-oss-120b,together,hard3,50,36,0.72,4096,hard3_0001..hard3_0050,papers/paper-sair-v16.tex:515
+AN45c_gemma_hard3_20_gemma-4-31B-it_20260410_125229.json,AN45c,google/gemma-4-31B-it,together,hard3,20,12,0.6,512,hard3_0001..hard3_0020,no
+AN45c_gemma_hard3_20_gemma-4-31b-it_20260410_161149.json,AN45c,google/gemma-4-31b-it,together,hard3,20,12,0.6,2048,hard3_0001..hard3_0020,no
+AN45c_gptoss_hard3_400_final_gpt-oss-120b_20260413_134539.json,AN45c,openai/gpt-oss-120b,together,hard3,400,224,0.56,8192,hard3_0001..hard3_0400,no
+AN45c_llama_hard3_20_Llama-3.3-70B-Instruct-Turbo_20260410_124447.json,AN45c,meta-llama/Llama-3.3-70B-Instruct-Turbo,together,hard3,20,11,0.55,NO VERIFICADO,hard3_0001..hard3_0020,papers/paper-sair-v16.tex:583;papers/paper-sair-v16.tex:585;papers/paper-sair-v16.tex:587;papers/paper-sair-v16.tex:869
+AN45c_llama_hard3_20_Llama-3.3-70B-Instruct-Turbo_20260410_124916.json,AN45c,meta-llama/Llama-3.3-70B-Instruct-Turbo,together,hard3,20,11,0.55,NO VERIFICADO,hard3_0001..hard3_0020,papers/paper-sair-v16.tex:583;papers/paper-sair-v16.tex:585;papers/paper-sair-v16.tex:587;papers/paper-sair-v16.tex:869
+AN5_hard3_50_gpt-oss-120b_20260401_075934.json,AN5,openai/gpt-oss-120b,together,hard3,50,27,0.54,4096,hard3_0001..hard3_0050,papers/paper-sair-v16.tex:528
+an45c_gptoss_hard3_20260413_115456.txt,AN45c,gpt-oss-120b,OpenRouter/DeepInfra,hard3,20,19,0.95,NO VERIFICADO,hard3_0001..hard3_0020,papers/paper-sair-v16.tex:511;papers/paper-sair-v16.tex:583;papers/paper-sair-v16.tex:587;papers/paper-sair-v16.tex:869
+baseline_hard3_50_llama_Llama-3.3-70B-Instruct-Turbo_20260401_154603.json,baseline,meta-llama/Llama-3.3-70B-Instruct-Turbo,together,hard3,50,26,0.52,NO VERIFICADO,hard3_0001..hard3_0050,papers/paper-sair-v16.tex:590;papers/paper-sair-v16.tex:870
