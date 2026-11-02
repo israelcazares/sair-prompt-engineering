@@ -1,7 +1,7 @@
 # AN45c — GPT-OSS-120B (DeepInfra) — hard3_20
 
 Comando ejecutado:
-cd /Users/manuelcazares/Downloads/sair/equational-theories-stage1-judge && \
+cd <local-judge-working-copy> && \
 	export OPENROUTER_API_KEY=$(grep OPENROUTER_API_KEY ../.env | cut -d'=' -f2 | tr -d '"' | tr -d "'") && \
 	python3 examples/run_smoke.py \
 		--prompt-file ../cheat_sheet_variant_AN45c.txt \
@@ -37,7 +37,7 @@ Output:
 # Comandos para Llama y Gemma (proveedor respectivo)
 
 ## Llama (Novita/AkashML/Parasail/Nebius...)
-cd /Users/manuelcazares/Downloads/sair/equational-theories-stage1-judge && \
+cd <local-judge-working-copy> && \
 	export OPENROUTER_API_KEY=$(grep OPENROUTER_API_KEY ../.env | cut -d'=' -f2 | tr -d '"' | tr -d "'") && \
 	python3 examples/run_smoke.py \
 		--prompt-file ../cheat_sheet_variant_AN45c.txt \
@@ -46,7 +46,7 @@ cd /Users/manuelcazares/Downloads/sair/equational-theories-stage1-judge && \
 		--models llama-3-3-70b-instruct 2>&1
 
 ## Gemma (Parasail/Novita/AkashML)
-cd /Users/manuelcazares/Downloads/sair/equational-theories-stage1-judge && \
+cd <local-judge-working-copy> && \
 	export OPENROUTER_API_KEY=$(grep OPENROUTER_API_KEY ../.env | cut -d'=' -f2 | tr -d '"' | tr -d "'") && \
 	python3 examples/run_smoke.py \
 		--prompt-file ../cheat_sheet_variant_AN45c.txt \

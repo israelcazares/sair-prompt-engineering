@@ -11,8 +11,7 @@
 | `SAIR-EQT1-EQT01-T00458-missing-normal-326.csv` | `21f1051989498ce565ef2d94da21752d6ed832e73157f4b98305b0234c4a9af1` | Recovered per-problem outcomes: 326 rows |
 
 The repository copy of `sair_matrix_extraction.csv` is byte-identical
-to the preserved original at
-`/Users/manuelcazares/Downloads/sair_matrix_extraction.csv` at the time
+to the preserved original in the author's local working copy at the time
 of reconstruction.
 
 ## Public Submission Identifiers
@@ -112,13 +111,14 @@ one decimal place:
 SHA-256:
 `9da46a6e9591ba2dc7eab33bfae12d5fb16568663a62ea76f10dd02e5a76a600`.
 
-`scripts/official_baseline_comparison.py` is copied from the earlier paired
-analysis with only its repository-root and baseline-input paths adjusted.
+`scripts/official_baseline_comparison.py` was initially copied from the earlier
+paired analysis with only its repository-root and baseline-input paths adjusted.
 It writes to stdout and reads this CSV plus `sair_matrix_extraction_v2.csv`.
 Board names map as `Evaluation (Scored)` → `scored` and `Order-5 (Research)`
 → `research`; pairing uses identical `problem_id` strings within model/set.
-The original comparison algorithm, including its handling of low-discordance
-McNemar cells, is unchanged.
+The released script additionally uses a two-sided exact binomial McNemar p
+when fewer than 25 problems are discordant, with p=1 when none are discordant.
+Other comparison calculations are unchanged.
 
 ## Submission EQT01-T00458 — prompt identity
 

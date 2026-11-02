@@ -1,10 +1,12 @@
 # Screening and auxiliary results
 
-`MANIFEST.csv` indexes 35 byte-preserved artifacts: the 25 result files retained
+`MANIFEST.csv` indexes 35 artifacts: the 25 result files retained
 by the private-repository audit and 10 additional JSON files covering repeated
 runs and the cross-dataset table. This includes runs with 20–50 problems and
 auxiliary runs with 69, 100, 200, or 400 problems. Files were scanned before
-copying; SHA-256 equality with each source was checked.
+copying; SHA-256 equality with each source was checked. The JSONs remain
+byte-preserved. The DeepInfra text log subsequently had three absolute local
+paths replaced by `<local-judge-working-copy>`; its result records are unchanged.
 
 ## Manifest conventions
 
