@@ -149,9 +149,15 @@ Evidence:
    precedes singleton forcing. SHA-256:
    `e21d0de3300e367a04f4c741c1c324064df33d28e7290ec98473df224fbdd1e8`.
 
-The exact size reported on My Submission agrees with the 2,242-byte released
-reconstruction. The original uploaded binary is unavailable; its byte-for-byte
-identity and whether the platform added any wrapper remain **NO VERIFICADO**.
+Verification dated **2026-11-02**: the author reports that the file downloaded
+using **Download Latest** on **My Submission** has SHA-256
+`e21d0de3300e367a04f4c741c1c324064df33d28e7290ec98473df224fbdd1e8`.
+This matches both `results/nov2026/T00458_cheatsheet.txt` and
+`cheatsheets/variants/cheat_sheet_variant_AN38_playground.txt`, verifying the
+downloaded submission's byte-for-byte identity with both released artifacts.
+Only the hash is recorded here; neither the downloaded file nor a screenshot
+is included in this update. Whether the platform adds a wrapper at evaluation
+time remains **NO VERIFICADO**.
 
 `sair_matrix_extraction_v2.csv` has columns `submission_id`, `board`, `model`,
 `problem_set`, `problem_index`, `problem_id`, `result`, and `runs`; there is no
