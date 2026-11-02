@@ -77,3 +77,45 @@ evaluation result was altered.
 - `EQT01-T00458` Gemma normal disagreement: 16.0%
 - Dataset SHA-256:
   `45617fc9c21166bbb15da72bb1254c5ccbfe4faf8b5eb632411b98b1b4f778e7`
+
+## Official Baseline matrix
+
+`official_baseline_matrix.csv` is a byte-identical copy of the baseline
+extraction archived as `fase1/official-baseline/sair_baseline_matrix.csv`.
+Extraction date: **2026-11-01**. Source: the official competition
+[leaderboard](https://competition.sair.foundation/competitions/mathematics-distillation-challenge-equational-theories-stage1/leaderboard),
+Baseline row, **Show Baseline → Details → Problem Matrix**, checked against
+the **Summary** view. This is the leaderboard Baseline row, not a reconstructed
+local no-cheatsheet run.
+
+The archived extraction note
+`fase1/official-baseline/SAIR — baseline y benchmark.md:3–46`
+documents the date, source, encoding and comparison with Summary.
+Those local audit notes and screenshots are not included in this release.
+Segment colors encode C (correct, green `rgb(60,160,80)`), I (incorrect, red
+`rgb(200,65,65)`), and U (unparsed, gray `rgb(135,135,145)`).
+Three segments are read top-to-bottom into `run1`, `run2`, `run3`.
+One solid block expands to three identical outcomes and has `single_block=1`;
+three segments have `single_block=0`.
+
+The CSV has 2,400 data rows: 200 problem IDs for each of 12 model × set cells,
+with three runs per problem. Accuracy is `C / 600`; U counts as not correct.
+All 12 recalculated accuracies reproduce the recorded Summary values at
+one decimal place:
+
+| Model | normal | hard | extra_hard | order5 |
+|---|---:|---:|---:|---:|
+| GPT-OSS 120B | 54.8% | 51.2% | 48.8% | 50.8% |
+| Gemma 4 31B IT | 65.2% | 55.7% | 50.0% | 74.0% |
+| Llama 3.3 70B Instruct | 50.0% | 50.0% | 49.8% | 50.0% |
+
+SHA-256:
+`9da46a6e9591ba2dc7eab33bfae12d5fb16568663a62ea76f10dd02e5a76a600`.
+
+`scripts/official_baseline_comparison.py` is copied from the earlier paired
+analysis with only its repository-root and baseline-input paths adjusted.
+It writes to stdout and reads this CSV plus `sair_matrix_extraction_v2.csv`.
+Board names map as `Evaluation (Scored)` → `scored` and `Order-5 (Research)`
+→ `research`; pairing uses identical `problem_id` strings within model/set.
+The original comparison algorithm, including its handling of low-discordance
+McNemar cells, is unchanged.

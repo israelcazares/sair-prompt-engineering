@@ -1,0 +1,2401 @@
+board,model,set,problem_id,run1,run2,run3,single_block
+Evaluation (Scored),Gemma 4 31B IT,normal,N_001,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_002,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_003,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_004,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_005,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_006,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_007,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_008,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_009,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_010,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_011,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_012,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_013,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_014,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_015,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_016,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_017,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_018,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_019,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_020,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_021,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_022,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_023,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_024,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_025,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_026,I,I,U,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_027,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_028,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_029,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_030,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_031,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_032,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_033,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_034,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_035,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_036,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_037,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_038,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_039,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_040,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_041,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_042,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_043,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_044,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_045,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_046,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_047,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_048,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_049,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_050,U,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_051,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_052,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_053,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_054,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_055,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_056,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_057,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_058,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_059,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_060,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_061,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_062,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_063,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_064,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_065,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_066,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_067,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_068,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_069,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_070,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_071,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_072,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_073,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_074,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_075,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_076,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_077,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_078,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_079,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_080,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_081,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_082,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_083,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_084,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_085,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_086,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_087,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_088,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_089,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_090,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_091,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_092,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_093,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_094,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_095,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_096,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_097,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_098,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_099,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_100,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_101,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_102,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_103,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_104,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_105,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_106,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_107,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_108,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_109,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_110,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_111,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_112,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_113,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_114,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_115,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_116,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_117,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_118,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_119,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_120,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_121,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_122,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_123,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_124,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_125,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_126,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_127,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_128,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_129,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_130,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_131,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_132,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_133,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_134,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_135,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_136,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_137,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_138,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_139,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_140,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_141,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_142,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_143,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_144,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_145,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_146,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_147,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_148,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_149,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_150,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_151,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_152,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_153,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_154,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_155,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_156,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_157,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_158,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_159,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_160,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_161,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_162,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_163,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_164,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_165,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_166,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_167,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_168,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_169,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_170,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_171,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_172,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_173,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_174,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_175,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_176,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_177,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_178,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_179,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_180,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_181,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_182,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_183,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_184,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_185,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_186,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,normal,N_187,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_188,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_189,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_190,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_191,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_192,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_193,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_194,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_195,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_196,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_197,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_198,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_199,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,normal,N_200,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_001,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_002,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_003,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_004,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_005,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_006,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_007,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_008,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_009,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_010,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_011,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_012,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_013,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_014,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_015,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_016,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_017,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_018,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_019,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_020,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_021,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_022,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_023,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_024,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_025,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_026,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_027,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_028,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_029,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_030,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_031,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_032,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_033,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_034,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_035,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_036,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_037,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_038,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_039,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_040,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_041,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_042,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_043,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_044,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_045,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_046,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_047,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_048,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_049,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_050,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_051,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_052,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_053,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_054,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_055,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_056,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_057,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_058,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_059,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_060,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_061,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_062,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_063,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_064,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_065,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_066,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_067,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_068,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_069,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_070,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_071,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_072,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_073,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_074,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_075,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_076,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_077,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_078,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_079,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_080,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_081,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_082,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_083,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_084,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_085,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_086,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_087,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_088,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_089,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_090,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_091,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_092,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_093,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_094,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_095,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_096,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_097,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_098,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_099,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_100,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_101,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_102,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_103,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_104,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_105,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_106,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_107,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_108,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_109,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_110,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_111,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_112,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_113,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_114,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_115,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_116,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_117,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_118,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_119,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_120,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_121,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_122,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_123,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_124,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_125,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_126,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_127,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_128,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_129,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_130,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_131,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_132,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_133,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_134,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_135,U,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_136,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_137,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_138,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_139,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_140,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_141,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_142,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_143,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_144,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_145,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_146,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_147,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_148,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_149,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_150,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_151,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_152,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_153,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_154,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_155,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_156,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_157,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_158,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_159,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_160,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_161,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_162,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_163,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_164,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_165,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_166,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_167,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_168,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_169,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_170,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_171,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_172,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_173,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_174,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_175,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_176,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_177,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_178,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_179,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_180,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_181,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_182,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_183,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_184,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_185,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_186,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_187,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_188,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_189,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_190,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_191,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_192,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_193,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_194,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_195,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_196,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_197,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_198,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,normal,N_199,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,normal,N_200,C,I,C,0
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_001,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_002,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_003,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_004,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_005,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_006,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_007,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_008,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_009,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_010,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_011,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_012,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_013,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_014,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_015,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_016,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_017,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_018,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_019,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_020,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_021,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_022,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_023,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_024,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_025,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_026,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_027,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_028,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_029,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_030,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_031,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_032,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_033,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_034,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_035,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_036,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_037,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_038,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_039,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_040,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_041,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_042,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_043,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_044,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_045,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_046,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_047,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_048,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_049,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_050,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_051,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_052,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_053,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_054,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_055,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_056,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_057,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_058,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_059,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_060,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_061,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_062,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_063,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_064,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_065,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_066,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_067,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_068,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_069,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_070,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_071,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_072,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_073,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_074,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_075,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_076,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_077,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_078,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_079,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_080,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_081,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_082,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_083,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_084,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_085,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_086,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_087,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_088,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_089,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_090,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_091,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_092,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_093,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_094,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_095,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_096,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_097,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_098,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_099,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_100,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_101,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_102,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_103,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_104,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_105,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_106,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_107,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_108,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_109,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_110,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_111,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_112,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_113,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_114,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_115,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_116,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_117,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_118,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_119,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_120,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_121,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_122,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_123,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_124,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_125,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_126,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_127,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_128,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_129,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_130,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_131,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_132,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_133,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_134,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_135,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_136,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_137,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_138,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_139,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_140,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_141,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_142,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_143,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_144,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_145,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_146,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_147,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_148,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_149,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_150,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_151,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_152,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_153,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_154,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_155,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_156,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_157,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_158,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_159,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_160,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_161,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_162,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_163,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_164,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_165,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_166,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_167,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_168,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_169,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_170,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_171,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_172,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_173,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_174,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_175,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_176,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_177,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_178,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_179,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_180,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_181,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_182,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_183,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_184,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_185,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_186,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_187,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_188,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_189,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_190,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_191,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_192,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_193,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_194,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_195,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_196,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_197,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_198,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_199,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,normal,N_200,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_001,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_002,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_003,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_004,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_005,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_006,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_007,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_008,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_009,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_010,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_011,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_012,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_013,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_014,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_015,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_016,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_017,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_018,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_019,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_020,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_021,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_022,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_023,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_024,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_025,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_026,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_027,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_028,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_029,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_030,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_031,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_032,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_033,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_034,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_035,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_036,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_037,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_038,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_039,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_040,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_041,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_042,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_043,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_044,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_045,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_046,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_047,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_048,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_049,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_050,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_051,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_052,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_053,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_054,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_055,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_056,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_057,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_058,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_059,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_060,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_061,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_062,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_063,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_064,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_065,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_066,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_067,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_068,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_069,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_070,U,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_071,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_072,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_073,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_074,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_075,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_076,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_077,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_078,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_079,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_080,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_081,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_082,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_083,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_084,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_085,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_086,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_087,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_088,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_089,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_090,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_091,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_092,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_093,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_094,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_095,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_096,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_097,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_098,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_099,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_100,C,C,U,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_101,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_102,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_103,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_104,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_105,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_106,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_107,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_108,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_109,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_110,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_111,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_112,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_113,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_114,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_115,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_116,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_117,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_118,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_119,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_120,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_121,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_122,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_123,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_124,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_125,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_126,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_127,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_128,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_129,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_130,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_131,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_132,U,U,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_133,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_134,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_135,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_136,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_137,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_138,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_139,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_140,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_141,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_142,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_143,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_144,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_145,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_146,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_147,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_148,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_149,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_150,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_151,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_152,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_153,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_154,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_155,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_156,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_157,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_158,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_159,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_160,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_161,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_162,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_163,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_164,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_165,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_166,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_167,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_168,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_169,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_170,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_171,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_172,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_173,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_174,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_175,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_176,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_177,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_178,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_179,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_180,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_181,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_182,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_183,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_184,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_185,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_186,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_187,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_188,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_189,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_190,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_191,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_192,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_193,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_194,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,hard,H_195,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_196,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_197,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_198,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_199,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,hard,H_200,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_001,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_002,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_003,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_004,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_005,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_006,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_007,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_008,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_009,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_010,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_011,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_012,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_013,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_014,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_015,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_016,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_017,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_018,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_019,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_020,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_021,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_022,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_023,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_024,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_025,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_026,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_027,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_028,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_029,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_030,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_031,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_032,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_033,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_034,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_035,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_036,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_037,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_038,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_039,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_040,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_041,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_042,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_043,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_044,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_045,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_046,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_047,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_048,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_049,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_050,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_051,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_052,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_053,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_054,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_055,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_056,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_057,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_058,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_059,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_060,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_061,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_062,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_063,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_064,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_065,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_066,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_067,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_068,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_069,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_070,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_071,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_072,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_073,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_074,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_075,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_076,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_077,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_078,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_079,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_080,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_081,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_082,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_083,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_084,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_085,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_086,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_087,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_088,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_089,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_090,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_091,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_092,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_093,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_094,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_095,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_096,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_097,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_098,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_099,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_100,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_101,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_102,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_103,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_104,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_105,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_106,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_107,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_108,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_109,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_110,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_111,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_112,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_113,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_114,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_115,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_116,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_117,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_118,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_119,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_120,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_121,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_122,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_123,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_124,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_125,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_126,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_127,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_128,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_129,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_130,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_131,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_132,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_133,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_134,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_135,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_136,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_137,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_138,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_139,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_140,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_141,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_142,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_143,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_144,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_145,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_146,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_147,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_148,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_149,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_150,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_151,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_152,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_153,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_154,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_155,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_156,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_157,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_158,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_159,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_160,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_161,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_162,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_163,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_164,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_165,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_166,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_167,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_168,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_169,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_170,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_171,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_172,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_173,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_174,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_175,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_176,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_177,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_178,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_179,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_180,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_181,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_182,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_183,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_184,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_185,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_186,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_187,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_188,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_189,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_190,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_191,I,I,U,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_192,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_193,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_194,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_195,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_196,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,hard,H_197,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_198,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_199,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,hard,H_200,C,C,I,0
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_001,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_002,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_003,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_004,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_005,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_006,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_007,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_008,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_009,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_010,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_011,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_012,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_013,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_014,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_015,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_016,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_017,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_018,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_019,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_020,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_021,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_022,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_023,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_024,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_025,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_026,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_027,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_028,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_029,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_030,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_031,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_032,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_033,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_034,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_035,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_036,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_037,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_038,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_039,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_040,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_041,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_042,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_043,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_044,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_045,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_046,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_047,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_048,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_049,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_050,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_051,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_052,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_053,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_054,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_055,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_056,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_057,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_058,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_059,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_060,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_061,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_062,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_063,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_064,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_065,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_066,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_067,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_068,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_069,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_070,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_071,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_072,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_073,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_074,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_075,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_076,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_077,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_078,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_079,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_080,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_081,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_082,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_083,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_084,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_085,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_086,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_087,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_088,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_089,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_090,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_091,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_092,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_093,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_094,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_095,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_096,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_097,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_098,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_099,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_100,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_101,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_102,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_103,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_104,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_105,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_106,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_107,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_108,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_109,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_110,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_111,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_112,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_113,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_114,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_115,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_116,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_117,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_118,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_119,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_120,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_121,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_122,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_123,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_124,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_125,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_126,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_127,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_128,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_129,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_130,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_131,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_132,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_133,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_134,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_135,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_136,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_137,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_138,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_139,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_140,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_141,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_142,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_143,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_144,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_145,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_146,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_147,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_148,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_149,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_150,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_151,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_152,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_153,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_154,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_155,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_156,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_157,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_158,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_159,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_160,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_161,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_162,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_163,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_164,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_165,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_166,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_167,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_168,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_169,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_170,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_171,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_172,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_173,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_174,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_175,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_176,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_177,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_178,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_179,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_180,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_181,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_182,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_183,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_184,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_185,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_186,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_187,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_188,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_189,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_190,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_191,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_192,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_193,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_194,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_195,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_196,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_197,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_198,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_199,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,hard,H_200,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_001,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_002,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_003,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_004,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_005,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_006,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_007,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_008,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_009,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_010,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_011,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_012,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_013,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_014,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_015,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_016,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_017,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_018,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_019,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_020,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_021,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_022,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_023,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_024,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_025,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_026,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_027,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_028,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_029,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_030,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_031,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_032,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_033,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_034,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_035,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_036,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_037,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_038,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_039,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_040,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_041,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_042,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_043,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_044,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_045,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_046,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_047,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_048,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_049,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_050,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_051,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_052,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_053,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_054,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_055,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_056,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_057,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_058,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_059,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_060,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_061,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_062,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_063,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_064,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_065,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_066,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_067,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_068,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_069,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_070,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_071,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_072,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_073,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_074,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_075,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_076,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_077,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_078,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_079,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_080,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_081,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_082,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_083,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_084,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_085,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_086,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_087,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_088,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_089,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_090,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_091,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_092,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_093,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_094,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_095,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_096,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_097,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_098,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_099,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_100,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_101,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_102,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_103,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_104,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_105,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_106,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_107,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_108,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_109,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_110,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_111,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_112,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_113,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_114,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_115,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_116,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_117,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_118,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_119,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_120,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_121,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_122,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_123,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_124,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_125,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_126,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_127,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_128,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_129,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_130,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_131,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_132,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_133,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_134,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_135,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_136,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_137,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_138,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_139,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_140,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_141,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_142,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_143,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_144,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_145,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_146,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_147,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_148,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_149,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_150,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_151,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_152,C,U,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_153,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_154,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_155,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_156,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_157,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_158,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_159,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_160,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_161,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_162,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_163,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_164,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_165,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_166,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_167,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_168,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_169,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_170,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_171,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_172,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_173,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_174,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_175,C,I,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_176,I,C,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_177,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_178,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_179,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_180,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_181,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_182,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_183,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_184,C,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_185,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_186,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_187,C,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_188,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_189,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_190,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_191,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_192,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_193,I,I,I,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_194,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_195,I,C,I,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_196,I,I,C,0
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_197,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_198,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_199,C,C,C,1
+Evaluation (Scored),Gemma 4 31B IT,extra_hard,EH_200,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_001,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_002,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_003,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_004,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_005,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_006,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_007,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_008,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_009,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_010,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_011,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_012,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_013,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_014,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_015,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_016,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_017,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_018,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_019,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_020,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_021,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_022,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_023,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_024,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_025,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_026,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_027,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_028,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_029,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_030,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_031,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_032,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_033,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_034,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_035,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_036,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_037,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_038,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_039,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_040,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_041,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_042,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_043,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_044,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_045,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_046,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_047,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_048,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_049,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_050,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_051,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_052,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_053,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_054,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_055,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_056,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_057,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_058,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_059,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_060,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_061,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_062,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_063,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_064,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_065,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_066,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_067,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_068,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_069,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_070,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_071,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_072,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_073,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_074,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_075,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_076,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_077,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_078,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_079,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_080,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_081,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_082,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_083,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_084,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_085,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_086,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_087,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_088,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_089,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_090,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_091,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_092,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_093,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_094,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_095,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_096,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_097,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_098,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_099,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_100,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_101,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_102,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_103,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_104,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_105,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_106,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_107,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_108,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_109,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_110,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_111,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_112,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_113,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_114,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_115,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_116,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_117,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_118,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_119,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_120,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_121,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_122,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_123,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_124,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_125,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_126,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_127,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_128,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_129,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_130,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_131,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_132,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_133,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_134,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_135,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_136,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_137,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_138,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_139,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_140,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_141,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_142,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_143,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_144,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_145,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_146,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_147,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_148,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_149,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_150,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_151,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_152,I,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_153,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_154,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_155,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_156,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_157,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_158,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_159,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_160,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_161,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_162,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_163,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_164,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_165,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_166,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_167,I,C,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_168,C,C,C,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_169,C,I,C,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_170,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_171,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_172,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_173,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_174,I,C,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_175,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_176,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_177,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_178,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_179,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_180,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_181,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_182,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_183,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_184,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_185,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_186,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_187,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_188,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_189,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_190,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_191,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_192,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_193,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_194,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_195,C,C,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_196,C,I,I,0
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_197,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_198,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_199,I,I,I,1
+Evaluation (Scored),GPT-OSS 120B,extra_hard,EH_200,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_001,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_002,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_003,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_004,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_005,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_006,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_007,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_008,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_009,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_010,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_011,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_012,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_013,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_014,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_015,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_016,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_017,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_018,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_019,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_020,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_021,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_022,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_023,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_024,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_025,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_026,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_027,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_028,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_029,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_030,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_031,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_032,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_033,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_034,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_035,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_036,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_037,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_038,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_039,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_040,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_041,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_042,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_043,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_044,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_045,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_046,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_047,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_048,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_049,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_050,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_051,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_052,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_053,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_054,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_055,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_056,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_057,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_058,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_059,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_060,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_061,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_062,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_063,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_064,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_065,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_066,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_067,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_068,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_069,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_070,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_071,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_072,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_073,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_074,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_075,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_076,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_077,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_078,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_079,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_080,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_081,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_082,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_083,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_084,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_085,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_086,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_087,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_088,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_089,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_090,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_091,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_092,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_093,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_094,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_095,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_096,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_097,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_098,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_099,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_100,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_101,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_102,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_103,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_104,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_105,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_106,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_107,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_108,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_109,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_110,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_111,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_112,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_113,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_114,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_115,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_116,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_117,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_118,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_119,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_120,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_121,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_122,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_123,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_124,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_125,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_126,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_127,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_128,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_129,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_130,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_131,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_132,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_133,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_134,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_135,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_136,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_137,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_138,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_139,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_140,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_141,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_142,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_143,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_144,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_145,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_146,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_147,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_148,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_149,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_150,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_151,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_152,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_153,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_154,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_155,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_156,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_157,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_158,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_159,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_160,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_161,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_162,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_163,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_164,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_165,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_166,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_167,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_168,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_169,I,I,I,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_170,C,I,C,0
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_171,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_172,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_173,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_174,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_175,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_176,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_177,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_178,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_179,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_180,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_181,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_182,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_183,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_184,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_185,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_186,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_187,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_188,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_189,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_190,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_191,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_192,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_193,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_194,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_195,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_196,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_197,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_198,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_199,C,C,C,1
+Evaluation (Scored),Llama 3.3 70B Instruct,extra_hard,EH_200,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_001,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_002,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_003,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_004,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_005,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_006,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_007,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_008,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_009,C,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_010,I,C,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_011,C,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_012,C,C,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_013,I,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_014,I,C,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_015,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_016,C,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_017,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_018,I,C,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_019,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_020,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_021,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_022,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_023,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_024,C,C,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_025,I,C,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_026,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_027,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_028,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_029,I,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_030,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_031,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_032,C,I,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_033,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_034,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_035,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_036,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_037,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_038,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_039,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_040,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_041,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_042,I,C,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_043,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_044,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_045,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_046,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_047,I,C,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_048,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_049,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_050,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_051,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_052,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_053,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_054,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_055,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_056,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_057,C,C,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_058,I,C,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_059,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_060,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_061,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_062,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_063,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_064,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_065,I,C,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_066,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_067,I,C,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_068,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_069,I,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_070,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_071,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_072,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_073,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_074,I,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_075,C,C,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_076,C,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_077,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_078,I,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_079,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_080,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_081,I,C,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_082,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_083,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_084,I,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_085,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_086,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_087,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_088,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_089,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_090,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_091,C,C,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_092,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_093,C,C,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_094,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_095,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_096,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_097,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_098,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_099,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_100,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_101,I,C,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_102,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_103,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_104,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_105,C,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_106,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_107,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_108,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_109,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_110,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_111,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_112,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_113,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_114,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_115,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_116,C,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_117,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_118,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_119,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_120,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_121,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_122,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_123,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_124,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_125,C,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_126,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_127,C,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_128,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_129,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_130,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_131,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_132,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_133,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_134,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_135,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_136,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_137,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_138,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_139,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_140,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_141,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_142,I,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_143,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_144,C,I,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_145,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_146,I,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_147,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_148,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_149,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_150,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_151,I,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_152,I,C,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_153,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_154,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_155,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_156,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_157,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_158,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_159,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_160,C,C,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_161,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_162,I,C,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_163,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_164,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_165,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_166,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_167,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_168,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_169,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_170,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_171,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_172,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_173,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_174,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_175,C,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_176,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_177,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_178,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_179,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_180,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_181,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_182,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_183,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_184,I,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_185,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_186,C,C,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_187,I,C,I,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_188,C,I,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_189,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_190,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_191,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_192,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_193,I,C,C,0
+Order-5 (Research),Gemma 4 31B IT,order5,O5_194,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_195,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_196,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_197,I,I,I,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_198,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_199,C,C,C,1
+Order-5 (Research),Gemma 4 31B IT,order5,O5_200,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_001,I,C,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_002,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_003,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_004,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_005,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_006,I,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_007,I,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_008,C,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_009,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_010,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_011,I,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_012,C,I,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_013,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_014,I,C,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_015,I,I,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_016,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_017,C,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_018,I,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_019,C,I,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_020,C,I,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_021,C,I,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_022,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_023,I,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_024,C,I,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_025,I,I,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_026,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_027,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_028,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_029,C,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_030,C,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_031,C,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_032,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_033,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_034,C,I,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_035,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_036,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_037,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_038,C,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_039,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_040,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_041,I,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_042,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_043,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_044,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_045,C,I,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_046,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_047,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_048,C,I,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_049,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_050,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_051,C,I,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_052,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_053,I,C,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_054,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_055,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_056,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_057,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_058,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_059,I,C,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_060,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_061,I,I,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_062,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_063,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_064,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_065,C,I,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_066,I,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_067,I,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_068,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_069,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_070,C,I,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_071,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_072,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_073,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_074,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_075,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_076,C,I,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_077,I,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_078,C,I,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_079,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_080,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_081,C,I,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_082,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_083,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_084,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_085,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_086,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_087,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_088,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_089,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_090,C,I,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_091,I,C,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_092,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_093,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_094,C,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_095,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_096,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_097,I,I,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_098,I,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_099,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_100,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_101,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_102,C,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_103,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_104,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_105,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_106,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_107,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_108,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_109,I,C,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_110,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_111,I,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_112,I,I,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_113,I,I,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_114,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_115,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_116,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_117,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_118,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_119,C,I,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_120,C,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_121,I,I,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_122,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_123,I,C,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_124,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_125,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_126,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_127,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_128,I,C,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_129,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_130,C,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_131,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_132,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_133,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_134,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_135,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_136,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_137,I,C,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_138,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_139,I,C,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_140,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_141,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_142,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_143,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_144,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_145,I,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_146,C,I,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_147,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_148,C,I,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_149,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_150,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_151,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_152,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_153,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_154,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_155,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_156,C,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_157,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_158,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_159,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_160,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_161,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_162,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_163,I,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_164,I,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_165,C,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_166,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_167,I,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_168,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_169,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_170,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_171,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_172,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_173,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_174,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_175,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_176,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_177,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_178,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_179,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_180,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_181,C,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_182,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_183,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_184,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_185,C,I,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_186,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_187,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_188,I,C,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_189,C,I,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_190,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_191,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_192,I,I,C,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_193,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_194,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_195,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_196,I,I,I,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_197,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_198,C,C,I,0
+Order-5 (Research),GPT-OSS 120B,order5,O5_199,C,C,C,1
+Order-5 (Research),GPT-OSS 120B,order5,O5_200,C,I,I,0
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_001,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_002,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_003,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_004,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_005,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_006,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_007,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_008,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_009,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_010,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_011,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_012,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_013,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_014,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_015,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_016,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_017,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_018,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_019,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_020,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_021,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_022,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_023,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_024,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_025,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_026,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_027,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_028,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_029,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_030,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_031,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_032,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_033,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_034,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_035,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_036,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_037,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_038,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_039,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_040,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_041,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_042,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_043,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_044,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_045,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_046,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_047,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_048,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_049,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_050,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_051,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_052,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_053,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_054,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_055,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_056,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_057,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_058,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_059,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_060,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_061,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_062,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_063,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_064,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_065,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_066,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_067,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_068,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_069,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_070,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_071,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_072,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_073,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_074,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_075,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_076,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_077,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_078,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_079,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_080,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_081,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_082,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_083,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_084,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_085,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_086,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_087,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_088,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_089,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_090,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_091,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_092,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_093,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_094,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_095,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_096,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_097,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_098,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_099,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_100,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_101,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_102,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_103,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_104,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_105,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_106,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_107,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_108,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_109,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_110,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_111,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_112,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_113,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_114,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_115,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_116,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_117,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_118,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_119,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_120,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_121,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_122,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_123,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_124,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_125,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_126,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_127,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_128,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_129,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_130,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_131,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_132,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_133,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_134,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_135,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_136,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_137,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_138,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_139,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_140,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_141,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_142,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_143,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_144,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_145,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_146,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_147,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_148,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_149,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_150,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_151,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_152,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_153,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_154,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_155,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_156,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_157,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_158,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_159,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_160,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_161,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_162,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_163,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_164,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_165,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_166,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_167,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_168,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_169,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_170,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_171,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_172,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_173,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_174,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_175,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_176,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_177,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_178,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_179,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_180,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_181,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_182,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_183,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_184,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_185,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_186,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_187,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_188,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_189,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_190,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_191,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_192,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_193,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_194,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_195,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_196,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_197,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_198,I,I,I,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_199,C,C,C,1
+Order-5 (Research),Llama 3.3 70B Instruct,order5,O5_200,I,I,I,1
